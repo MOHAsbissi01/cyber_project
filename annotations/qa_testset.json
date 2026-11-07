@@ -1,0 +1,1154 @@
+{
+ "_comment": "Builds annotations/qa_testset.json (hand-written QA test set) and sanity-checks it against the raw corpus.\n\nRelevance of an incident to a question is defined HERE, by a regex over the corpus text (field 'text' = question+answer, or 'question' only\nwhen the question field defines the topic) - independent of the NER/graph used by the system. Answer keywords: the answer is correct if EVERY group\nhas at least one of its alternatives (case-insensitive substring). 'abstain': the corpus has no evidence; the right behaviour is to refuse.\nThe set was written after inspecting the corpus (see PROJECT_DEFENSE_GUIDE.md). split: 'dev' = used while building the abstention logic,\n'test' = never used for tuning.\n",
+ "questions": [
+  {
+   "kb_only": false,
+   "id": "A01",
+   "question": "Which vulnerabilities affect log4j?",
+   "kind": "software->vulnerability",
+   "split": "dev",
+   "relevant_regex": "log4j|log4shell",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2021-44228"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "vulns_of_software",
+   "n_relevant": 1
+  },
+  {
+   "kb_only": false,
+   "id": "A02",
+   "question": "Which CVE affects Docker containers?",
+   "kind": "software->vulnerability",
+   "split": "test",
+   "relevant_regex": "CVE-2019-5736",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2019-5736"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "vulns_of_software",
+   "n_relevant": 2
+  },
+  {
+   "kb_only": true,
+   "id": "A03",
+   "question": "Which vulnerability affects Kubernetes?",
+   "kind": "software->vulnerability",
+   "split": "test",
+   "relevant_regex": "CVE-2018-1002105",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2018-1002105"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "vulns_of_software",
+   "n_relevant": 0
+  },
+  {
+   "kb_only": false,
+   "id": "A04",
+   "question": "Which vulnerabilities affect Firefox?",
+   "kind": "software->vulnerability",
+   "split": "test",
+   "relevant_regex": "CVE-2016-5273|CVE-2017-5123",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2016-5273",
+     "CVE-2017-5123"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "vulns_of_software",
+   "n_relevant": 2
+  },
+  {
+   "kb_only": false,
+   "id": "A05",
+   "question": "Which vulnerabilities affect Chrome?",
+   "kind": "software->vulnerability",
+   "split": "test",
+   "relevant_regex": "CVE-2019-5786|CVE-2020-6463",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2019-5786",
+     "CVE-2020-6463"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "vulns_of_software",
+   "n_relevant": 1
+  },
+  {
+   "kb_only": false,
+   "id": "A06",
+   "question": "Which CVE affects Internet Explorer?",
+   "kind": "software->vulnerability",
+   "split": "test",
+   "relevant_regex": "CVE-2014-6332|CVE-2016-0189",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2014-6332",
+     "CVE-2016-0189"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "vulns_of_software",
+   "n_relevant": 2
+  },
+  {
+   "kb_only": false,
+   "id": "A07",
+   "question": "Which CVE affects OpenSSL?",
+   "kind": "software->vulnerability",
+   "split": "test",
+   "relevant_regex": "openssl",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2014-0160"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "vulns_of_software",
+   "n_relevant": 6
+  },
+  {
+   "kb_only": false,
+   "id": "A08",
+   "question": "Which vulnerability affects PHP?",
+   "kind": "software->vulnerability",
+   "split": "test",
+   "relevant_regex": "CVE-2018-19374|CVE-2016-8357",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2018-19374",
+     "CVE-2016-8357"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "vulns_of_software",
+   "n_relevant": 2
+  },
+  {
+   "kb_only": false,
+   "id": "B01",
+   "question": "Which software does CVE-2016-5195 affect?",
+   "kind": "vulnerability->software",
+   "split": "test",
+   "relevant_regex": "CVE-2016-5195",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Linux"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "software_of_cve",
+   "n_relevant": 4
+  },
+  {
+   "kb_only": false,
+   "id": "B02",
+   "question": "Which systems are affected by CVE-2017-0144?",
+   "kind": "vulnerability->software",
+   "split": "test",
+   "relevant_regex": "CVE-2017-0144",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Windows",
+     "SMB"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "software_of_cve",
+   "n_relevant": 1
+  },
+  {
+   "kb_only": false,
+   "id": "B03",
+   "question": "Which software does CVE-2021-44228 affect?",
+   "kind": "vulnerability->software",
+   "split": "dev",
+   "relevant_regex": "CVE-2021-44228",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Log4j"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "software_of_cve",
+   "n_relevant": 1
+  },
+  {
+   "kb_only": false,
+   "id": "B04",
+   "question": "What does CVE-2019-5736 affect?",
+   "kind": "vulnerability->software",
+   "split": "test",
+   "relevant_regex": "CVE-2019-5736",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Docker",
+     "runC"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "software_of_cve",
+   "n_relevant": 2
+  },
+  {
+   "kb_only": false,
+   "id": "B05",
+   "question": "Which products are affected by CVE-2020-1472?",
+   "kind": "vulnerability->software",
+   "split": "test",
+   "relevant_regex": "CVE-2020-1472|zerologon",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Windows",
+     "Netlogon",
+     "Active Directory"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "software_of_cve",
+   "n_relevant": 1
+  },
+  {
+   "kb_only": true,
+   "id": "B06",
+   "question": "Which software is affected by CVE-2018-1002105?",
+   "kind": "vulnerability->software",
+   "split": "test",
+   "relevant_regex": "CVE-2018-1002105",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Kubernetes"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "software_of_cve",
+   "n_relevant": 0
+  },
+  {
+   "kb_only": false,
+   "id": "B07",
+   "question": "What is Heartbleed?",
+   "kind": "vulnerability->software",
+   "split": "test",
+   "relevant_regex": "heartbleed",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "OpenSSL"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "describe_cve",
+   "n_relevant": 1
+  },
+  {
+   "kb_only": false,
+   "id": "B08",
+   "question": "What is the CVE of Dirty COW?",
+   "kind": "vulnerability->software",
+   "split": "test",
+   "relevant_regex": "dirty\\s?cow",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2016-5195"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "describe_cve",
+   "n_relevant": 6
+  },
+  {
+   "kb_only": false,
+   "id": "C01",
+   "question": "Which incidents are related to Mimikatz?",
+   "kind": "incidents-of-entity",
+   "split": "test",
+   "relevant_regex": "mimikatz",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "incidents_of_entity",
+   "n_relevant": 37
+  },
+  {
+   "kb_only": false,
+   "id": "C02",
+   "question": "Which incidents mention Stuxnet?",
+   "kind": "incidents-of-entity",
+   "split": "test",
+   "relevant_regex": "stuxnet",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "incidents_of_entity",
+   "n_relevant": 14
+  },
+  {
+   "kb_only": false,
+   "id": "C03",
+   "question": "Which incidents are related to Emotet?",
+   "kind": "incidents-of-entity",
+   "split": "test",
+   "relevant_regex": "emotet",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "incidents_of_entity",
+   "n_relevant": 24
+  },
+  {
+   "kb_only": false,
+   "id": "C04",
+   "question": "Which incidents discuss Kerberoasting?",
+   "kind": "incidents-of-entity",
+   "split": "test",
+   "relevant_regex": "kerberoast",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "incidents_of_entity",
+   "n_relevant": 12
+  },
+  {
+   "kb_only": false,
+   "id": "C05",
+   "question": "Which incidents are about Spectre?",
+   "kind": "incidents-of-entity",
+   "split": "test",
+   "relevant_regex": "spectre",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "incidents_of_entity",
+   "n_relevant": 13
+  },
+  {
+   "kb_only": false,
+   "id": "C06",
+   "question": "Which incidents are related to Cobalt Strike?",
+   "kind": "incidents-of-entity",
+   "split": "test",
+   "relevant_regex": "cobalt strike",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "incidents_of_entity",
+   "n_relevant": 5
+  },
+  {
+   "kb_only": false,
+   "id": "C07",
+   "question": "Which incidents mention APT28?",
+   "kind": "incidents-of-entity",
+   "split": "test",
+   "relevant_regex": "apt\\s?28|sofacy|fancy bear",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "incidents_of_entity",
+   "n_relevant": 4
+  },
+  {
+   "kb_only": false,
+   "id": "C08",
+   "question": "Which incidents are related to Metasploit?",
+   "kind": "incidents-of-entity",
+   "split": "test",
+   "relevant_regex": "metasploit",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "incidents_of_entity",
+   "n_relevant": 20
+  },
+  {
+   "kb_only": false,
+   "id": "D01",
+   "question": "What does SQL injection target?",
+   "kind": "attack->targets",
+   "split": "test",
+   "relevant_regex": "sql ?injection|sqli",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "database",
+     "web application"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "targets_of_attack",
+   "n_relevant": 43
+  },
+  {
+   "kb_only": false,
+   "id": "D02",
+   "question": "What does phishing target?",
+   "kind": "attack->targets",
+   "split": "test",
+   "relevant_regex": "phishing",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "email",
+     "credentials",
+     "user"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "targets_of_attack",
+   "n_relevant": 4
+  },
+  {
+   "kb_only": false,
+   "id": "D03",
+   "question": "What does a botnet target?",
+   "kind": "attack->targets",
+   "split": "test",
+   "relevant_regex": "botnet",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "IoT",
+     "server",
+     "endpoint",
+     "network"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "targets_of_attack",
+   "n_relevant": 28
+  },
+  {
+   "kb_only": false,
+   "id": "D04",
+   "question": "What do rootkits target?",
+   "kind": "attack->targets",
+   "split": "test",
+   "relevant_regex": "rootkit",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "kernel",
+     "UEFI",
+     "firmware",
+     "boot",
+     "Intel"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "targets_of_attack",
+   "n_relevant": 44
+  },
+  {
+   "kb_only": false,
+   "id": "D05",
+   "question": "What does XSS target?",
+   "kind": "attack->targets",
+   "split": "test",
+   "relevant_regex": "\\bxss\\b|cross-site scripting",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "browser",
+     "web application",
+     "user"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "targets_of_attack",
+   "n_relevant": 68
+  },
+  {
+   "kb_only": false,
+   "id": "D06",
+   "question": "What does Kerberoasting target?",
+   "kind": "attack->targets",
+   "split": "test",
+   "relevant_regex": "kerberoast",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Kerberos",
+     "Active Directory",
+     "credentials",
+     "service"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "targets_of_attack",
+   "n_relevant": 12
+  },
+  {
+   "kb_only": false,
+   "id": "E01",
+   "question": "How can ROP attacks be mitigated?",
+   "kind": "defence",
+   "split": "test",
+   "relevant_regex": "\\brop\\b|return-oriented",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "ASLR",
+     "DEP",
+     "CFI",
+     "CFG",
+     "canary",
+     "shadow stack",
+     "Control Flow"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "mitigations",
+   "n_relevant": 54
+  },
+  {
+   "kb_only": false,
+   "id": "E02",
+   "question": "How do you defend against CSRF?",
+   "kind": "defence",
+   "split": "test",
+   "relevant_regex": "csrf|cross-site request forgery",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "SameSite",
+     "token"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "mitigations",
+   "n_relevant": 35
+  },
+  {
+   "kb_only": false,
+   "id": "E03",
+   "question": "How can SQL injection be prevented?",
+   "kind": "defence",
+   "split": "test",
+   "relevant_regex": "sql ?injection|sqli",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "parameteriz",
+     "prepared statement",
+     "input validation",
+     "WAF",
+     "sanitiz"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "mitigations",
+   "n_relevant": 43
+  },
+  {
+   "kb_only": false,
+   "id": "E04",
+   "question": "What mitigates cross-site scripting?",
+   "kind": "defence",
+   "split": "test",
+   "relevant_regex": "\\bxss\\b|cross-site scripting",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "CSP",
+     "Content Security Policy",
+     "encod",
+     "sanitiz",
+     "escap"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "mitigations",
+   "n_relevant": 68
+  },
+  {
+   "kb_only": false,
+   "id": "F01",
+   "question": "What is the relationship between ASLR and ROP?",
+   "kind": "relationship",
+   "split": "test",
+   "relevant_regex": "aslr",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "mitigat"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "relation_between",
+   "n_relevant": 41
+  },
+  {
+   "kb_only": false,
+   "id": "F02",
+   "question": "What is the relationship between Mimikatz and Kerberos?",
+   "kind": "relationship",
+   "split": "test",
+   "relevant_regex": "mimikatz",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Kerberos"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "relation_between",
+   "n_relevant": 37
+  },
+  {
+   "kb_only": false,
+   "id": "G01",
+   "question": "Which incidents are similar to incident 3?",
+   "kind": "similar",
+   "split": "test",
+   "relevant_regex": "\\bxss\\b|cross-site scripting",
+   "relevance_field": "question",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": "similar_incidents",
+   "n_relevant": 68
+  },
+  {
+   "kb_only": false,
+   "id": "H01",
+   "question": "What is Kerberoasting?",
+   "kind": "characteristics",
+   "split": "test",
+   "relevant_regex": "kerberoast",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "service ticket",
+     "SPN",
+     "service principal",
+     "TGS",
+     "offline",
+     "crack"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": "describe_entity",
+   "n_relevant": 12
+  },
+  {
+   "kb_only": false,
+   "id": "H02",
+   "question": "What is a watering hole attack?",
+   "kind": "characteristics",
+   "split": "test",
+   "relevant_regex": "watering hole",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "website",
+     "compromis"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 3
+  },
+  {
+   "kb_only": false,
+   "id": "H03",
+   "question": "How does ASLR work?",
+   "kind": "characteristics",
+   "split": "test",
+   "relevant_regex": "\\baslr\\b",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "random"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 32
+  },
+  {
+   "kb_only": false,
+   "id": "H04",
+   "question": "What is session fixation?",
+   "kind": "characteristics",
+   "split": "test",
+   "relevant_regex": "session fixation",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "session id",
+     "session identifier",
+     "session token",
+     "known"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 2
+  },
+  {
+   "kb_only": false,
+   "id": "H05",
+   "question": "What are the characteristics of ransomware?",
+   "kind": "characteristics",
+   "split": "test",
+   "relevant_regex": "ransomware",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "encrypt"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 29
+  },
+  {
+   "kb_only": false,
+   "id": "H06",
+   "question": "Explain Spectre.",
+   "kind": "characteristics",
+   "split": "test",
+   "relevant_regex": "spectre",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "speculat"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 13
+  },
+  {
+   "kb_only": false,
+   "id": "U01",
+   "question": "Which vulnerability affects Zorbatron-9000 firmware?",
+   "kind": "unanswerable",
+   "split": "dev",
+   "relevant_regex": null,
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null
+  },
+  {
+   "kb_only": false,
+   "id": "U02",
+   "question": "What is the capital of France?",
+   "kind": "unanswerable",
+   "split": "dev",
+   "relevant_regex": null,
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null
+  },
+  {
+   "kb_only": false,
+   "id": "U03",
+   "question": "Which CVE affects SAP HANA 2.0?",
+   "kind": "unanswerable",
+   "split": "test",
+   "relevant_regex": "sap hana",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null,
+   "n_relevant": 0
+  },
+  {
+   "kb_only": false,
+   "id": "U04",
+   "question": "Which incidents are related to the Conficker worm?",
+   "kind": "unanswerable",
+   "split": "test",
+   "relevant_regex": "conficker",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null,
+   "n_relevant": 0
+  },
+  {
+   "kb_only": false,
+   "id": "U05",
+   "question": "Which CVE affects Siemens S7-1500 PLCs?",
+   "kind": "unanswerable",
+   "split": "test",
+   "relevant_regex": "s7-1500",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null,
+   "n_relevant": 0
+  },
+  {
+   "kb_only": false,
+   "id": "U06",
+   "question": "Who is the CEO of Microsoft?",
+   "kind": "unanswerable",
+   "split": "test",
+   "relevant_regex": null,
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null
+  },
+  {
+   "kb_only": false,
+   "id": "U07",
+   "question": "Which vulnerability affects Oracle WebLogic 12c?",
+   "kind": "unanswerable",
+   "split": "test",
+   "relevant_regex": "weblogic",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null,
+   "n_relevant": 0
+  },
+  {
+   "kb_only": false,
+   "id": "U08",
+   "question": "What is the recipe for chocolate cake?",
+   "kind": "unanswerable",
+   "split": "test",
+   "relevant_regex": null,
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null
+  },
+  {
+   "kb_only": false,
+   "id": "P01",
+   "question": "Tell me about known flaws in Windows.",
+   "kind": "paraphrase:software->vulnerability",
+   "split": "paraphrase",
+   "relevant_regex": "CVE-2017-0144|CVE-2020-1472|CVE-2021-34527|CVE-2019-0708",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2017-0144",
+     "CVE-2019-0708",
+     "CVE-2020-1472",
+     "CVE-2021-34527"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 4
+  },
+  {
+   "kb_only": false,
+   "id": "P02",
+   "question": "Are there any CVEs known for Docker?",
+   "kind": "paraphrase:software->vulnerability",
+   "split": "paraphrase",
+   "relevant_regex": "CVE-2019-5736",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2019-5736"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 2
+  },
+  {
+   "kb_only": false,
+   "id": "P03",
+   "question": "Quelle faille touche Log4j ?",
+   "kind": "paraphrase:software->vulnerability",
+   "split": "paraphrase",
+   "relevant_regex": "log4j|log4shell",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2021-44228"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 1
+  },
+  {
+   "kb_only": false,
+   "id": "P04",
+   "question": "Which operating systems does the Dirty COW bug impact?",
+   "kind": "paraphrase:vulnerability->software",
+   "split": "paraphrase",
+   "relevant_regex": "dirty\\s?cow",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Linux"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 6
+  },
+  {
+   "kb_only": false,
+   "id": "P05",
+   "question": "What is EternalBlue's CVE identifier?",
+   "kind": "paraphrase:vulnerability->software",
+   "split": "paraphrase",
+   "relevant_regex": "eternalblue",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2017-0144"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 6
+  },
+  {
+   "kb_only": false,
+   "id": "P06",
+   "question": "Give me incidents that talk about the Stuxnet worm.",
+   "kind": "paraphrase:incidents-of-entity",
+   "split": "paraphrase",
+   "relevant_regex": "stuxnet",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 14
+  },
+  {
+   "kb_only": false,
+   "id": "P07",
+   "question": "What kinds of assets do rootkits go after?",
+   "kind": "paraphrase:attack->targets",
+   "split": "paraphrase",
+   "relevant_regex": "rootkit",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "kernel",
+     "UEFI",
+     "firmware",
+     "boot",
+     "Intel"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 44
+  },
+  {
+   "kb_only": false,
+   "id": "P08",
+   "question": "Which defences stop return-oriented programming?",
+   "kind": "paraphrase:defence",
+   "split": "paraphrase",
+   "relevant_regex": "\\brop\\b|return-oriented",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "ASLR",
+     "DEP",
+     "CFI",
+     "CFG",
+     "canary",
+     "shadow stack",
+     "Control Flow"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 54
+  },
+  {
+   "kb_only": false,
+   "id": "P09",
+   "question": "How does Kerberoasting relate to Active Directory?",
+   "kind": "paraphrase:relationship",
+   "split": "paraphrase",
+   "relevant_regex": "kerberoast",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Active Directory"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 12
+  },
+  {
+   "kb_only": false,
+   "id": "P10",
+   "question": "Describe how Spectre attacks work.",
+   "kind": "paraphrase:characteristics",
+   "split": "paraphrase",
+   "relevant_regex": "spectre",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "speculat"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 13
+  },
+  {
+   "kb_only": false,
+   "id": "P11",
+   "question": "Which CVE affects Zyxel firewalls?",
+   "kind": "paraphrase:unanswerable",
+   "split": "paraphrase",
+   "relevant_regex": "zyxel",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null,
+   "n_relevant": 0
+  },
+  {
+   "kb_only": false,
+   "id": "P12",
+   "question": "Quelle est la capitale de l'Allemagne ?",
+   "kind": "paraphrase:unanswerable",
+   "split": "paraphrase",
+   "relevant_regex": null,
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null
+  },
+  {
+   "kb_only": false,
+   "id": "P13",
+   "question": "Which incidents mention the NotPetya wiper?",
+   "kind": "paraphrase:incidents-of-entity",
+   "split": "paraphrase",
+   "relevant_regex": "notpetya|petya",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 4
+  },
+  {
+   "kb_only": false,
+   "id": "P14",
+   "question": "What does ransomware go after?",
+   "kind": "paraphrase:attack->targets",
+   "split": "paraphrase",
+   "relevant_regex": "ransomware",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "email",
+     "network",
+     "server",
+     "endpoint",
+     "credentials",
+     "user",
+     "file",
+     "data"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 29
+  },
+  {
+   "kb_only": false,
+   "id": "P15",
+   "question": "Explain what a watering-hole campaign is.",
+   "kind": "paraphrase:characteristics",
+   "split": "paraphrase",
+   "relevant_regex": "watering hole",
+   "relevance_field": "question",
+   "answer_keywords": [
+    [
+     "website",
+     "compromis"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 3
+  },
+  {
+   "kb_only": false,
+   "id": "P16",
+   "question": "Which products does CVE-2019-0708 impact?",
+   "kind": "paraphrase:vulnerability->software",
+   "split": "paraphrase",
+   "relevant_regex": "CVE-2019-0708",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "Windows",
+     "RDP"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 1
+  },
+  {
+   "kb_only": false,
+   "id": "P17",
+   "question": "Which vulnerabilities affect Apache Struts?",
+   "kind": "paraphrase:software->vulnerability",
+   "split": "paraphrase",
+   "relevant_regex": "struts",
+   "relevance_field": "text",
+   "answer_keywords": [
+    [
+     "CVE-2017-5638"
+    ]
+   ],
+   "expect_abstain": false,
+   "expected_intent": null,
+   "n_relevant": 1
+  },
+  {
+   "kb_only": false,
+   "id": "P18",
+   "question": "Which CVE affects Cisco IOS XE?",
+   "kind": "paraphrase:unanswerable",
+   "split": "paraphrase",
+   "relevant_regex": "ios xe",
+   "relevance_field": "text",
+   "answer_keywords": [],
+   "expect_abstain": true,
+   "expected_intent": null,
+   "n_relevant": 0
+  }
+ ]
+}

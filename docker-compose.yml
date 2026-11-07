@@ -1,0 +1,15 @@
+# Neo4j for the Graph-RAG store.   docker compose up -d   (then: python scripts/neo4j_import.py --reset --check)
+# The password is read from the NEO4J_PASSWORD environment variable and is never written to a file of this project.
+services:
+  neo4j:
+    image: neo4j:5
+    container_name: cyberintel-neo4j
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:?set NEO4J_PASSWORD first}
+    ports:
+      - "7474:7474"   # browser UI  http://localhost:7474
+      - "7687:7687"   # bolt
+    volumes:
+      - neo4j_data:/data
+volumes:
+  neo4j_data:

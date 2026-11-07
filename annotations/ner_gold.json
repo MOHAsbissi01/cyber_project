@@ -1,0 +1,1385 @@
+{
+ "_comment": "Hand-annotated NER gold: 70 random 2-sentence passages (seed 7). Annotator: Claude (blind to extractor output); the student should review. Entity types: all lexicon types except TARGET (generic nouns). Names use the canonical form of lexicon.py; entities absent from the lexicon are still annotated (they count as false negatives). pids 0-34 = dev (lexicon may be tuned on their errors), 35-69 = test (final measurement only). Set 'final' (pids 100-144, seed 11) was drawn and annotated AFTER the lexicon was frozen: it is the only unbiased recall estimate. WARNING: the lexicon was extended after reading ALL of pids 0-69, so 'test' (35-69) is optimistic.",
+ "passages": [
+  {
+   "pid": 0,
+   "doc": 175,
+   "set": "dev",
+   "text": "While it is rarely used for its original purpose, attackers have started to use the protocol’s simplicity to bypass SSRF restrictions. One such example is how Redis uses a command-line interface (CLI) that can be connected via Telnet.",
+   "entities": [
+    [
+     "ATTACK",
+     "SSRF"
+    ],
+    [
+     "SOFTWARE",
+     "Redis"
+    ],
+    [
+     "TECHNOLOGY",
+     "Telnet"
+    ]
+   ]
+  },
+  {
+   "pid": 1,
+   "doc": 211,
+   "set": "dev",
+   "text": "Additionally, organizations should stay informed about new LFI variants emerging in the threat landscape so that their WAF rules can be adjusted accordingly. This ongoing vigilance ensures that web applications remain as secure as possible against evolving attack methods like local file inclusion attacks.",
+   "entities": [
+    [
+     "ATTACK",
+     "LFI/RFI"
+    ],
+    [
+     "DEFENSE",
+     "WAF"
+    ]
+   ]
+  },
+  {
+   "pid": 2,
+   "doc": 345,
+   "set": "dev",
+   "text": "In summary, it is crucial to configure JWT libraries properly to reject tokens signed with 'none' as this simple change goes a long way toward securing user sessions and maintaining data privacy in web applications. Implementing robust validation mechanisms also helps detect tampering attempts early on, allowing quick responses before any harm is done.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "JWT"
+    ]
+   ]
+  },
+  {
+   "pid": 3,
+   "doc": 904,
+   "set": "dev",
+   "text": "However, if the program can enforce that all threads run on the same CPU core, then using RDTSCP (a variant of RDTSC) may provide more predictable results. RDTSCP returns the value of the time-stamp counter in registers EDX:EAX and returns the processor ID of the current logical CPU in ECX.",
+   "entities": []
+  },
+  {
+   "pid": 4,
+   "doc": 2022,
+   "set": "dev",
+   "text": "Sending multiple HTTP requests to the server with carefully crafted request bodies designed to manipulate encryption padding and induce errors. Monitoring and analyzing responses from the server, searching for signs of successful padding oracles that indicate partial decryption success.",
+   "entities": [
+    [
+     "ATTACK",
+     "padding oracle"
+    ]
+   ]
+  },
+  {
+   "pid": 5,
+   "doc": 1456,
+   "set": "dev",
+   "text": "If there’s a vulnerability in one of these services, like buffer overflow or insufficient validation of parameters, an attacker could exploit it to gain elevated privileges. The key here is that if an attacker can escalate privileges through the XPC service, they might be able to break out of the sandbox and access more system resources.",
+   "entities": [
+    [
+     "ATTACK",
+     "buffer overflow"
+    ],
+    [
+     "ATTACK",
+     "privilege escalation"
+    ],
+    [
+     "ATTACK",
+     "sandbox escape"
+    ],
+    [
+     "TECHNOLOGY",
+     "XPC"
+    ]
+   ]
+  },
+  {
+   "pid": 6,
+   "doc": 1099,
+   "set": "dev",
+   "text": "Apple has implemented several mitigations, including certificate revocation lists (CRLs), dynamic app verification, and warnings for apps outside the App Store. However, large enterprises remain vulnerable to profile-based attacks due to complex device management workflows that might not enforce strict policy checks on incoming configuration data.",
+   "entities": []
+  },
+  {
+   "pid": 7,
+   "doc": 1349,
+   "set": "dev",
+   "text": "As a result of this flaw in Firefox, attackers are able to use heap spraying to place their own malicious JavaScript code into memory and then execute it by exploiting the substring function’s overflow vulnerability. The attack works because the sprayed code is placed into memory at locations where the substring function will read from.",
+   "entities": [
+    [
+     "SOFTWARE",
+     "Firefox"
+    ],
+    [
+     "ATTACK",
+     "heap spray"
+    ],
+    [
+     "SOFTWARE",
+     "JavaScript"
+    ]
+   ]
+  },
+  {
+   "pid": 8,
+   "doc": 1486,
+   "set": "dev",
+   "text": "Suppose Sysmon is watching for process creations. The malware can avoid triggering those logs by using stealthier techniques: injecting into an existing process instead of spawning a new one, or hooking system calls directly rather than creating named processes.",
+   "entities": [
+    [
+     "TOOL",
+     "Sysmon"
+    ],
+    [
+     "ATTACK",
+     "process injection"
+    ]
+   ]
+  },
+  {
+   "pid": 9,
+   "doc": 944,
+   "set": "dev",
+   "text": "The result is a miner that efficiently uses available CPU resources while minimizing memory overhead. By combining advanced compiler flags and multi-threaded scheduling, it can achieve near-maximal throughput without sacrificing stability.",
+   "entities": []
+  },
+  {
+   "pid": 10,
+   "doc": 1728,
+   "set": "dev",
+   "text": "These gadgets are code snippets that can be chained together to perform arbitrary operations during Return-Oriented Programming (ROP) attacks. By scanning through the memory regions of an application, ROPgadget identifies sequences of instructions ending with a return statement.",
+   "entities": [
+    [
+     "ATTACK",
+     "ROP"
+    ],
+    [
+     "TOOL",
+     "ROPgadget"
+    ]
+   ]
+  },
+  {
+   "pid": 11,
+   "doc": 1472,
+   "set": "dev",
+   "text": "Hardware-assisted virtualization escape attacks are often performed through CPU vulnerability exploitation. If an attacker finds a flaw in the hypervisor software stack, then they may be able to execute arbitrary code on the host system with full privileges (ring 0 or ring -1).",
+   "entities": [
+    [
+     "ATTACK",
+     "sandbox escape"
+    ]
+   ]
+  },
+  {
+   "pid": 12,
+   "doc": 1415,
+   "set": "dev",
+   "text": "The attacker begins by obtaining information about the target application’s memory layout using tools such as Volatility or Windbg and then identifies a location where the victim process will eventually read from. The attacker injects code into this location, which can be either shellcode or a malicious JavaScript function that redirects execution to the exploit.",
+   "entities": [
+    [
+     "TOOL",
+     "Volatility"
+    ],
+    [
+     "TOOL",
+     "WinDbg"
+    ],
+    [
+     "SOFTWARE",
+     "JavaScript"
+    ]
+   ]
+  },
+  {
+   "pid": 13,
+   "doc": 1685,
+   "set": "dev",
+   "text": "1. Define the scope of the application architecture: This includes all components, APIs, data flows, external integrations, and infrastructure services used by the application.",
+   "entities": []
+  },
+  {
+   "pid": 14,
+   "doc": 1243,
+   "set": "dev",
+   "text": "This is especially useful in environments where multiple versions of an application need to be supported, or when it is necessary to override default paths for testing and debugging purposes. The Set Schema API allows applications to specify custom directory paths for loading resources such as DLLs, images, and other files.",
+   "entities": []
+  },
+  {
+   "pid": 15,
+   "doc": 787,
+   "set": "dev",
+   "text": "By constructing a transition matrix that reflects observed mutations in prior malware versions or variants, analysts can extrapolate the likelihood of specific changes occurring next, thereby anticipating potential future characteristics of polymorphic malware. This predictive capability helps security teams prepare defenses and update detection signatures preemptively.",
+   "entities": []
+  },
+  {
+   "pid": 16,
+   "doc": 1310,
+   "set": "dev",
+   "text": "Active scanning refers to launching probes at a remote system in order to determine its operating system type, available services, etc., but it can result in an alert being raised by intrusion detection systems (IDS). Once sufficient information has been gathered about potential targets, an attacker can move on to the next stage of the attack life cycle—exploitation.",
+   "entities": [
+    [
+     "DEFENSE",
+     "IDS/IPS"
+    ]
+   ]
+  },
+  {
+   "pid": 17,
+   "doc": 1865,
+   "set": "dev",
+   "text": "It is vital to recognize that cybersecurity threats evolve rapidly, requiring continuous vigilance and adaptation from those responsible for securing online platforms. Embrace the best practices outlined above, and you’ll be well on your way to defending your web applications against this sophisticated attack vector.",
+   "entities": []
+  },
+  {
+   "pid": 18,
+   "doc": 2001,
+   "set": "dev",
+   "text": "The attacker chooses a random value 'r' and computes a new ciphertext C’ = (r * C) mod N. If the decrypted result D’ of this ciphertext begins with 0x00 0x02, then the attacker knows that r * D ≡ 0 mod N.",
+   "entities": []
+  },
+  {
+   "pid": 19,
+   "doc": 1107,
+   "set": "dev",
+   "text": "These channels allow users to install apps outside the App Store, which could be malicious or contain covert channels. Applications on iOS are allowed access to specific hardware resources such as the camera, microphone, GPS, compass, gyroscope, accelerometer, etc.",
+   "entities": [
+    [
+     "SOFTWARE",
+     "iOS"
+    ]
+   ]
+  },
+  {
+   "pid": 20,
+   "doc": 1978,
+   "set": "dev",
+   "text": "Finally, we tested it in QEMU virtual machine with Secure Boot enabled. Once loaded, our DXE driver successfully patched bootmgfw.efi, allowing unsigned code to execute.",
+   "entities": [
+    [
+     "SOFTWARE",
+     "QEMU"
+    ],
+    [
+     "DEFENSE",
+     "Secure Boot"
+    ]
+   ]
+  },
+  {
+   "pid": 21,
+   "doc": 349,
+   "set": "dev",
+   "text": "Additionally, the choice between RS256 and ES256 (Elliptic Curve Digital Signature Algorithm) involves trade-offs in performance versus key size; ECDSA offers smaller keys and faster computations but may have less widespread support or familiarity among developers. Ultimately, selecting the right signing algorithm hinges on balancing security requirements with operational practicality for the given architecture.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "ECC/ECDSA"
+    ]
+   ]
+  },
+  {
+   "pid": 22,
+   "doc": 393,
+   "set": "dev",
+   "text": "This approach is more robust because it’s based on cryptographic principles, which are harder to bypass than manual validation rules. The attacker would need both a valid signature and access to the encrypted payload.",
+   "entities": []
+  },
+  {
+   "pid": 23,
+   "doc": 1859,
+   "set": "dev",
+   "text": "To recap: First, we discussed how OAuth works at a high level, highlighting the different actors involved in an OAuth flow and the role they play. We also touched on some of the important features that make OAuth 2.0 secure and efficient.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "OAuth"
+    ]
+   ]
+  },
+  {
+   "pid": 24,
+   "doc": 309,
+   "set": "dev",
+   "text": "As always, staying informed about new threats and adapting security measures accordingly remains crucial in today’s ever-evolving threat landscape. Information Not Found: While there is no specific reference document on this topic, the NIST SP 800-53 control family includes requirements for secure configuration management and software development life cycle practices that apply to GraphQL APIs as well as other API types.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "GraphQL"
+    ]
+   ]
+  },
+  {
+   "pid": 25,
+   "doc": 1935,
+   "set": "dev",
+   "text": "We trust that this paper will provide valuable insights into both the theory behind return-oriented programming and practical steps you can take today to defend yourself against potential attacks.15. Please feel free to contact us with any questions or feedback regarding this material—we look forward to hearing from you!",
+   "entities": [
+    [
+     "ATTACK",
+     "ROP"
+    ]
+   ]
+  },
+  {
+   "pid": 26,
+   "doc": 2083,
+   "set": "dev",
+   "text": "2) Next, you register the task with theBITS service using the JobSetNotification method in BITSAdmin.exe or PowerShell’s Start-BitsTransfer cmdlet. 3) Finally, you start theBITS transfer (the job itself).",
+   "entities": [
+    [
+     "SOFTWARE",
+     "PowerShell"
+    ],
+    [
+     "TOOL",
+     "BITSAdmin"
+    ]
+   ]
+  },
+  {
+   "pid": 27,
+   "doc": 1835,
+   "set": "dev",
+   "text": "This technique is very effective in bypassing CSP and can be applied across different resource types like images or CSS files. Attackers are also leveraging this method for cross-site request forgery (CSRF) attacks by embedding malicious requests within URLs that load resources such as images.",
+   "entities": [
+    [
+     "DEFENSE",
+     "CSP"
+    ],
+    [
+     "ATTACK",
+     "CSRF"
+    ]
+   ]
+  },
+  {
+   "pid": 28,
+   "doc": 1498,
+   "set": "dev",
+   "text": "The PoC for this exploit typically involves setting up a malicious directory structure, then starting a container in such a way that runC’s temp dir is replaced by the attacker’s symbolic link. Once the container runs, the injected code executes as root, giving full control over the host machine.",
+   "entities": [
+    [
+     "SOFTWARE",
+     "runC"
+    ]
+   ]
+  },
+  {
+   "pid": 29,
+   "doc": 973,
+   "set": "dev",
+   "text": "This can include packing the malware with custom packers, encrypting sections of the code, and using polymorphic engines that alter the code structure upon each execution. By doing so, it becomes more difficult for researchers to reverse-engineer the malicious components responsible for cryptocurrency mining and other malicious activities.",
+   "entities": []
+  },
+  {
+   "pid": 30,
+   "doc": 1155,
+   "set": "dev",
+   "text": "Furthermore, deep learning techniques like recurrent neural networks (RNNs) or long short-term memory (LSTM) networks are useful in handling sequential data streams, making them suitable for real-time traffic analysis. Lastly, the detection results are visualized using dashboards and alerts are generated whenever an anomaly is detected.",
+   "entities": []
+  },
+  {
+   "pid": 31,
+   "doc": 1932,
+   "set": "dev",
+   "text": "This significantly complicates any attempts to reverse engineer the application or bypass its security measures. To protect against decompilation and disassembly attacks, VMProtect includes a large set of anti-decompiler tricks and code obfuscation techniques that make it very difficult for automated analysis tools to understand the structure of the protected program.",
+   "entities": [
+    [
+     "TOOL",
+     "VMProtect"
+    ]
+   ]
+  },
+  {
+   "pid": 32,
+   "doc": 373,
+   "set": "dev",
+   "text": "The client should display this information for the user so they know what action needs to be taken to authenticate successfully. Another example might be a failed attempt to logon using the correct credentials.",
+   "entities": []
+  },
+  {
+   "pid": 33,
+   "doc": 647,
+   "set": "dev",
+   "text": "Formal verification using **temporal logic** and **model checking** systematically checks whether a given set of flow rules satisfies specified safety properties (e.g., no conflicting flows, no unauthorized data exfiltration). Key steps include: 1.",
+   "entities": []
+  },
+  {
+   "pid": 34,
+   "doc": 2026,
+   "set": "dev",
+   "text": "By doing so, the attacker can eventually determine what that secret was. It’s important to note that this attack requires careful timing and multiple iterations because the attacker must identify patterns in the data that indicate successful guesses.",
+   "entities": []
+  },
+  {
+   "pid": 35,
+   "doc": 197,
+   "set": "test",
+   "text": "3) Audit logs showing changes to the system, configuration files, or other sensitive data; 4) System log files containing information about processes, kernel modules, and other low-level details.",
+   "entities": []
+  },
+  {
+   "pid": 36,
+   "doc": 29,
+   "set": "test",
+   "text": "Stored Cross-Site Scripting (XSS) vulnerabilities arise when user input is saved on the server and later rendered without proper sanitization or escaping. In such scenarios, attackers can exploit legitimate features to inject malicious scripts that execute in the context of other users’ sessions.",
+   "entities": [
+    [
+     "ATTACK",
+     "stored XSS"
+    ]
+   ]
+  },
+  {
+   "pid": 37,
+   "doc": 726,
+   "set": "test",
+   "text": "This way when we overwrite pages containing our target code, the new code can be loaded into memory with no issues and with minimal disruption to other threads. The second part requires some careful coding so that the execution flow from one instruction to another does not depend on a value being written or read from memory (in this case, the original code) by the same thread.",
+   "entities": []
+  },
+  {
+   "pid": 38,
+   "doc": 646,
+   "set": "test",
+   "text": "Network operators can also configure flow timeouts or use ACLs to reduce unnecessary PACKET_IN messages from switches. Additionally, implementing robust monitoring tools like Nagios or Zabbix can help in detecting anomalies in controller CPU utilization early on and triggering automatic countermeasures.",
+   "entities": [
+    [
+     "TOOL",
+     "Nagios"
+    ],
+    [
+     "TOOL",
+     "Zabbix"
+    ]
+   ]
+  },
+  {
+   "pid": 39,
+   "doc": 106,
+   "set": "test",
+   "text": "The server sees these requests coming from a valid session, not realizing they were initiated from another context. Hence, CSRF exemplifies the 'confused deputy' problem where the deputy (server) relies on credentials provided by the browser without verifying whether those credentials were legitimately used to initiate the action.",
+   "entities": [
+    [
+     "ATTACK",
+     "CSRF"
+    ]
+   ]
+  },
+  {
+   "pid": 40,
+   "doc": 1908,
+   "set": "test",
+   "text": "Another tool called xmlsec provides command-line utilities to verify XML Signatures on SAML responses and identify any potential issues such as signature wrapping. It is important that organizations regularly audit their IdPs and SPs with tools designed specifically for this purpose in order to ensure they are protected against such threats.",
+   "entities": [
+    [
+     "TOOL",
+     "xmlsec"
+    ],
+    [
+     "TECHNOLOGY",
+     "SAML"
+    ],
+    [
+     "ATTACK",
+     "signature wrapping"
+    ]
+   ]
+  },
+  {
+   "pid": 41,
+   "doc": 1373,
+   "set": "test",
+   "text": "These selected gadgets form a 'gadget library' that is used to construct ROP chains. This approach helps attackers efficiently find and use suitable code segments for their attacks while mitigating potential issues caused by side effects.",
+   "entities": [
+    [
+     "ATTACK",
+     "ROP"
+    ]
+   ]
+  },
+  {
+   "pid": 42,
+   "doc": 1258,
+   "set": "test",
+   "text": "In addition, security software can employ heuristic-based detection to spot unusual loading patterns and proactively alert on potential attempts at this type of code injection. Advanced memory analysis techniques, such as those used in memory forensics, are also beneficial for identifying unusual DLL load requests within processes.",
+   "entities": []
+  },
+  {
+   "pid": 43,
+   "doc": 49,
+   "set": "test",
+   "text": "Finally, developers should always ensure that their web applications do not include any vulnerable third-party libraries or components that could be exploited for this purpose. By following these best practices, developers can significantly reduce the likelihood of successful prototype pollution-based attacks on their web applications.",
+   "entities": [
+    [
+     "ATTACK",
+     "prototype pollution"
+    ]
+   ]
+  },
+  {
+   "pid": 44,
+   "doc": 1641,
+   "set": "test",
+   "text": "Finally, leverage feedback loops where human analyst decisions on alerts inform future model training, enhancing its ability to detect true anomalies while reducing false positives over time. This iterative process ensures that machine learning evolves alongside real-world threat patterns and organizational behaviors, delivering more accurate insights for security teams.",
+   "entities": []
+  },
+  {
+   "pid": 45,
+   "doc": 988,
+   "set": "test",
+   "text": "The framework would standardize these methods so that a developer can use a unified function name for sending messages regardless of the browser. Testing is crucial as well.",
+   "entities": []
+  },
+  {
+   "pid": 46,
+   "doc": 469,
+   "set": "test",
+   "text": "This highlights the need for continuous research and development efforts aimed at improving security in an increasingly complex threat landscape. Please note that this is a theoretical explanation of how the attack works, and no actual exploits or malicious activities are being promoted here.",
+   "entities": []
+  },
+  {
+   "pid": 47,
+   "doc": 1207,
+   "set": "test",
+   "text": "The Mitre ATT&CK framework lists several techniques under T1548, which focuses on privilege escalation via SUID binaries. Best practices include limiting the use of SUID/SGID scripts whenever possible, ensuring that they are thoroughly tested and vetted for security flaws, and employing a defense-in-depth approach with additional detection mechanisms to catch unusual executions or path changes.",
+   "entities": [
+    [
+     "MITRE_TECHNIQUE",
+     "T1548"
+    ],
+    [
+     "ATTACK",
+     "privilege escalation"
+    ]
+   ]
+  },
+  {
+   "pid": 48,
+   "doc": 1735,
+   "set": "test",
+   "text": "Once achieved, attackers can overwrite adjacent memory areas on the heap, ultimately gaining control over program execution or sensitive data. Defenders must rely on secure coding practices, robust testing methodologies, and continuous threat intelligence updates to mitigate these vulnerabilities effectively.",
+   "entities": []
+  },
+  {
+   "pid": 49,
+   "doc": 850,
+   "set": "test",
+   "text": "One method used by attackers is to establish command-and-control (C2) communication channels via legitimate services such as Discord, Telegram and GitHub. This allows attackers to blend malicious activities with normal traffic patterns on these platforms, making it harder for defenders to identify suspicious communications or data exfiltration attempts.",
+   "entities": [
+    [
+     "SOFTWARE",
+     "GitHub"
+    ],
+    [
+     "SOFTWARE",
+     "Discord"
+    ],
+    [
+     "SOFTWARE",
+     "Telegram"
+    ]
+   ]
+  },
+  {
+   "pid": 50,
+   "doc": 288,
+   "set": "test",
+   "text": "By implementing proper URL sanitization and ensuring no redirects are followed blindly, developers can effectively mitigate SSRF vulnerabilities within their webhook consumers. The Open Web Application Security Project (OWASP) has created a top 10 list for web application security issues that includes SSRF as an important vulnerability to be aware of when developing or securing applications.",
+   "entities": [
+    [
+     "ATTACK",
+     "SSRF"
+    ]
+   ]
+  },
+  {
+   "pid": 51,
+   "doc": 161,
+   "set": "test",
+   "text": "If we have a web server that does not allow us to read any local files but allows SSRF using the file:// protocol handler, then it will be very easy for an attacker to perform a local file inclusion attack against it. We can also use this vector to read other important configuration files such as /etc/shadow and so on.",
+   "entities": [
+    [
+     "ATTACK",
+     "SSRF"
+    ],
+    [
+     "ATTACK",
+     "LFI/RFI"
+    ]
+   ]
+  },
+  {
+   "pid": 52,
+   "doc": 475,
+   "set": "test",
+   "text": "In many cases, victims only become aware of the problem when their own brand reputation has already been damaged through bad reviews, negative SEO rankings and loss of customer trust. To defend against Ghost Domain attacks, organizations should monitor expiring trademarked domains ahead of time so that they can renew or transfer them before someone else takes over.",
+   "entities": [
+    [
+     "ATTACK",
+     "Ghost Domain"
+    ]
+   ]
+  },
+  {
+   "pid": 53,
+   "doc": 2093,
+   "set": "test",
+   "text": "For example, if the application is looking for the file ‘comctl32.dll’ and it does not exist in any of the directories searched, then a phantom DLL hijack opportunity exists for that file name and the first directory searched would be the path used to load the DLL. Analyze application code using tools such as IDA Pro to identify hard-coded attempts to load libraries.",
+   "entities": [
+    [
+     "TOOL",
+     "IDA Pro"
+    ],
+    [
+     "ATTACK",
+     "DLL hijacking"
+    ]
+   ]
+  },
+  {
+   "pid": 54,
+   "doc": 290,
+   "set": "test",
+   "text": "Service Meshes are a relatively new concept that have become popular as part of Kubernetes deployments, where they can be used to manage the communications between microservices within a cluster. A service mesh is an infrastructure layer that exists between user applications and the network stack.",
+   "entities": [
+    [
+     "SOFTWARE",
+     "Kubernetes"
+    ]
+   ]
+  },
+  {
+   "pid": 55,
+   "doc": 914,
+   "set": "test",
+   "text": "There might also be an outb instruction involved in the sequence. It’s important to note that newer versions of these hypervisors have changed their default ports or obfuscated them, making detection more challenging without official tools.",
+   "entities": []
+  },
+  {
+   "pid": 56,
+   "doc": 1993,
+   "set": "test",
+   "text": "As technology evolves, so too do these standards—developers must stay informed about updates or upcoming features slated for future releases. In summary, although there are differences between TPM 1 and TPM 2, they remain vital instruments for safeguarding data across a wide range of applications.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "TPM"
+    ]
+   ]
+  },
+  {
+   "pid": 57,
+   "doc": 2049,
+   "set": "test",
+   "text": "5. **Key Recovery Analysis**: Applying statistical analysis to collected data, comparing normal and faulty ciphertexts, and leveraging mathematical models specific to AES operations to reconstruct key bits.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "AES"
+    ]
+   ]
+  },
+  {
+   "pid": 58,
+   "doc": 560,
+   "set": "test",
+   "text": "This creates an optical channel that can be used to both send commands and receive information from the infected air-gapped computer. These covert channels are all bidirectional, meaning they allow both command and control (C2) communication and data exfiltration without the need for Internet access.",
+   "entities": []
+  },
+  {
+   "pid": 59,
+   "doc": 1006,
+   "set": "test",
+   "text": "Attribution is crucial for law enforcement and threat intelligence purposes, so understanding the methodology here will help them track down the culprits. First step: Data collection.",
+   "entities": []
+  },
+  {
+   "pid": 60,
+   "doc": 1850,
+   "set": "test",
+   "text": "The impact of such a request depends heavily on what exactly is being queried. If an attacker can obtain information about user accounts (e.g., via /user/1, /user/2), they might be able to get more than just account details.",
+   "entities": []
+  },
+  {
+   "pid": 61,
+   "doc": 156,
+   "set": "test",
+   "text": "Finally, you should regularly monitor for signs of an XXE attack. This can include searching logs and event data for suspicious activity such as large file uploads or abnormal HTTP requests containing XML entities.",
+   "entities": [
+    [
+     "ATTACK",
+     "XXE"
+    ]
+   ]
+  },
+  {
+   "pid": 62,
+   "doc": 1790,
+   "set": "test",
+   "text": "By staying informed about these evolving tactics, the security community can build more resilient systems capable of withstanding advanced exploitation attempts and safeguarding sensitive data from unauthorized access or malicious manipulation. In conclusion, stack pivoting is an intricate yet highly effective technique for bypassing buffer size limitations in exploit development.",
+   "entities": [
+    [
+     "ATTACK",
+     "stack pivoting"
+    ]
+   ]
+  },
+  {
+   "pid": 63,
+   "doc": 1372,
+   "set": "test",
+   "text": "Finally, the payload is usually appended at the end of the chain, with a final gadget redirecting execution to it. The process of creating these chains can be extremely time-consuming and labor-intensive, especially in complex environments with numerous security features enabled.",
+   "entities": []
+  },
+  {
+   "pid": 64,
+   "doc": 2191,
+   "set": "test",
+   "text": "Spread spectrum modulation techniques can be used to modulate data onto a carrier signal that is periodically altered in frequency or time to avoid interference with other signals. The idea behind these techniques is that any unwanted noise or interference present on the power lines will be spread across multiple frequencies, making it easier for the receiver to pick up and decode the transmitted signal.",
+   "entities": []
+  },
+  {
+   "pid": 65,
+   "doc": 1255,
+   "set": "test",
+   "text": "By analyzing these logs for unusual or suspicious paths, security analysts can identify potential attempts at exploiting the DLL hijacking vulnerability on their network. For more information on what makes an image load event suspicious, please refer to our post titled ‘Suspicious Process Execution Indicators in Windows Event Logs’.",
+   "entities": [
+    [
+     "ATTACK",
+     "DLL hijacking"
+    ],
+    [
+     "SOFTWARE",
+     "Windows"
+    ]
+   ]
+  },
+  {
+   "pid": 66,
+   "doc": 994,
+   "set": "test",
+   "text": "However, they can also be abused by cybercriminals to hide their tracks, making it imperative that organizations employ robust network monitoring solutions capable of detecting suspicious proxy traffic patterns. For more information on this topic, please visit the following resources:",
+   "entities": []
+  },
+  {
+   "pid": 67,
+   "doc": 1451,
+   "set": "test",
+   "text": "Attackers target these compilers due to their complex handling of dynamic type conversions, garbage collection, and memory management. Exploiting JIT compilers typically involves two phases: **memory corruption** and **sandbox escape**, culminating in arbitrary code execution at the host level.",
+   "entities": [
+    [
+     "ATTACK",
+     "sandbox escape"
+    ],
+    [
+     "ATTACK",
+     "memory corruption"
+    ]
+   ]
+  },
+  {
+   "pid": 68,
+   "doc": 917,
+   "set": "test",
+   "text": "Memory size and resource based sandbox detection works by checking the amount of RAM and storage available to an application. For example, some sandbox environments have limited resources or use virtualization technologies that can cause unexpected behaviors when running complex code.",
+   "entities": []
+  },
+  {
+   "pid": 69,
+   "doc": 2025,
+   "set": "test",
+   "text": "The effectiveness of CRIME relies on both the availability of compression (e.g., gzip) and the ability to control part of what is being compressed. Mitigation techniques include disabling HTTP compression, ensuring sensitive tokens are placed in TLS-encrypted sections of requests, or employing secure protocols that prevent such side-channel attacks.",
+   "entities": [
+    [
+     "ATTACK",
+     "CRIME"
+    ],
+    [
+     "TECHNOLOGY",
+     "TLS/SSL"
+    ],
+    [
+     "ATTACK",
+     "side-channel"
+    ]
+   ]
+  },
+  {
+   "pid": 100,
+   "doc": 1945,
+   "set": "final",
+   "text": "Unfortunately, even though Microsoft introduced these mitigations over a decade ago, many organizations still run 32-bit operating systems. The most commonly exploited vulnerability leading to kernel pool feng shui is CVE-2017-8469 (Win32k EOP), discovered by FireEye researchers in March of that year and used in the subsequent Shadow Brokers dump.",
+   "entities": [
+    [
+     "CVE",
+     "CVE-2017-8469"
+    ],
+    [
+     "THREAT_ACTOR",
+     "Shadow Brokers"
+    ],
+    [
+     "ATTACK",
+     "kernel pool feng shui"
+    ]
+   ]
+  },
+  {
+   "pid": 101,
+   "doc": 1293,
+   "set": "final",
+   "text": "The implementation relies on the use of a special process type that enforces certain restrictions. Microsoft has not revealed all details of how exactly PPL is implemented, but it is likely based on existing protections such as job objects and the kernel’s ability to control process memory access rights.",
+   "entities": [
+    [
+     "DEFENSE",
+     "PPL"
+    ]
+   ]
+  },
+  {
+   "pid": 102,
+   "doc": 1697,
+   "set": "final",
+   "text": "This technique relies on discovering small chunks of pointers or addresses within the program’s data structures. Once they have that data, attackers can reverse-engineer the address space and find the location of critical functions such as system calls or library routines.",
+   "entities": []
+  },
+  {
+   "pid": 103,
+   "doc": 1628,
+   "set": "final",
+   "text": "The TPM ensures that this data remains protected even if the rest of the computer’s hardware is compromised. A TPM has several functions, including generating random numbers and performing cryptographic operations like encrypting data and signing documents.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "TPM"
+    ]
+   ]
+  },
+  {
+   "pid": 104,
+   "doc": 1260,
+   "set": "final",
+   "text": "The implementation leverages the underlying Windows loader’s ability to validate signatures against a trusted root certificate store. If an unsigned or tampered DLL is attempted to be loaded, the operation will fail with error code `ERROR_BAD_EXE_FORMAT` (0x200).",
+   "entities": [
+    [
+     "SOFTWARE",
+     "Windows"
+    ]
+   ]
+  },
+  {
+   "pid": 105,
+   "doc": 900,
+   "set": "final",
+   "text": "It involves delaying execution until after the environment has been assessed for signs that it might be running on a virtual machine, sandbox, or other type of environment that would allow a human analyst to reverse-engineer the code. The goal here is not to detect virtual machines but to make sure that whatever is going to be executed will not be detected by an automated process.",
+   "entities": []
+  },
+  {
+   "pid": 106,
+   "doc": 1866,
+   "set": "final",
+   "text": "These windows must then agree on what message format they will communicate with, as well as how they will respond to each other’s messages. For example, Window A may listen for an event named 'message' and process any data that comes in via that channel.",
+   "entities": []
+  },
+  {
+   "pid": 107,
+   "doc": 1525,
+   "set": "final",
+   "text": "**Hypervisor-Level Access**: Memory is managed at the hypervisor level in cloud deployments, making it difficult for security teams to directly access or dump physical RAM of virtual machines (VMs). Hypervisors like Xen, KVM, and Hyper-V implement isolation between VM memory spaces, requiring specific administrative privileges or cloud provider APIs to perform memory dumps.",
+   "entities": [
+    [
+     "SOFTWARE",
+     "Xen"
+    ],
+    [
+     "SOFTWARE",
+     "KVM"
+    ],
+    [
+     "SOFTWARE",
+     "Hyper-V"
+    ]
+   ]
+  },
+  {
+   "pid": 108,
+   "doc": 657,
+   "set": "final",
+   "text": "Additionally, it is critical to use a strong hash function such as SHA-3 or BLAKE2b, which has not been broken yet in terms of quantum attacks. Furthermore, one should ensure that all communication between the SDN controller and switches is encrypted using a quantum-resistant algorithm such as New Hope or NTRU.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "SHA-3"
+    ],
+    [
+     "TECHNOLOGY",
+     "BLAKE2b"
+    ],
+    [
+     "TECHNOLOGY",
+     "NTRU"
+    ],
+    [
+     "TECHNOLOGY",
+     "New Hope"
+    ]
+   ]
+  },
+  {
+   "pid": 109,
+   "doc": 1350,
+   "set": "final",
+   "text": "You will see an inline patch of the VirtualAlloc function (and others if you so choose) take place with no crash and no error messages. This is one very effective way to bypass DEP!",
+   "entities": [
+    [
+     "DEFENSE",
+     "DEP/NX"
+    ]
+   ]
+  },
+  {
+   "pid": 110,
+   "doc": 1394,
+   "set": "final",
+   "text": "Because of these differences, ROP on PowerPC requires careful selection of gadgets and may involve additional steps such as modifying the CR or LR registers. The most common way to perform an ROP attack on PowerPC is by overwriting the LR with a gadget address that performs desired operations.",
+   "entities": [
+    [
+     "ATTACK",
+     "ROP"
+    ]
+   ]
+  },
+  {
+   "pid": 111,
+   "doc": 1387,
+   "set": "final",
+   "text": "Despite these advances in detection technology, DOP remains a significant threat that must be taken seriously by developers who want their software products to remain secure against future threats. Additionally, organizations should adopt robust security practices like memory protection and code signing to further reduce the risk of falling victim to such attacks in the first place.",
+   "entities": [
+    [
+     "ATTACK",
+     "DOP"
+    ],
+    [
+     "DEFENSE",
+     "code signing"
+    ]
+   ]
+  },
+  {
+   "pid": 112,
+   "doc": 441,
+   "set": "final",
+   "text": "With proper security measures and up-to-date patches, organizations can significantly mitigate the risks posed by this dangerous threat. If you suspect your organization has been compromised or if you want to learn more about advanced privilege escalation techniques like the Diamond Ticket attack, please contact us for a consultation.",
+   "entities": [
+    [
+     "ATTACK",
+     "privilege escalation"
+    ],
+    [
+     "ATTACK",
+     "Diamond Ticket"
+    ]
+   ]
+  },
+  {
+   "pid": 113,
+   "doc": 812,
+   "set": "final",
+   "text": "Dropbox provides both free and paid accounts for individuals and organizations. Paid plans come with larger storage capacities and enhanced security features such as two-factor authentication (2FA).",
+   "entities": [
+    [
+     "SOFTWARE",
+     "Dropbox"
+    ],
+    [
+     "DEFENSE",
+     "MFA"
+    ]
+   ]
+  },
+  {
+   "pid": 114,
+   "doc": 335,
+   "set": "final",
+   "text": "OIDC UserInfo Endpoint: After authentication, if the client application requests user profile information, then the authorization server exposes a UserInfo endpoint that provides such data in JSON format. The request to the UserInfo endpoint requires an access token as the Bearer Token.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "OpenID Connect"
+    ]
+   ]
+  },
+  {
+   "pid": 115,
+   "doc": 496,
+   "set": "final",
+   "text": "The response needs to be technically detailed yet understandable, emphasizing continuous improvement and learning from real-world attacks. Finally, a summary of best practices will help the user implement these strategies effectively.",
+   "entities": []
+  },
+  {
+   "pid": 116,
+   "doc": 1759,
+   "set": "final",
+   "text": "It must be possible to extract at least some kernel data to find the location of the shadow stack. 2) A vulnerability in a system call or driver that allows execution within the context of the kernel.",
+   "entities": [
+    [
+     "DEFENSE",
+     "shadow stack"
+    ]
+   ]
+  },
+  {
+   "pid": 117,
+   "doc": 227,
+   "set": "final",
+   "text": "However, with great flexibility comes great responsibility. The inherent flexibility of GraphQL queries can be abused if not properly secured, leading to unauthorized access to sensitive information.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "GraphQL"
+    ]
+   ]
+  },
+  {
+   "pid": 118,
+   "doc": 1489,
+   "set": "final",
+   "text": "In this section we will look at how to bypass Mandatory Access Control (MAC) using domain transitions in SELinux. As previously discussed, MAC enforces a security policy that controls who can access which files on a system, what processes can be executed, and which applications can run.",
+   "entities": [
+    [
+     "DEFENSE",
+     "SELinux"
+    ],
+    [
+     "DEFENSE",
+     "Mandatory Access Control"
+    ]
+   ]
+  },
+  {
+   "pid": 119,
+   "doc": 2162,
+   "set": "final",
+   "text": "Creating a BadUSB implementation capable of surviving firmware updates and factory resets involves manipulating the device’s internal storage mechanisms (e.g., flash memory), bootloader logic, or hidden partitions that persist across standard reinitialization processes. Here is an overview of how researchers achieve this: ### Key Steps for Persistent BadUSB Implementation 1.",
+   "entities": [
+    [
+     "ATTACK",
+     "BadUSB"
+    ]
+   ]
+  },
+  {
+   "pid": 120,
+   "doc": 1870,
+   "set": "final",
+   "text": "Finally, here is an example of how attackers can exploit ESI tags to inject malicious code into a cached page: https://github.com/marcinwielgosz/esi_injector. In summary, Edge Side Include injection vulnerabilities are prevalent in many web applications and pose serious security risks.",
+   "entities": [
+    [
+     "ATTACK",
+     "ESI injection"
+    ],
+    [
+     "SOFTWARE",
+     "GitHub"
+    ]
+   ]
+  },
+  {
+   "pid": 121,
+   "doc": 934,
+   "set": "final",
+   "text": "For instance, if only certain files have their access times changed but not creation times, it raises suspicion about the validity of the timestamp data. The NTFS $MFT itself is a potential source of inconsistency; while timestamps can be altered in individual file records within the table, the MFT update sequence number (USN) journal may retain original timestamps.",
+   "entities": []
+  },
+  {
+   "pid": 122,
+   "doc": 1297,
+   "set": "final",
+   "text": "This can help detect suspicious activity such as brute-force attacks or unauthorized access attempts. To use Credential Guard effectively, it is important to ensure that the host operating system meets the minimum hardware requirements.",
+   "entities": [
+    [
+     "DEFENSE",
+     "Credential Guard"
+    ],
+    [
+     "ATTACK",
+     "brute force"
+    ]
+   ]
+  },
+  {
+   "pid": 123,
+   "doc": 2066,
+   "set": "final",
+   "text": "Furthermore, ongoing research into advanced cryptanalytic methods ensures that cryptographic standards remain strong and resistant to newly discovered vulnerabilities. As technology continues to progress, so too must our understanding of how seemingly benign characteristics can be manipulated by those with malicious intent.",
+   "entities": []
+  },
+  {
+   "pid": 124,
+   "doc": 1452,
+   "set": "final",
+   "text": "User awareness is also important in preventing attacks that rely on social engineering or phishing tactics. By keeping software updated and following best practices for online security, users can reduce the risk of being affected by sandbox escape exploits.",
+   "entities": [
+    [
+     "ATTACK",
+     "social engineering"
+    ],
+    [
+     "ATTACK",
+     "phishing"
+    ],
+    [
+     "ATTACK",
+     "sandbox escape"
+    ]
+   ]
+  },
+  {
+   "pid": 125,
+   "doc": 264,
+   "set": "final",
+   "text": "The presence of such a vulnerability is typically indicated when the web application’s framework or ORM does not restrict the assignment of properties on the model being updated. In some cases, developers may forget to implement the required restrictions or filters on incoming parameters.",
+   "entities": []
+  },
+  {
+   "pid": 126,
+   "doc": 929,
+   "set": "final",
+   "text": "This is exactly what we are going to be discussing in this module: how to apply different obfuscation techniques to malware samples and make them look different on the outside while maintaining the same functionality inside. It is important to note that all of the examples in this module have been created using manual assembly, rather than through compiler output.",
+   "entities": []
+  },
+  {
+   "pid": 127,
+   "doc": 991,
+   "set": "final",
+   "text": "Once connected, an attacker can fully control the compromised device. The hidden desktop is created by running multiple display sessions on Windows, where each session (desktop) has its own set of applications and window management.",
+   "entities": [
+    [
+     "SOFTWARE",
+     "Windows"
+    ]
+   ]
+  },
+  {
+   "pid": 128,
+   "doc": 418,
+   "set": "final",
+   "text": "Attackers can also use staged payloads to deliver a custom version of the malware, which might be specially built for the target or contain unique signatures to identify individual victims. These additional checks make it harder for defenders to see exactly what will happen when the dropper is executed and therefore increase the chances of success for the attacker.",
+   "entities": [
+    [
+     "ATTACK",
+     "dropper"
+    ]
+   ]
+  },
+  {
+   "pid": 129,
+   "doc": 443,
+   "set": "final",
+   "text": "3. **Import Tickets with Mimikatz**: On the second system, the attacker runs `sekurlsa::tickets /import` to inject the exported Kerberos tickets into memory of that host.",
+   "entities": [
+    [
+     "MALWARE",
+     "Mimikatz"
+    ],
+    [
+     "TECHNOLOGY",
+     "Kerberos"
+    ]
+   ]
+  },
+  {
+   "pid": 130,
+   "doc": 1062,
+   "set": "final",
+   "text": "**Cross-Platform Boot Process Handling**: - Intel-based systems typically boot via a legacy BIOS or modern UEFI implementation with x86 instruction sets, whereas ARM platforms use UEFI on top of the Cortex-A architecture. Malware must account for these differences in memory mapping (e.g., physical vs. virtual addresses), interrupt controllers, and security features like TrustZone on ARM.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "Intel"
+    ],
+    [
+     "TECHNOLOGY",
+     "BIOS"
+    ],
+    [
+     "TECHNOLOGY",
+     "UEFI"
+    ],
+    [
+     "TECHNOLOGY",
+     "ARM"
+    ],
+    [
+     "TECHNOLOGY",
+     "TrustZone"
+    ]
+   ]
+  },
+  {
+   "pid": 131,
+   "doc": 119,
+   "set": "final",
+   "text": "The use of the referer header can be beneficial for tracking user navigation and debugging, but it also poses some privacy concerns since users might not want their browsing history to be revealed to every site they visit. As a result, many browsers allow users to disable or restrict the referer header’s transmission, thereby reducing its reliability as a security mechanism.",
+   "entities": []
+  },
+  {
+   "pid": 132,
+   "doc": 1677,
+   "set": "final",
+   "text": "The process includes the following steps: 1) Identifying assets and data: Determine what information, systems, applications, or services are critical to the business and must be protected from cyberattacks.",
+   "entities": []
+  },
+  {
+   "pid": 133,
+   "doc": 1788,
+   "set": "final",
+   "text": "This technique is commonly used in privilege escalation exploits such as CVE-2016-4586 (Netlink). Another example is using gadgets from other modules loaded into the Linux kernel to chain together multiple ROP gadgets and create a chain of calls that eventually lead to a system call with privileges higher than those available to the user.",
+   "entities": [
+    [
+     "ATTACK",
+     "privilege escalation"
+    ],
+    [
+     "CVE",
+     "CVE-2016-4586"
+    ],
+    [
+     "SOFTWARE",
+     "Linux"
+    ],
+    [
+     "ATTACK",
+     "ROP"
+    ]
+   ]
+  },
+  {
+   "pid": 134,
+   "doc": 367,
+   "set": "final",
+   "text": "When a client sends a request to the web cache, the cache uses a unique identifier called a 'cache key' to look up and store cached resources. The cache key is constructed by combining various parts of the incoming HTTP request that determine how responses are stored and retrieved.",
+   "entities": []
+  },
+  {
+   "pid": 135,
+   "doc": 1955,
+   "set": "final",
+   "text": "By carefully crafting transactions that trigger memory corruptions in vulnerable code paths, attackers can achieve code execution within critical processes. However, with strong code practices, layered defenses, and prompt patching, these types of exploits can be effectively mitigated.",
+   "entities": [
+    [
+     "ATTACK",
+     "memory corruption"
+    ]
+   ]
+  },
+  {
+   "pid": 136,
+   "doc": 963,
+   "set": "final",
+   "text": "Key indicators include: - **`navigator.webkitGetUserMedia`**: Originally intended for accessing camera/microphone devices, this API has been abused by miners to bypass throttling of `window.crypto.webkitSubtle`. Its unusual use in non-media contexts can signal cryptomining activity.",
+   "entities": []
+  },
+  {
+   "pid": 137,
+   "doc": 1777,
+   "set": "final",
+   "text": "Thank you very much for your interest in this important topic!. This talk is based on joint work with Daniel Gruss (Graz University of Technology), Michael Schwarz (Graz University of Technology) and Thomas Lipp (Graz University of Technology).",
+   "entities": []
+  },
+  {
+   "pid": 138,
+   "doc": 1579,
+   "set": "final",
+   "text": "By combining these measures, the attack vector becomes much less effective because attackers cannot easily scale their attempts without triggering security alerts. It’s also crucial to educate users on choosing strong passwords and promptly reporting any unusual login attempts.",
+   "entities": []
+  },
+  {
+   "pid": 139,
+   "doc": 1924,
+   "set": "final",
+   "text": "This is often found via a format string vulnerability where we can print out the addresses of global variables or via an infoleak bug in which we can read arbitrary memory locations. Once we have the address of the GOT entry, we must determine how many bytes are necessary to overwrite it (usually four for 32-bit systems).",
+   "entities": [
+    [
+     "ATTACK",
+     "format string"
+    ]
+   ]
+  },
+  {
+   "pid": 140,
+   "doc": 1180,
+   "set": "final",
+   "text": "The taxii-server library provides several methods for configuring and managing collections, objects, and other TAXII 2 server components. Implementing authentication involves setting up appropriate endpoints or middleware in your Flask application, which can be done by using standard Python libraries such as flask_httpauth.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "TAXII"
+    ],
+    [
+     "SOFTWARE",
+     "Flask"
+    ],
+    [
+     "SOFTWARE",
+     "Python"
+    ]
+   ]
+  },
+  {
+   "pid": 141,
+   "doc": 1196,
+   "set": "final",
+   "text": "Threat intelligence relies heavily on collecting data points—like hashes, domain names, IP addresses—that help identify malicious activity. These IOCs are often based on cryptographic fingerprints, such as malware hash values or encrypted payloads.",
+   "entities": []
+  },
+  {
+   "pid": 142,
+   "doc": 450,
+   "set": "final",
+   "text": "They also leave few traces on systems as most communications occur at the application level rather than at the network level. Attackers can hide their activities from detection by using different evasion techniques such as encryption, tunneling through other protocols like HTTP or HTTPS, and modifying packets with spoofed source addresses.",
+   "entities": [
+    [
+     "TECHNOLOGY",
+     "HTTPS"
+    ]
+   ]
+  },
+  {
+   "pid": 143,
+   "doc": 1427,
+   "set": "final",
+   "text": "This technique can be challenging for defenders because it requires knowledge of both heaps’ layouts, how they interact, and which objects reside where. The concept behind cross-heap exploitation is that heap segments are allocated as contiguous blocks in memory, but the actual data structures stored within these segments may not always be contiguous.",
+   "entities": [
+    [
+     "ATTACK",
+     "cross-heap exploitation"
+    ]
+   ]
+  },
+  {
+   "pid": 144,
+   "doc": 435,
+   "set": "final",
+   "text": "The **Protected Users** group is an Active Directory (AD) protected group introduced in Windows Server 2016 and Windows 10/Server 2016, designed to mitigate advanced credential theft attacks. Members of this group receive additional security restrictions that limit their susceptibility to common lateral movement techniques used by adversaries.",
+   "entities": [
+    [
+     "DEFENSE",
+     "Protected Users"
+    ],
+    [
+     "SOFTWARE",
+     "Active Directory"
+    ],
+    [
+     "SOFTWARE",
+     "Windows"
+    ],
+    [
+     "ATTACK",
+     "lateral movement"
+    ]
+   ]
+  }
+ ]
+}

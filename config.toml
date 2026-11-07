@@ -1,0 +1,53 @@
+# Central configuration. Every path/hyper-parameter used by the project lives here (no hard-coded paths in code).
+# Paths are relative to the project root.
+
+[paths]
+data = "data/train.parquet"
+artifacts = "artifacts"          # cached objects (corpus, graph, indexes, models) built by `python -m cyberintel.pipeline`
+reports = "reports"              # metrics (json), figures (png), tables (csv) used by the UI and the report
+annotations = "annotations"      # gold labels / NER gold / QA test set (hand-checked)
+
+[data]
+seed = 42
+test_size = 0.20                 # share of the whole corpus
+val_size = 0.10                  # share of the whole corpus
+min_question_chars = 10
+min_answer_chars = 120           # after removing leaked reasoning
+chunk_chars = 700                # target size of a retrieval chunk (course Chap. 4: chunking)
+
+[embedding]
+default = "tfidf"                # "tfidf" (TF-IDF + SVD/LSA, offline) or "st" (sentence-transformers)
+st_model = "sentence-transformers/all-MiniLM-L6-v2"
+lsa_dim = 128
+
+[graph]
+min_support = 2                  # min #incidents with a sentence-level co-occurrence to keep an entity-entity relation
+min_support_cve = 1              # CVE relations are rare: keep single-evidence links (with provenance)
+knn_k = 8
+knn_threshold = 0.25
+max_pair_chars = 120             # max char distance between two entities of a relation inside a sentence
+
+[gnn]
+hidden = 64
+epochs = 200
+lr = 0.01
+weight_decay = 5e-4
+dropout = 0.5
+seeds = [0, 1, 2, 3, 4]
+
+[rag]
+dense = "st"                     # chunk embeddings: "st" (sentence-transformers) or "none" (lexical only)
+top_k = 5
+rrf_k = 60                       # reciprocal-rank-fusion constant
+min_dense_score = 0.30           # abstention thresholds (calibrated on the QA dev questions, see reports/qa_eval.json)
+min_lexical_score = 0.12
+
+[neo4j]
+uri = "bolt://localhost:7687"
+user = "neo4j"
+password_env = "NEO4J_PASSWORD"  # the password is read from this environment variable, never stored
+database = "neo4j"
+
+[llm]
+provider = "none"                # "none" (extractive, offline) or "claude" (needs ANTHROPIC_API_KEY)
+claude_model = "claude-haiku-5-5"

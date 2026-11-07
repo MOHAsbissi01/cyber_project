@@ -1,0 +1,245 @@
+{
+  "nodes": 2710,
+  "edges": 25970,
+  "node_types": {
+    "INCIDENT": 2193,
+    "ATTACK": 73,
+    "DEFENSE": 31,
+    "TARGET": 18,
+    "SOFTWARE": 56,
+    "TOOL": 34,
+    "TECHNOLOGY": 46,
+    "MITRE_TECHNIQUE": 86,
+    "IP": 22,
+    "CVE": 93,
+    "TACTIC": 9,
+    "CWE": 2,
+    "MALWARE": 19,
+    "THREAT_ACTOR": 6,
+    "VULN_NAME": 22
+  },
+  "edge_relations": {
+    "MENTIONS": 13660,
+    "SIMILAR_TO": 11932,
+    "TARGETS": 165,
+    "MITIGATES": 46,
+    "USES": 30,
+    "EXPLOITS": 1,
+    "MAPS_TO": 10,
+    "AFFECTS": 97,
+    "ALIAS_OF": 29
+  },
+  "semantic_edges": 378,
+  "semantic_edge_sources": {
+    "corpus": 327,
+    "reference_kb": 51
+  },
+  "semantic_edge_status": {
+    "unverified": 306,
+    "reference": 51,
+    "differs_from_kb": 5,
+    "contradicted_by_kb": 2,
+    "verified": 14
+  },
+  "connected_components": 1,
+  "largest_component": 2710,
+  "entity_graph": {
+    "nodes": 517,
+    "edges": 364,
+    "components": 255,
+    "largest_component": 248,
+    "density": 0.00136,
+    "isolated_entities": 245
+  },
+  "pagerank_top": [
+    [
+      "Windows",
+      "SOFTWARE",
+      0.0184
+    ],
+    [
+      "JavaScript",
+      "SOFTWARE",
+      0.0114
+    ],
+    [
+      "Linux",
+      "SOFTWARE",
+      0.01
+    ],
+    [
+      "Intel",
+      "TECHNOLOGY",
+      0.01
+    ],
+    [
+      "credentials",
+      "TARGET",
+      0.0084
+    ],
+    [
+      "web application",
+      "TARGET",
+      0.0081
+    ],
+    [
+      "ARM",
+      "TECHNOLOGY",
+      0.0072
+    ],
+    [
+      "ransomware",
+      "ATTACK",
+      0.0065
+    ],
+    [
+      "XPC",
+      "TECHNOLOGY",
+      0.0061
+    ],
+    [
+      "browser",
+      "TARGET",
+      0.006
+    ],
+    [
+      "PHP",
+      "SOFTWARE",
+      0.0059
+    ],
+    [
+      "Chrome",
+      "SOFTWARE",
+      0.0058
+    ]
+  ],
+  "degree_top": [
+    [
+      "Windows",
+      "SOFTWARE",
+      20
+    ],
+    [
+      "JavaScript",
+      "SOFTWARE",
+      13
+    ],
+    [
+      "SQL injection",
+      "ATTACK",
+      11
+    ],
+    [
+      "privilege escalation",
+      "ATTACK",
+      11
+    ],
+    [
+      "SSRF",
+      "ATTACK",
+      11
+    ],
+    [
+      "credentials",
+      "TARGET",
+      9
+    ],
+    [
+      "brute force",
+      "ATTACK",
+      9
+    ],
+    [
+      "Linux",
+      "SOFTWARE",
+      9
+    ],
+    [
+      "Intel",
+      "TECHNOLOGY",
+      9
+    ],
+    [
+      "ransomware",
+      "ATTACK",
+      9
+    ],
+    [
+      "CSRF",
+      "ATTACK",
+      8
+    ],
+    [
+      "Mimikatz",
+      "MALWARE",
+      8
+    ]
+  ],
+  "incident_communities": {
+    "n_communities": 12,
+    "nmi_vs_weak_labels": 0.2547,
+    "ari_vs_weak_labels": 0.1295,
+    "weighted_purity": 0.481
+  },
+  "relation_edges_by_name": [
+    {
+      "relation": "AFFECTS",
+      "source": "corpus",
+      "n": 67
+    },
+    {
+      "relation": "AFFECTS",
+      "source": "reference_kb",
+      "n": 30
+    },
+    {
+      "relation": "ALIAS_OF",
+      "source": "corpus",
+      "n": 8
+    },
+    {
+      "relation": "ALIAS_OF",
+      "source": "reference_kb",
+      "n": 21
+    },
+    {
+      "relation": "EXPLOITS",
+      "source": "corpus",
+      "n": 1
+    },
+    {
+      "relation": "MAPS_TO",
+      "source": "corpus",
+      "n": 10
+    },
+    {
+      "relation": "MITIGATES",
+      "source": "corpus",
+      "n": 46
+    },
+    {
+      "relation": "TARGETS",
+      "source": "corpus",
+      "n": 165
+    },
+    {
+      "relation": "USES",
+      "source": "corpus",
+      "n": 30
+    }
+  ],
+  "claims_check": {
+    "unverified": 306,
+    "verified": 14,
+    "differs_from_kb": 5,
+    "contradicted_by_kb": 2
+  },
+  "similarity_graph": {
+    "edges": 11932,
+    "edge_homophily_weak_labels": 0.5155
+  },
+  "shared_entity_graph": {
+    "edges": 47640,
+    "edge_homophily_weak_labels": 0.3756
+  }
+}

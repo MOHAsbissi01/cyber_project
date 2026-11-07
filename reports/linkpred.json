@@ -1,0 +1,84 @@
+{
+  "n_entities": 245,
+  "n_positive_edges": 327,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "protocol": "70/10/20 random edge split, type-compatible negatives (1:1), metrics on held-out test edges",
+  "methods": {
+    "common_neighbours": {
+      "auc": {
+        "mean": 0.5293,
+        "std": 0.0157
+      },
+      "ap": {
+        "mean": 0.5267,
+        "std": 0.0156
+      }
+    },
+    "jaccard": {
+      "auc": {
+        "mean": 0.5293,
+        "std": 0.0157
+      },
+      "ap": {
+        "mean": 0.5299,
+        "std": 0.016
+      }
+    },
+    "adamic_adar": {
+      "auc": {
+        "mean": 0.5296,
+        "std": 0.0158
+      },
+      "ap": {
+        "mean": 0.5335,
+        "std": 0.0161
+      }
+    },
+    "preferential_attachment": {
+      "auc": {
+        "mean": 0.4959,
+        "std": 0.0497
+      },
+      "ap": {
+        "mean": 0.5863,
+        "std": 0.0526
+      }
+    },
+    "feature_cosine_(no_graph)": {
+      "auc": {
+        "mean": 0.7805,
+        "std": 0.0291
+      },
+      "ap": {
+        "mean": 0.7559,
+        "std": 0.0677
+      }
+    },
+    "gcn_autoencoder": {
+      "auc": {
+        "mean": 0.8363,
+        "std": 0.0371
+      },
+      "ap": {
+        "mean": 0.8405,
+        "std": 0.0417
+      }
+    },
+    "mlp_autoencoder_(no_graph)": {
+      "auc": {
+        "mean": 0.8738,
+        "std": 0.0488
+      },
+      "ap": {
+        "mean": 0.8748,
+        "std": 0.0528
+      }
+    }
+  }
+}

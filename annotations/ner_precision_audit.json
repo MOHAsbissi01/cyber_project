@@ -1,0 +1,1104 @@
+{
+ "_comment": "Precision audit: 137 extractor mentions sampled at random per entity type (TARGET excluded), judged by the annotator (Claude) from a +-50 char context. Wrong: 3 git-commit SHA-1 ids typed HASH, 1 'process monitoring' typed TOOL. Both causes were fixed afterwards (URL masking for HASH; no inflection suffix for TOOL); the fixed extractor was not re-audited.",
+ "n": 137,
+ "correct": 133,
+ "precision": 0.9708,
+ "mentions": [
+  {
+   "n": 0,
+   "doc": 1044,
+   "type": "ATTACK",
+   "name": "backdoor",
+   "ctx": "e server for the SolarWinds product. The SUNBURST [[backdoor]] communicated via HTTP with a command-an",
+   "correct": true
+  },
+  {
+   "n": 1,
+   "doc": 1983,
+   "type": "ATTACK",
+   "name": "privilege escalation",
+   "ctx": "se techniques to bypass security measures or gain [[elevated privileges]] within a system. This presentation will",
+   "correct": true
+  },
+  {
+   "n": 2,
+   "doc": 105,
+   "type": "ATTACK",
+   "name": "SQL injection",
+   "ctx": " Never underestimate the potential harm caused by [[SQL injection]] attacks—always remain vigilant and prep",
+   "correct": true
+  },
+  {
+   "n": 3,
+   "doc": 1843,
+   "type": "ATTACK",
+   "name": "SQL injection",
+   "ctx": "anitization, and parameterized queries to prevent [[SQL injection]] attacks. Also, keeping web servers and ",
+   "correct": true
+  },
+  {
+   "n": 4,
+   "doc": 518,
+   "type": "ATTACK",
+   "name": "zero-day",
+   "ctx": " This approach maximizes the chances of detecting [[zero-day]] attacks while minimizing false positive",
+   "correct": true
+  },
+  {
+   "n": 5,
+   "doc": 1249,
+   "type": "ATTACK",
+   "name": "process injection",
+   "ctx": "What are the implementation details of reflective [[DLL injection]] combined with search order hijacking fo",
+   "correct": true
+  },
+  {
+   "n": 6,
+   "doc": 1939,
+   "type": "ATTACK",
+   "name": "ROP",
+   "ctx": "application logic after successful execution. The [[ROP]] chain must be carefully constructed so ",
+   "correct": true
+  },
+  {
+   "n": 7,
+   "doc": 1860,
+   "type": "ATTACK",
+   "name": "CSRF",
+   "ctx": "other techniques like cross-site request forgery ([[CSRF]]) or cross-site scripting (XSS) to explo",
+   "correct": true
+  },
+  {
+   "n": 8,
+   "doc": 1398,
+   "type": "ATTACK",
+   "name": "memory corruption",
+   "ctx": "used in conjunction with other techniques such as [[memory corruption]] and malware injection.",
+   "correct": true
+  },
+  {
+   "n": 9,
+   "doc": 996,
+   "type": "ATTACK",
+   "name": "lateral movement",
+   "ctx": "e is to gather credentials, which can be used for [[lateral movement]] within the network or exfiltration of s",
+   "correct": true
+  },
+  {
+   "n": 10,
+   "doc": 1733,
+   "type": "ATTACK",
+   "name": "buffer overflow",
+   "ctx": "y crafted RPC request can be sent that triggers a [[buffer overflow]] within the LSARPC server process (lsass",
+   "correct": true
+  },
+  {
+   "n": 11,
+   "doc": 1819,
+   "type": "ATTACK",
+   "name": "ROP",
+   "ctx": "es. Step 3 – Disable Return-Oriented Programming ([[ROP]]): While ROP is a robust mitigation agai",
+   "correct": true
+  },
+  {
+   "n": 12,
+   "doc": 1816,
+   "type": "CVE",
+   "name": "CVE-2016-7945",
+   "ctx": "ies using the second format string vulnerability ([[CVE-2016-7945]]). The goal of this section is not only ",
+   "correct": true
+  },
+  {
+   "n": 13,
+   "doc": 1787,
+   "type": "CVE",
+   "name": "CVE-2018-0836",
+   "ctx": "in multiple public sources such as CVE-2019-7481, [[CVE-2018-0836]], and MS17-018. The concept is that an a",
+   "correct": true
+  },
+  {
+   "n": 14,
+   "doc": 2089,
+   "type": "CVE",
+   "name": "CVE-2017-8784",
+   "ctx": "ed 'DLL hijacking' and has been known since 2005 ([[CVE-2017-8784]]). The attacker copies a malicious versi",
+   "correct": true
+  },
+  {
+   "n": 15,
+   "doc": 751,
+   "type": "CVE",
+   "name": "CVE-2017-0290",
+   "ctx": "tem accounts to escalate privileges. For example, [[CVE-2017-0290]] (EternalBlue) is an exploit used for pr",
+   "correct": true
+  },
+  {
+   "n": 16,
+   "doc": 1823,
+   "type": "CVE",
+   "name": "CVE-2019-10744",
+   "ctx": ".prototype-pollution.pdf. For more information on [[CVE-2019-10744]], see the following link: https://www.cv",
+   "correct": true
+  },
+  {
+   "n": 17,
+   "doc": 1411,
+   "type": "CVE",
+   "name": "CVE-2016-5273",
+   "ctx": "n example, a vulnerability discovered in Firefox ([[CVE-2016-5273]]) allows arbitrary code execution withou",
+   "correct": true
+  },
+  {
+   "n": 18,
+   "doc": 2006,
+   "type": "CVE",
+   "name": "CVE-2018-19756",
+   "ctx": "that caused collisions and led to key compromise ([[CVE-2018-19756]]). Another example was a flaw in the iOS",
+   "correct": true
+  },
+  {
+   "n": 19,
+   "doc": 1212,
+   "type": "CVE",
+   "name": "CVE-2019-5736",
+   "ctx": "bility in the Docker API or runtime. For example, [[CVE-2019-5736]] was a critical vulnerability allowing r",
+   "correct": true
+  },
+  {
+   "n": 20,
+   "doc": 1787,
+   "type": "CVE",
+   "name": "CVE-2019-7481",
+   "ctx": "ell documented in multiple public sources such as [[CVE-2019-7481]], CVE-2018-0836, and MS17-018. The conce",
+   "correct": true
+  },
+  {
+   "n": 21,
+   "doc": 1966,
+   "type": "CVE",
+   "name": "CVE-2017-8469",
+   "ctx": "xploit: In Windows Hyper-V 10.x, a vulnerability ([[CVE-2017-8469]]) allowed an attacker to escalate privil",
+   "correct": true
+  },
+  {
+   "n": 22,
+   "doc": 1732,
+   "type": "CVE",
+   "name": "CVE-2018-3646",
+   "ctx": "rivilege escalation through a buffer overflow. 2. [[CVE-2018-3646]]: An out-of-bounds write vulnerability i",
+   "correct": true
+  },
+  {
+   "n": 23,
+   "doc": 1769,
+   "type": "CVE",
+   "name": "CVE-2016-5195",
+   "ctx": "g shared memory locations. The initial Dirty Cow ([[CVE-2016-5195]]) was fixed in the Linux kernel by chang",
+   "correct": true
+  },
+  {
+   "n": 24,
+   "doc": 388,
+   "type": "CWE",
+   "name": "CWE-94",
+   "ctx": "akness Enumeration (CWE) classifies this issue as [[CWE-94]], which highlights command injection att",
+   "correct": true
+  },
+  {
+   "n": 25,
+   "doc": 388,
+   "type": "CWE",
+   "name": "CWE-502",
+   "ctx": "akness Enumeration (CWE) classifies this issue as [[CWE-502]], which highlights insecure deserializat",
+   "correct": true
+  },
+  {
+   "n": 26,
+   "doc": 1817,
+   "type": "DEFENSE",
+   "name": "stack canary",
+   "ctx": "ould manipulate the output string to bypass stack [[canaries]] by supplying specially crafted argument",
+   "correct": true
+  },
+  {
+   "n": 27,
+   "doc": 1697,
+   "type": "DEFENSE",
+   "name": "ASLR",
+   "ctx": "artial pointer leak and memory spraying to bypass [[ASLR]] in a vulnerable application: // Sample ",
+   "correct": true
+  },
+  {
+   "n": 28,
+   "doc": 1697,
+   "type": "DEFENSE",
+   "name": "ASLR",
+   "ctx": "ovides attackers with a reliable method to bypass [[ASLR]]. By using this approach, they can locat",
+   "correct": true
+  },
+  {
+   "n": 29,
+   "doc": 463,
+   "type": "DEFENSE",
+   "name": "EDR",
+   "ctx": "that are used during execution of a program. Many [[EDR]] solutions allow for whitelisting specif",
+   "correct": true
+  },
+  {
+   "n": 30,
+   "doc": 211,
+   "type": "DEFENSE",
+   "name": "WAF",
+   "ctx": "example of how to use a web application firewall ([[WAF]]) rule to detect and block local file in",
+   "correct": true
+  },
+  {
+   "n": 31,
+   "doc": 315,
+   "type": "DEFENSE",
+   "name": "patch management",
+   "ctx": "d system relies on continuous monitoring, regular [[patching]], and an experienced security team capab",
+   "correct": true
+  },
+  {
+   "n": 32,
+   "doc": 1753,
+   "type": "DEFENSE",
+   "name": "CFI/CFG",
+   "ctx": "tections in Linux distributions. To be effective, [[CFG]] must be properly implemented during com",
+   "correct": true
+  },
+  {
+   "n": 33,
+   "doc": 1750,
+   "type": "DEFENSE",
+   "name": "CFI/CFG",
+   "ctx": "the comprehensive technique for bypassing Windows [[Control Flow Guard]] (CFG) through indirect call target corr",
+   "correct": true
+  },
+  {
+   "n": 34,
+   "doc": 6,
+   "type": "DEFENSE",
+   "name": "HttpOnly",
+   "ctx": "uests. The browser will automatically include the [[HttpOnly]] session cookie when making the request,",
+   "correct": true
+  },
+  {
+   "n": 35,
+   "doc": 1753,
+   "type": "DEFENSE",
+   "name": "CFI/CFG",
+   "ctx": "e the desired protection level. The first part of [[CFG]] is the compiler’s role to instrument al",
+   "correct": true
+  },
+  {
+   "n": 36,
+   "doc": 1483,
+   "type": "DEFENSE",
+   "name": "SIEM",
+   "ctx": "nts and could be noticed by monitoring tools like [[SIEM]] or EDRs. Thus, it is preferable to disa",
+   "correct": true
+  },
+  {
+   "n": 37,
+   "doc": 1061,
+   "type": "DEFENSE",
+   "name": "Secure Boot",
+   "ctx": "ting integrity checks performed by the platform’s [[secure boot]] mechanism. Researchers at MITRE ATT&CK ",
+   "correct": true
+  },
+  {
+   "n": 38,
+   "doc": 1743,
+   "type": "HASH",
+   "name": "3e95b6a80941a2d713f31785e14c50b5a04a70d0",
+   "ctx": "lity: curl: https://github.com/bagder/curl/commit/[[3e95b6a80941a2d713f31785e14c50b5a04a70d0]]; libcurl: http://curl.haxx.se/libcurl/.",
+   "correct": false
+  },
+  {
+   "n": 39,
+   "doc": 1743,
+   "type": "HASH",
+   "name": "3e95b6a80941a2d713f31785e14c50b5a04a70d0",
+   "ctx": "lity: curl: https://github.com/bagder/curl/commit/[[3e95b6a80941a2d713f31785e14c50b5a04a70d0]]; libcurl: http://curl.haxx.se/libcurl/.",
+   "correct": false
+  },
+  {
+   "n": 40,
+   "doc": 1743,
+   "type": "HASH",
+   "name": "3e95b6a80941a2d713f31785e14c50b5a04a70d0",
+   "ctx": "lity: curl: https://github.com/bagder/curl/commit/[[3e95b6a80941a2d713f31785e14c50b5a04a70d0]]; libcurl: http://curl.haxx.se/libcurl/.",
+   "correct": false
+  },
+  {
+   "n": 41,
+   "doc": 181,
+   "type": "IP",
+   "name": "169.254.169.254",
+   "ctx": "quires the client to be able to send a request to [[169.254.169.254]], which can only be done from within the",
+   "correct": true
+  },
+  {
+   "n": 42,
+   "doc": 1838,
+   "type": "IP",
+   "name": "10.0.2.5",
+   "ctx": " the wp-config.php file from the web root: http://[[10.0.2.5]]/2023/wp-content/themes/twentytwentythre",
+   "correct": true
+  },
+  {
+   "n": 43,
+   "doc": 1003,
+   "type": "IP",
+   "name": "192.168.35.4",
+   "ctx": "led.js; cctor://192.168.35.4:80/error.js; cctor://[[192.168.35.4]]:80/purchase.js; cctor://192.168.35.4:80",
+   "correct": true
+  },
+  {
+   "n": 44,
+   "doc": 168,
+   "type": "IP",
+   "name": "192.168.0.1",
+   "ctx": "using that URL, it will actually be connecting to [[192.168.0.1]] on port 443 and sending an HTTP GET to ",
+   "correct": true
+  },
+  {
+   "n": 45,
+   "doc": 170,
+   "type": "IP",
+   "name": "192.0.2.3",
+   "ctx": "tempt to access the internal IP 192.0.2.3: ::ffff:[[192.0.2.3]]. This technique can also be used to obf",
+   "correct": true
+  },
+  {
+   "n": 46,
+   "doc": 1838,
+   "type": "IP",
+   "name": "10.0.2.5",
+   "ctx": "oads wp-config.php using a text extension: http://[[10.0.2.5]]/2023/wp-content/themes/twentytwentythre",
+   "correct": true
+  },
+  {
+   "n": 47,
+   "doc": 170,
+   "type": "IP",
+   "name": "198.51.100.4",
+   "ctx": ".0.2.3 -> ::ffff:192.0.2.3 198.51.100.4 -> ::ffff:[[198.51.100.4]] IPv6 addresses can also be represented ",
+   "correct": true
+  },
+  {
+   "n": 48,
+   "doc": 135,
+   "type": "IP",
+   "name": "169.254.169.254",
+   "ctx": "est to an internal network resource (e.g., http://[[169.254.169.254]]/latest/meta-data/). XXE vulnerabilities",
+   "correct": true
+  },
+  {
+   "n": 49,
+   "doc": 700,
+   "type": "MALWARE",
+   "name": "Emotet",
+   "ctx": " the following steps: Download the YARA rules for [[Emotet]] from VT (Figure 10-6). Note that this c",
+   "correct": true
+  },
+  {
+   "n": 50,
+   "doc": 700,
+   "type": "MALWARE",
+   "name": "Emotet",
+   "ctx": "gure 10-5, it is labeled by some AV engines as an [[Emotet]] sample. This is good news! It appears t",
+   "correct": true
+  },
+  {
+   "n": 51,
+   "doc": 690,
+   "type": "MALWARE",
+   "name": "Emotet",
+   "ctx": " remote desktop services is crucial to preventing [[Emotet]] from spreading through RDP attacks. Des",
+   "correct": true
+  },
+  {
+   "n": 52,
+   "doc": 691,
+   "type": "MALWARE",
+   "name": "Zeus",
+   "ctx": "apid evolution in malware design and development. [[Zeus]] variants include Citadel, GameOver Zeus",
+   "correct": true
+  },
+  {
+   "n": 53,
+   "doc": 430,
+   "type": "MALWARE",
+   "name": "Mimikatz",
+   "ctx": "ermissions. This information can be queried using [[Mimikatz]] to discover which user account has what",
+   "correct": true
+  },
+  {
+   "n": 54,
+   "doc": 1538,
+   "type": "MALWARE",
+   "name": "Mimikatz",
+   "ctx": "ing techniques like Pass-the-Hash. A tool such as [[Mimikatz]] can be used for this attack, which allo",
+   "correct": true
+  },
+  {
+   "n": 55,
+   "doc": 402,
+   "type": "MALWARE",
+   "name": "NotPetya",
+   "ctx": " Use a real-world example (like the SolarWinds or [[NotPetya]] incidents) to illustrate the devastatin",
+   "correct": true
+  },
+  {
+   "n": 56,
+   "doc": 1204,
+   "type": "MALWARE",
+   "name": "Mimikatz",
+   "ctx": "r’s credentials are available in memory (like via [[Mimikatz]]), then the master key can be extracted ",
+   "correct": true
+  },
+  {
+   "n": 57,
+   "doc": 1554,
+   "type": "MALWARE",
+   "name": "Mimikatz",
+   "ctx": "g attackers a much longer period to exploit them. [[Mimikatz]] is the most popular tool for generating",
+   "correct": true
+  },
+  {
+   "n": 58,
+   "doc": 1538,
+   "type": "MALWARE",
+   "name": "Mimikatz",
+   "ctx": "oller to steal Kerberos tickets from memory using [[Mimikatz]]’s 'sekmem' command. The attacker then u",
+   "correct": true
+  },
+  {
+   "n": 59,
+   "doc": 1554,
+   "type": "MALWARE",
+   "name": "Mimikatz",
+   "ctx": "neration performed using alternative tools beyond [[Mimikatz]]? Golden Tickets are created by the NTLM",
+   "correct": true
+  },
+  {
+   "n": 60,
+   "doc": 817,
+   "type": "MALWARE",
+   "name": "Cobalt Strike",
+   "ctx": " Tracking15. WMI ExecutionThe advantages of using [[Cobalt Strike]] are as follows:16. Easy to use and conf",
+   "correct": true
+  },
+  {
+   "n": 61,
+   "doc": 859,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1074.003",
+   "ctx": "nes. Finally, I included information about ATT&CK [[T1074.003]]: Process Analysis (Time-based evasion) ",
+   "correct": true
+  },
+  {
+   "n": 62,
+   "doc": 1229,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1098",
+   "ctx": "escalation, including T1053 – Scheduled Task/Job, [[T1098]] – Account Manipulation, and T1210 – Exp",
+   "correct": true
+  },
+  {
+   "n": 63,
+   "doc": 2056,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1498",
+   "ctx": "ct data at rest. Meanwhile, MITRE ATT&CK includes [[T1498]] as an entry for hardware-assisted attac",
+   "correct": true
+  },
+  {
+   "n": 64,
+   "doc": 1044,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1574",
+   "ctx": " under Tactic TA0001 Initial Access and Technique [[T1574]] Valid Accounts, while NIST CSF identifi",
+   "correct": true
+  },
+  {
+   "n": 65,
+   "doc": 960,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1078",
+   "ctx": "cryptojackers use living-off-the-land techniques ([[T1078]]), meaning they employ legitimate tools ",
+   "correct": true
+  },
+  {
+   "n": 66,
+   "doc": 1907,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1090",
+   "ctx": "574 (Hijacking and Impersonation Techniques), and [[T1090]] (Proxy/Intercept Communication). These ",
+   "correct": true
+  },
+  {
+   "n": 67,
+   "doc": 427,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1484",
+   "ctx": "ntial dumping (T1552), domain account management ([[T1484]]), and remote services (T1021). Despite ",
+   "correct": true
+  },
+  {
+   "n": 68,
+   "doc": 1905,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1132",
+   "ctx": " CSF ID: PR.DS-6, DE.CM-4, MA.TE-5; MITRE ATT&CK: [[T1132]] – Signature Wrapping; CIS Critical Secu",
+   "correct": true
+  },
+  {
+   "n": 69,
+   "doc": 1198,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1204",
+   "ctx": "es this technique under T1574 (DLL Hijacking) and [[T1204]] (Exploitation of Remote Services). This",
+   "correct": true
+  },
+  {
+   "n": 70,
+   "doc": 135,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1213",
+   "ctx": "f an attacker. This technique is classified under [[T1213]] – External Remote Services by MITRE ATT",
+   "correct": true
+  },
+  {
+   "n": 71,
+   "doc": 1573,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1574",
+   "ctx": " Incident Handling Guide), MITRE ATT&CK Technique [[T1574]] (Adversary-in-the-Middle). The Kerberos",
+   "correct": true
+  },
+  {
+   "n": 72,
+   "doc": 2021,
+   "type": "MITRE_TECHNIQUE",
+   "name": "T1498",
+   "ctx": "he MITRE ATT&CK framework lists this attack under [[T1498]]: Data Manipulation. Defenses include en",
+   "correct": true
+  },
+  {
+   "n": 73,
+   "doc": 1660,
+   "type": "SOFTWARE",
+   "name": "Docker",
+   "ctx": "evelopers build container images using tools like [[Docker]] or Buildah. These images often rely on ",
+   "correct": true
+  },
+  {
+   "n": 74,
+   "doc": 1818,
+   "type": "SOFTWARE",
+   "name": "Active Directory",
+   "ctx": "tackers to compromise systems that are part of an [[Active Directory]] domain. 3) CVE-2022-41978: The ‘log_err",
+   "correct": true
+  },
+  {
+   "n": 75,
+   "doc": 457,
+   "type": "SOFTWARE",
+   "name": "Active Directory",
+   "ctx": "ion, while AS-REP Roasting poses a real threat to [[Active Directory]] security, proactive measures, continuou",
+   "correct": true
+  },
+  {
+   "n": 76,
+   "doc": 205,
+   "type": "SOFTWARE",
+   "name": "PHP",
+   "ctx": "er. <block>ZIP wrapper attacks have been known in [[PHP]] for over a decade and are still not com",
+   "correct": true
+  },
+  {
+   "n": 77,
+   "doc": 1887,
+   "type": "SOFTWARE",
+   "name": "JavaScript",
+   "ctx": " attacker can achieve this by generating multiple [[JavaScript]] files until one of them has an SRI hash",
+   "correct": true
+  },
+  {
+   "n": 78,
+   "doc": 1195,
+   "type": "SOFTWARE",
+   "name": "AWS",
+   "ctx": "lementation for implementing these concepts in an [[AWS]] environment using GuardDuty and Securit",
+   "correct": true
+  },
+  {
+   "n": 79,
+   "doc": 1468,
+   "type": "SOFTWARE",
+   "name": "Kubernetes",
+   "ctx": "tive data in other pods or gaining control over a [[Kubernetes]] node. This technique is categorized und",
+   "correct": true
+  },
+  {
+   "n": 80,
+   "doc": 720,
+   "type": "SOFTWARE",
+   "name": "Windows",
+   "ctx": "ernel involvement. The most famous example is the [[Windows]] LoadLibrary function hooking technique,",
+   "correct": true
+  },
+  {
+   "n": 81,
+   "doc": 1432,
+   "type": "SOFTWARE",
+   "name": "JavaScript",
+   "ctx": "uption flaws in the Blink rendering engine and V8 [[JavaScript]] engine, which power many modern web bro",
+   "correct": true
+  },
+  {
+   "n": 82,
+   "doc": 1732,
+   "type": "SOFTWARE",
+   "name": "Linux",
+   "ctx": "5715: A vulnerability in the Intel SGX driver for [[Linux]], which allows privilege escalation thro",
+   "correct": true
+  },
+  {
+   "n": 83,
+   "doc": 805,
+   "type": "SOFTWARE",
+   "name": "VirtualBox",
+   "ctx": "it-learn), and virtualization software (VMware or [[VirtualBox]]) installed prior to the course. Course ",
+   "correct": true
+  },
+  {
+   "n": 84,
+   "doc": 1402,
+   "type": "SOFTWARE",
+   "name": "Windows",
+   "ctx": " an effective defense against ROP attacks on both [[Windows 10]] and Linux operating systems alike. Fina",
+   "correct": true
+  },
+  {
+   "n": 85,
+   "doc": 1164,
+   "type": "TACTIC",
+   "name": "Initial Access",
+   "ctx": "ds. The framework includes the following tactics: [[Initial Access]], Execution, Persistence, Privilege Esca",
+   "correct": true
+  },
+  {
+   "n": 86,
+   "doc": 2174,
+   "type": "TACTIC",
+   "name": "Initial Access",
+   "ctx": "3-3:2013(E); MITRE ATT&CK for Enterprise, Tactic: [[Initial Access]], Technique: Malicious Use of Mobile Dev",
+   "correct": true
+  },
+  {
+   "n": 87,
+   "doc": 1164,
+   "type": "TACTIC",
+   "name": "Execution",
+   "ctx": "k includes the following tactics: Initial Access, [[Execution]], Persistence, Privilege Escalation, Def",
+   "correct": true
+  },
+  {
+   "n": 88,
+   "doc": 2118,
+   "type": "TACTIC",
+   "name": "Defense Evasion",
+   "ctx": "tection approach aligns with MITRE ATT&CK Tactic: [[Defense Evasion]] and Technique: Modify Code (T1054), emp",
+   "correct": true
+  },
+  {
+   "n": 89,
+   "doc": 2187,
+   "type": "TACTIC",
+   "name": "Persistence",
+   "ctx": "odels (e.g., MITRE ATT&CK Tactic: Initial Access, [[Persistence]]), along with technical considerations: ",
+   "correct": true
+  },
+  {
+   "n": 90,
+   "doc": 686,
+   "type": "TACTIC",
+   "name": "Defense Evasion",
+   "ctx": "ITRE ATT&CK reports and studied under the Tactic: [[Defense Evasion]] (T1045) category, providing valuable in",
+   "correct": true
+  },
+  {
+   "n": 91,
+   "doc": 1044,
+   "type": "TACTIC",
+   "name": "Initial Access",
+   "ctx": "T&CK framework lists SUNBURST under Tactic TA0001 [[Initial Access]] and Technique T1574 Valid Accounts, whi",
+   "correct": true
+  },
+  {
+   "n": 92,
+   "doc": 2071,
+   "type": "TACTIC",
+   "name": "Initial Access",
+   "ctx": "a-wizard?view=msvc-170 5. Mitre Att&ck™. 'Tactic: [[Initial Access]].' https://attack.mitre.org/tactics/T106",
+   "correct": true
+  },
+  {
+   "n": 93,
+   "doc": 289,
+   "type": "TECHNOLOGY",
+   "name": "HTTPS",
+   "ctx": "vailability. They could use RESTful APIs via HTTP/[[HTTPS]], or maybe message queues like Kafka or ",
+   "correct": true
+  },
+  {
+   "n": 94,
+   "doc": 1859,
+   "type": "TECHNOLOGY",
+   "name": "OAuth",
+   "ctx": "et us first get familiar with the structure of an [[OAuth 2.0]] implementation.",
+   "correct": true
+  },
+  {
+   "n": 95,
+   "doc": 983,
+   "type": "TECHNOLOGY",
+   "name": "HTTPS",
+   "ctx": "nitor and record all web forms submitted via HTTP/[[HTTPS]] (the victim’s credentials, personal inf",
+   "correct": true
+  },
+  {
+   "n": 96,
+   "doc": 1845,
+   "type": "TECHNOLOGY",
+   "name": "TLS/SSL",
+   "ctx": "irements for handling HTTP headers and requires a [[TLS]] encrypted channel by default (known as ",
+   "correct": true
+  },
+  {
+   "n": 97,
+   "doc": 1674,
+   "type": "TECHNOLOGY",
+   "name": "PKI",
+   "ctx": "ons, and robust non-repudiation protocols such as [[PKI]] certificates that tie the action to an ",
+   "correct": true
+  },
+  {
+   "n": 98,
+   "doc": 1062,
+   "type": "TECHNOLOGY",
+   "name": "Intel",
+   "ctx": "pile or include architecture-specific modules for [[Intel]] (x86_64) and ARM platforms. This often ",
+   "correct": true
+  },
+  {
+   "n": 99,
+   "doc": 1873,
+   "type": "TECHNOLOGY",
+   "name": "Intel",
+   "ctx": "olset for exploiting vulnerabilities found within [[Intel]] SGX processors. Furthermore, as new har",
+   "correct": true
+  },
+  {
+   "n": 100,
+   "doc": 227,
+   "type": "TECHNOLOGY",
+   "name": "GraphQL",
+   "ctx": "s take a moment to review some key concepts about [[GraphQL]] security and how it differs from RESTfu",
+   "correct": true
+  },
+  {
+   "n": 101,
+   "doc": 1851,
+   "type": "TECHNOLOGY",
+   "name": "GraphQL",
+   "ctx": "se queries. This problem is often referred to as '[[GraphQL]] query explosion', and it is one of the ",
+   "correct": true
+  },
+  {
+   "n": 102,
+   "doc": 1971,
+   "type": "TECHNOLOGY",
+   "name": "BIOS",
+   "ctx": "used to protect system firmware, such as UEFI and [[BIOS]], from malicious attacks. However, it ha",
+   "correct": true
+  },
+  {
+   "n": 103,
+   "doc": 1076,
+   "type": "TECHNOLOGY",
+   "name": "UEFI",
+   "ctx": "erview The Unified Extensible Firmware Interface ([[UEFI]]) is a critical layer of modern computin",
+   "correct": true
+  },
+  {
+   "n": 104,
+   "doc": 1859,
+   "type": "TECHNOLOGY",
+   "name": "OAuth",
+   "ctx": "exercises in this module. Have fun learning about [[OAuth]] vulnerabilities! In case of any questio",
+   "correct": true
+  },
+  {
+   "n": 105,
+   "doc": 695,
+   "type": "THREAT_ACTOR",
+   "name": "APT28",
+   "ctx": "ode obfuscation techniques employed by the APT28 ([[Sofacy]]) malware family, including the use of o",
+   "correct": true
+  },
+  {
+   "n": 106,
+   "doc": 695,
+   "type": "THREAT_ACTOR",
+   "name": "APT28",
+   "ctx": "les behind their VM-based protection schemes. The [[Sofacy]] group has been one of the most prominen",
+   "correct": true
+  },
+  {
+   "n": 107,
+   "doc": 695,
+   "type": "THREAT_ACTOR",
+   "name": "APT28",
+   "ctx": "to opaque predicates and control flow flattening, [[Sofacy]] employs further obfuscation techniques ",
+   "correct": true
+  },
+  {
+   "n": 108,
+   "doc": 396,
+   "type": "THREAT_ACTOR",
+   "name": "APT28",
+   "ctx": "h those of a state-sponsored espionage group like [[APT28]] (Fancy Bear). How would their approache",
+   "correct": true
+  },
+  {
+   "n": 109,
+   "doc": 398,
+   "type": "THREAT_ACTOR",
+   "name": "APT28",
+   "ctx": "deeper analysis. Similarly, Russia’s use of APT28/[[Sofacy]] tools has been a recurring theme in sev",
+   "correct": true
+  },
+  {
+   "n": 110,
+   "doc": 2072,
+   "type": "THREAT_ACTOR",
+   "name": "APT29",
+   "ctx": "opted by various hacking groups, including APT29 ([[Cozy Bear]]),/apt35/astra,hive,astrum and others. C",
+   "correct": true
+  },
+  {
+   "n": 111,
+   "doc": 396,
+   "type": "THREAT_ACTOR",
+   "name": "APT28",
+   "ctx": "P/FTP for efficiency. State-sponsored groups like [[APT28]] focus on specific high-value targets wi",
+   "correct": true
+  },
+  {
+   "n": 112,
+   "doc": 695,
+   "type": "THREAT_ACTOR",
+   "name": "APT28",
+   "ctx": "icult to follow through simple static inspection. [[Sofacy]] also leverages custom virtual machines ",
+   "correct": true
+  },
+  {
+   "n": 113,
+   "doc": 979,
+   "type": "TOOL",
+   "name": "Process Monitor",
+   "ctx": "rus solutions that rely on user-mode scanning and [[process monitoring]]. However, these methods are not without",
+   "correct": false
+  },
+  {
+   "n": 114,
+   "doc": 1967,
+   "type": "TOOL",
+   "name": "Volatility",
+   "ctx": "ipulating and reading the VMCS structure, such as [[Volatility]]. The first step is to dump all the VMCS",
+   "correct": true
+  },
+  {
+   "n": 115,
+   "doc": 1729,
+   "type": "TOOL",
+   "name": "IDA Pro",
+   "ctx": " has been made easier by tools such as radare2 or [[IDA Pro]] which automate some aspects of searchin",
+   "correct": true
+  },
+  {
+   "n": 116,
+   "doc": 700,
+   "type": "TOOL",
+   "name": "YARA",
+   "ctx": "xt step is to check whether any of these existing [[YARA]] rules match our sample. We can do this ",
+   "correct": true
+  },
+  {
+   "n": 117,
+   "doc": 1833,
+   "type": "TOOL",
+   "name": "Burp Suite",
+   "ctx": "You can now run Mothra scans directly from within [[Burp Suite]] by right-clicking on a response in hist",
+   "correct": true
+  },
+  {
+   "n": 118,
+   "doc": 1351,
+   "type": "TOOL",
+   "name": "Metasploit",
+   "ctx": "termine where their code is placed in memory. The [[Metasploit]] framework uses this approach for severa",
+   "correct": true
+  },
+  {
+   "n": 119,
+   "doc": 1515,
+   "type": "TOOL",
+   "name": "Volatility",
+   "ctx": "o detect known malware signatures. All this makes [[Volatility]] an invaluable tool for any malware anal",
+   "correct": true
+  },
+  {
+   "n": 120,
+   "doc": 1147,
+   "type": "TOOL",
+   "name": "Metasploit",
+   "ctx": "rposes, one can use publicly available tools like [[Metasploit]]’s polymorphic engine or custom code to ",
+   "correct": true
+  },
+  {
+   "n": 121,
+   "doc": 2188,
+   "type": "TOOL",
+   "name": "Ghidra",
+   "ctx": "ware and hardware components. Tools like IDA Pro, [[Ghidra]], or Radare2 help deconstruct binary fil",
+   "correct": true
+  },
+  {
+   "n": 122,
+   "doc": 2170,
+   "type": "TOOL",
+   "name": "Wireshark",
+   "ctx": "nal advertisement packets to copy. If a tool like [[Wireshark]] has been used previously to sniff Bluet",
+   "correct": true
+  },
+  {
+   "n": 123,
+   "doc": 88,
+   "type": "TOOL",
+   "name": "Burp Suite",
+   "ctx": "ing automated scanning tools such as OWASP ZAP or [[Burp Suite]] helps identify and remediate vulnerabil",
+   "correct": true
+  },
+  {
+   "n": 124,
+   "doc": 1232,
+   "type": "TOOL",
+   "name": "Process Monitor",
+   "ctx": "l targets for phantom dll exploitation is through [[Process Monitor]] (Procmon). Procmon can be used to monit",
+   "correct": true
+  },
+  {
+   "n": 125,
+   "doc": 1770,
+   "type": "VULN_NAME",
+   "name": "Spectre",
+   "ctx": " Processors’ Predictive Nature Before diving into [[Spectre]] v1 itself, it is essential to understan",
+   "correct": true
+  },
+  {
+   "n": 126,
+   "doc": 1045,
+   "type": "VULN_NAME",
+   "name": "EternalBlue",
+   "ctx": "ctionality that allows it to spread via SMBv1 and [[EternalBlue]] vulnerabilities present in the Microsof",
+   "correct": true
+  },
+  {
+   "n": 127,
+   "doc": 1765,
+   "type": "VULN_NAME",
+   "name": "Dirty COW",
+   "ctx": "he memory management subsystem of the kernel. The [[Dirty COW]] (Copy-On-Write) exploit uses a race con",
+   "correct": true
+  },
+  {
+   "n": 128,
+   "doc": 960,
+   "type": "VULN_NAME",
+   "name": "EternalBlue",
+   "ctx": "nerabilities that ransomware attacks use, such as [[EternalBlue]], to propagate within a network. Additio",
+   "correct": true
+  },
+  {
+   "n": 129,
+   "doc": 1762,
+   "type": "VULN_NAME",
+   "name": "Zerologon",
+   "ctx": "y malware or ransomware. As another example, the '[[Zerologon]]' attack (CVE-2020-1472) was used to exp",
+   "correct": true
+  },
+  {
+   "n": 130,
+   "doc": 1776,
+   "type": "VULN_NAME",
+   "name": "Meltdown",
+   "ctx": "landscape associated with vulnerabilities such as [[Meltdown]]. As new exploits emerge—such as those t",
+   "correct": true
+  },
+  {
+   "n": 131,
+   "doc": 1313,
+   "type": "VULN_NAME",
+   "name": "Spectre",
+   "ctx": "zed access to sensitive data. From what I gather, [[Spectre]] is a bit more complex, involving branch",
+   "correct": true
+  },
+  {
+   "n": 132,
+   "doc": 1775,
+   "type": "VULN_NAME",
+   "name": "Meltdown",
+   "ctx": "tive execution controls (like KAISER) to mitigate [[Meltdown]], but they may introduce a measurable ov",
+   "correct": true
+  },
+  {
+   "n": 133,
+   "doc": 1774,
+   "type": "VULN_NAME",
+   "name": "Spectre",
+   "ctx": " or cache side-channel attacks. Developing robust [[Spectre]] exploitation frameworks remains a compl",
+   "correct": true
+  },
+  {
+   "n": 134,
+   "doc": 1767,
+   "type": "VULN_NAME",
+   "name": "Dirty COW",
+   "ctx": "Linux Copy-on-Write Vulnerability: Exploiting the [[Dirty COW]] Bug' by Thomas Dullien provides an in-d",
+   "correct": true
+  },
+  {
+   "n": 135,
+   "doc": 637,
+   "type": "VULN_NAME",
+   "name": "KRACK",
+   "ctx": "P instances can help detect potential large-scale [[KRACK]] attempts. By combining robust patch man",
+   "correct": true
+  },
+  {
+   "n": 136,
+   "doc": 1777,
+   "type": "VULN_NAME",
+   "name": "Spectre",
+   "ctx": "disclosure despite KPTI protections? Meltdown and [[Spectre]] vulnerabilities have revolutionized our",
+   "correct": true
+  }
+ ]
+}

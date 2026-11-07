@@ -1,0 +1,24 @@
+# Python 3.13 (tested on 3.13.14, Windows 11). Versions are the ones the reported results were produced with.
+# --- core pipeline
+pandas==3.1.1
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+networkx==3.7
+pyarrow==26.0.1
+joblib==1.6.0
+matplotlib==3.11.2
+nltk==3.10.4              # stemming / lemmatisation / POS; data downloaded once into ./nltk_data (see README)
+torch==2.15.0             # GNN / GTN (pure torch, no torch_geometric) and Transformer fine-tuning
+# --- Transformers (AA5/AA6): only needed for `python -m cyberintel.transformers_exp ...` and for the dense retriever
+sentence-transformers==6.2.0
+transformers==5.22.1
+datasets==5.1.0           # only to download the dataset with `--source hf`
+# --- UI
+streamlit==1.66.1
+pyvis==0.3.2              # interactive graph view
+# --- optional integrations
+neo4j==6.4.1              # Neo4j store (scripts/neo4j_import.py); the app falls back to the in-memory graph when unreachable
+anthropic==2.5.0          # optional Claude generation (needs ANTHROPIC_API_KEY); default generation is extractive and offline
+# --- tests
+pytest==9.2.0

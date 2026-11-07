@@ -1,0 +1,241 @@
+{
+  "model": "minilm_logreg",
+  "classes": [
+    "access_control",
+    "crypto",
+    "csrf_session",
+    "incident_response",
+    "injection",
+    "malware",
+    "network_attack",
+    "other",
+    "phishing",
+    "vulnerability",
+    "xss"
+  ],
+  "val_macro_f1": 0.5893,
+  "test_weak": {
+    "n": 439,
+    "accuracy": 0.7198,
+    "macro_f1": 0.6356,
+    "weighted_f1": 0.7242,
+    "per_class": {
+      "access_control": {
+        "precision": 0.7234,
+        "recall": 0.6939,
+        "f1-score": 0.7083,
+        "support": 49
+      },
+      "crypto": {
+        "precision": 0.8043,
+        "recall": 0.8222,
+        "f1-score": 0.8132,
+        "support": 45
+      },
+      "csrf_session": {
+        "precision": 0.5714,
+        "recall": 0.8,
+        "f1-score": 0.6667,
+        "support": 10
+      },
+      "incident_response": {
+        "precision": 0.5263,
+        "recall": 0.6667,
+        "f1-score": 0.5882,
+        "support": 15
+      },
+      "injection": {
+        "precision": 0.72,
+        "recall": 0.9,
+        "f1-score": 0.8,
+        "support": 20
+      },
+      "malware": {
+        "precision": 0.7681,
+        "recall": 0.7361,
+        "f1-score": 0.7518,
+        "support": 72
+      },
+      "network_attack": {
+        "precision": 0.48,
+        "recall": 0.6316,
+        "f1-score": 0.5455,
+        "support": 19
+      },
+      "other": {
+        "precision": 0.5385,
+        "recall": 0.5283,
+        "f1-score": 0.5333,
+        "support": 53
+      },
+      "phishing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2
+      },
+      "vulnerability": {
+        "precision": 0.8632,
+        "recall": 0.7372,
+        "f1-score": 0.7953,
+        "support": 137
+      },
+      "xss": {
+        "precision": 0.7143,
+        "recall": 0.8824,
+        "f1-score": 0.7895,
+        "support": 17
+      }
+    },
+    "confusion_matrix": [
+      [
+        34,
+        2,
+        1,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        5,
+        0
+      ],
+      [
+        4,
+        37,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        10,
+        0,
+        3,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        18,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        0,
+        53,
+        4,
+        8,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        12,
+        0,
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        0,
+        3,
+        0,
+        5,
+        3,
+        28,
+        1,
+        8,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        1,
+        2,
+        3,
+        5,
+        7,
+        2,
+        11,
+        0,
+        101,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15
+      ]
+    ]
+  },
+  "params": {
+    "C": 4
+  },
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "seconds": 142.9
+}

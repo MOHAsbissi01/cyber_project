@@ -1,0 +1,53 @@
+{
+  "raw_rows": 2411,
+  "rows_after_cleaning": 2193,
+  "columns": [
+    "system",
+    "user",
+    "assistant"
+  ],
+  "rows_with_null": 2,
+  "duplicate_questions": 15,
+  "answers_with_think_tag": 354,
+  "answers_with_unclosed_think": 201,
+  "rows_with_reasoning_sentences_removed": 234,
+  "reasoning_sentences_removed_total": 568,
+  "rows_with_literal_backslash_n": 524,
+  "rows_with_cve_in_raw_text": 69,
+  "rows_with_ip_in_raw_text": 31,
+  "question_chars_mean": 160.4,
+  "answer_chars_mean": 2889.1,
+  "answer_chars_p95": 5242.0,
+  "nature": "LLM-generated Q&A about security concepts (not real incident reports); no ground-truth labels.",
+  "class_definitions": {
+    "xss": "Cross-site scripting and client-side script injection / CSP / DOM issues.",
+    "injection": "Server-side injection: SQLi, command/LDAP/template injection, XXE, SSRF.",
+    "csrf_session": "CSRF, session hijacking/fixation, cookie and session handling.",
+    "phishing": "Phishing and social engineering.",
+    "malware": "Malware families and behaviour: trojans, botnets, rootkits, RATs, ransomware, C2.",
+    "vulnerability": "Memory-safety bugs, exploitation techniques, CVEs, privilege escalation, patching.",
+    "network_attack": "DDoS, MITM, scanning, DNS/ARP attacks, firewall/IDS topics.",
+    "crypto": "Cryptography, TLS/PKI, hashing, encryption attacks.",
+    "incident_response": "IR, forensics, SIEM/SOC, threat hunting, MITRE-based detection.",
+    "access_control": "Authentication, authorisation, passwords, OAuth/JWT, IAM.",
+    "other": "None of the above is the main topic."
+  },
+  "class_counts": {
+    "vulnerability": 683,
+    "malware": 362,
+    "other": 264,
+    "access_control": 244,
+    "crypto": 223,
+    "injection": 98,
+    "network_attack": 93,
+    "xss": 83,
+    "incident_response": 78,
+    "csrf_session": 52,
+    "phishing": 13
+  },
+  "split_counts": {
+    "train": 1534,
+    "test": 439,
+    "val": 220
+  }
+}

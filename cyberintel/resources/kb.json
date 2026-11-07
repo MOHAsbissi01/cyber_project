@@ -1,0 +1,26 @@
+{
+  "_comment": "Small curated REFERENCE knowledge base of very well-known, publicly documented CVEs (NVD / vendor advisories). It is NOT derived from the dataset. It is used (1) to fill the CVE->software gap of the corpus with explicit provenance 'reference_kb', and (2) to flag corpus claims that contradict it. Re-verify an entry against NVD before citing it outside this project.",
+  "cves": {
+    "CVE-2021-44228": {"name": "Log4Shell", "affects": ["Apache Log4j"], "weakness": "remote code execution via JNDI lookup", "summary": "Remote code execution in Apache Log4j 2 through attacker-controlled log messages that trigger JNDI lookups."},
+    "CVE-2017-0144": {"name": "EternalBlue", "affects": ["Windows", "SMB"], "weakness": "remote code execution", "summary": "Remote code execution in Microsoft SMBv1; exploited by WannaCry and NotPetya."},
+    "CVE-2014-0160": {"name": "Heartbleed", "affects": ["OpenSSL"], "weakness": "information disclosure (buffer over-read)", "summary": "Missing bounds check in the TLS heartbeat extension leaks process memory."},
+    "CVE-2016-5195": {"name": "Dirty COW", "affects": ["Linux"], "weakness": "privilege escalation (race condition)", "summary": "Race condition in the Linux kernel copy-on-write mechanism allows local privilege escalation."},
+    "CVE-2014-6271": {"name": "Shellshock", "affects": ["Bash"], "weakness": "remote code execution via environment variables", "summary": "Bash executes trailing commands in specially crafted function definitions in environment variables."},
+    "CVE-2020-1472": {"name": "Zerologon", "affects": ["Windows", "Active Directory"], "weakness": "privilege escalation (Netlogon cryptographic flaw)", "summary": "Flaw in the Netlogon secure channel lets an attacker impersonate a domain controller."},
+    "CVE-2021-34527": {"name": "PrintNightmare", "affects": ["Windows"], "weakness": "remote code execution (Print Spooler)", "summary": "Windows Print Spooler allows remote code execution and local privilege escalation."},
+    "CVE-2019-0708": {"name": "BlueKeep", "affects": ["Windows", "RDP"], "weakness": "remote code execution", "summary": "Pre-authentication remote code execution in Remote Desktop Services."},
+    "CVE-2017-5754": {"name": "Meltdown", "affects": ["Intel"], "weakness": "speculative execution side channel", "summary": "Lets user code read kernel memory through out-of-order execution."},
+    "CVE-2017-5715": {"name": "Spectre", "affects": ["Intel", "AMD", "ARM"], "weakness": "speculative execution side channel (branch target injection, variant 2)", "summary": "Branch target injection abuses speculative execution to leak data across security boundaries."},
+    "CVE-2017-5753": {"name": "Spectre", "affects": ["Intel", "AMD", "ARM"], "weakness": "speculative execution side channel (bounds check bypass, variant 1)", "summary": "Bounds check bypass abuses speculative execution to leak data."},
+    "CVE-2018-3646": {"name": "Foreshadow", "affects": ["Intel"], "weakness": "L1 terminal fault side channel", "summary": "L1 Terminal Fault affecting virtualisation; leaks data from the L1 cache."},
+    "CVE-2019-5736": {"name": "runc container escape", "affects": ["Docker"], "weakness": "container escape (runc overwrite)", "summary": "A malicious container can overwrite the host runc binary and gain root on the host."},
+    "CVE-2017-5638": {"name": "Apache Struts 2 Jakarta Multipart RCE", "affects": ["Apache Struts"], "weakness": "remote code execution", "summary": "Content-Type header parsing flaw in Apache Struts 2 (exploited in the Equifax breach)."},
+    "CVE-2018-1002105": {"name": "Kubernetes API server privilege escalation", "affects": ["Kubernetes"], "weakness": "privilege escalation", "summary": "Request-handling flaw lets users escalate privileges through the Kubernetes API server."},
+    "CVE-2015-7547": {"name": "glibc getaddrinfo overflow", "affects": ["glibc", "Linux"], "weakness": "stack buffer overflow", "summary": "Stack-based buffer overflow in glibc DNS resolver functions."},
+    "CVE-2016-0189": {"name": "Internet Explorer scripting engine memory corruption", "affects": ["Internet Explorer"], "weakness": "memory corruption", "summary": "Memory corruption in the JScript/VBScript engine of Internet Explorer."},
+    "CVE-2017-8759": {"name": ".NET Framework SOAP WSDL parser code injection", "affects": [".NET Framework"], "weakness": "remote code execution", "summary": "Code injection in the .NET Framework SOAP WSDL parser, used in malicious Office documents."},
+    "CVE-2019-5786": {"name": "Chrome FileReader use-after-free", "affects": ["Chrome"], "weakness": "use-after-free", "summary": "Use-after-free in Chrome's FileReader exploited in the wild in 2019."},
+    "CVE-2014-6332": {"name": "Windows OLE automation array remote code execution", "affects": ["Windows", "Internet Explorer"], "weakness": "remote code execution", "summary": "OLE automation array flaw reachable through Internet Explorer VBScript."},
+    "CVE-2017-0290": {"name": "Microsoft Malware Protection Engine remote code execution", "affects": ["Windows Defender"], "weakness": "remote code execution (scanning a crafted file)", "summary": "Remote code execution in the Microsoft Malware Protection Engine used by Windows Defender."}
+  }
+}

@@ -1,0 +1,3324 @@
+{
+  "classes": [
+    "access_control",
+    "crypto",
+    "csrf_session",
+    "incident_response",
+    "injection",
+    "malware",
+    "network_attack",
+    "other",
+    "phishing",
+    "vulnerability",
+    "xss"
+  ],
+  "models": {
+    "tfidf_logreg": {
+      "val_macro_f1": 0.6054,
+      "params": {
+        "C": 8
+      },
+      "test_weak": {
+        "n": 439,
+        "accuracy": 0.7312,
+        "macro_f1": 0.6461,
+        "weighted_f1": 0.723,
+        "per_class": {
+          "access_control": {
+            "precision": 0.7609,
+            "recall": 0.7143,
+            "f1-score": 0.7368,
+            "support": 49
+          },
+          "crypto": {
+            "precision": 0.7619,
+            "recall": 0.7111,
+            "f1-score": 0.7356,
+            "support": 45
+          },
+          "csrf_session": {
+            "precision": 0.6667,
+            "recall": 0.8,
+            "f1-score": 0.7273,
+            "support": 10
+          },
+          "incident_response": {
+            "precision": 0.7273,
+            "recall": 0.5333,
+            "f1-score": 0.6154,
+            "support": 15
+          },
+          "injection": {
+            "precision": 0.7727,
+            "recall": 0.85,
+            "f1-score": 0.8095,
+            "support": 20
+          },
+          "malware": {
+            "precision": 0.7262,
+            "recall": 0.8472,
+            "f1-score": 0.7821,
+            "support": 72
+          },
+          "network_attack": {
+            "precision": 0.8571,
+            "recall": 0.6316,
+            "f1-score": 0.7273,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.4878,
+            "recall": 0.3774,
+            "f1-score": 0.4255,
+            "support": 53
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 2
+          },
+          "vulnerability": {
+            "precision": 0.7718,
+            "recall": 0.8394,
+            "f1-score": 0.8042,
+            "support": 137
+          },
+          "xss": {
+            "precision": 0.7222,
+            "recall": 0.7647,
+            "f1-score": 0.7429,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            35,
+            3,
+            1,
+            0,
+            0,
+            1,
+            1,
+            2,
+            0,
+            6,
+            0
+          ],
+          [
+            5,
+            32,
+            1,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            0,
+            3,
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            17,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            61,
+            0,
+            5,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            12,
+            1,
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            0,
+            7,
+            1,
+            20,
+            0,
+            15,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            1,
+            0,
+            3,
+            7,
+            0,
+            7,
+            0,
+            115,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            13
+          ]
+        ]
+      },
+      "test_gold": {
+        "n": 183,
+        "accuracy": 0.7049,
+        "macro_f1": 0.6441,
+        "weighted_f1": 0.7098,
+        "per_class": {
+          "access_control": {
+            "precision": 0.8182,
+            "recall": 0.9,
+            "f1-score": 0.8571,
+            "support": 20
+          },
+          "crypto": {
+            "precision": 0.6818,
+            "recall": 0.9375,
+            "f1-score": 0.7895,
+            "support": 16
+          },
+          "csrf_session": {
+            "precision": 0.7,
+            "recall": 0.875,
+            "f1-score": 0.7778,
+            "support": 8
+          },
+          "incident_response": {
+            "precision": 1.0,
+            "recall": 0.6154,
+            "f1-score": 0.7619,
+            "support": 13
+          },
+          "injection": {
+            "precision": 0.8947,
+            "recall": 0.68,
+            "f1-score": 0.7727,
+            "support": 25
+          },
+          "malware": {
+            "precision": 0.7391,
+            "recall": 0.6296,
+            "f1-score": 0.68,
+            "support": 27
+          },
+          "network_attack": {
+            "precision": 0.8333,
+            "recall": 0.5263,
+            "f1-score": 0.6452,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.2,
+            "recall": 0.2857,
+            "f1-score": 0.2353,
+            "support": 14
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1
+          },
+          "vulnerability": {
+            "precision": 0.5938,
+            "recall": 0.8261,
+            "f1-score": 0.6909,
+            "support": 23
+          },
+          "xss": {
+            "precision": 0.9333,
+            "recall": 0.8235,
+            "f1-score": 0.875,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            18,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            15,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            8,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            17,
+            0,
+            1,
+            1,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            17,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            1,
+            0,
+            10,
+            2,
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1,
+            4,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            19,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            14
+          ]
+        ],
+        "labels_source": [
+          "claude-annotator"
+        ]
+      }
+    },
+    "tfidf_linear_svm": {
+      "val_macro_f1": 0.6005,
+      "params": {
+        "C": 0.5
+      },
+      "test_weak": {
+        "n": 439,
+        "accuracy": 0.7472,
+        "macro_f1": 0.6698,
+        "weighted_f1": 0.736,
+        "per_class": {
+          "access_control": {
+            "precision": 0.7609,
+            "recall": 0.7143,
+            "f1-score": 0.7368,
+            "support": 49
+          },
+          "crypto": {
+            "precision": 0.7561,
+            "recall": 0.6889,
+            "f1-score": 0.7209,
+            "support": 45
+          },
+          "csrf_session": {
+            "precision": 0.7143,
+            "recall": 1.0,
+            "f1-score": 0.8333,
+            "support": 10
+          },
+          "incident_response": {
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1-score": 0.6,
+            "support": 15
+          },
+          "injection": {
+            "precision": 0.7692,
+            "recall": 1.0,
+            "f1-score": 0.8696,
+            "support": 20
+          },
+          "malware": {
+            "precision": 0.7317,
+            "recall": 0.8333,
+            "f1-score": 0.7792,
+            "support": 72
+          },
+          "network_attack": {
+            "precision": 0.7778,
+            "recall": 0.7368,
+            "f1-score": 0.7568,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.5758,
+            "recall": 0.3585,
+            "f1-score": 0.4419,
+            "support": 53
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 2
+          },
+          "vulnerability": {
+            "precision": 0.7986,
+            "recall": 0.8394,
+            "f1-score": 0.8185,
+            "support": 137
+          },
+          "xss": {
+            "precision": 0.75,
+            "recall": 0.8824,
+            "f1-score": 0.8108,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            35,
+            2,
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            0,
+            6,
+            0
+          ],
+          [
+            6,
+            31,
+            1,
+            1,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            9,
+            1,
+            2,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            20,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            0,
+            60,
+            0,
+            5,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            14,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            3,
+            0,
+            8,
+            2,
+            19,
+            0,
+            14,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            3,
+            2,
+            1,
+            1,
+            3,
+            7,
+            0,
+            5,
+            0,
+            115,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            15
+          ]
+        ]
+      },
+      "test_gold": {
+        "n": 183,
+        "accuracy": 0.7158,
+        "macro_f1": 0.6406,
+        "weighted_f1": 0.7165,
+        "per_class": {
+          "access_control": {
+            "precision": 0.85,
+            "recall": 0.85,
+            "f1-score": 0.85,
+            "support": 20
+          },
+          "crypto": {
+            "precision": 0.6522,
+            "recall": 0.9375,
+            "f1-score": 0.7692,
+            "support": 16
+          },
+          "csrf_session": {
+            "precision": 0.5833,
+            "recall": 0.875,
+            "f1-score": 0.7,
+            "support": 8
+          },
+          "incident_response": {
+            "precision": 0.8889,
+            "recall": 0.6154,
+            "f1-score": 0.7273,
+            "support": 13
+          },
+          "injection": {
+            "precision": 0.8182,
+            "recall": 0.72,
+            "f1-score": 0.766,
+            "support": 25
+          },
+          "malware": {
+            "precision": 0.7727,
+            "recall": 0.6296,
+            "f1-score": 0.6939,
+            "support": 27
+          },
+          "network_attack": {
+            "precision": 0.8667,
+            "recall": 0.6842,
+            "f1-score": 0.7647,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.125,
+            "recall": 0.1429,
+            "f1-score": 0.1333,
+            "support": 14
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1
+          },
+          "vulnerability": {
+            "precision": 0.7037,
+            "recall": 0.8261,
+            "f1-score": 0.76,
+            "support": 23
+          },
+          "xss": {
+            "precision": 0.8824,
+            "recall": 0.8824,
+            "f1-score": 0.8824,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            17,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            15,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            8,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            18,
+            0,
+            1,
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            17,
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            1,
+            0,
+            13,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            1,
+            1,
+            0,
+            2,
+            1,
+            2,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            19,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            15
+          ]
+        ],
+        "labels_source": [
+          "claude-annotator"
+        ]
+      }
+    },
+    "tfidf_complement_nb": {
+      "val_macro_f1": 0.5002,
+      "params": {
+        "alpha": 0.1
+      },
+      "test_weak": {
+        "n": 439,
+        "accuracy": 0.6856,
+        "macro_f1": 0.5591,
+        "weighted_f1": 0.6538,
+        "per_class": {
+          "access_control": {
+            "precision": 0.68,
+            "recall": 0.6939,
+            "f1-score": 0.6869,
+            "support": 49
+          },
+          "crypto": {
+            "precision": 0.6122,
+            "recall": 0.6667,
+            "f1-score": 0.6383,
+            "support": 45
+          },
+          "csrf_session": {
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1-score": 0.7,
+            "support": 10
+          },
+          "incident_response": {
+            "precision": 0.4444,
+            "recall": 0.2667,
+            "f1-score": 0.3333,
+            "support": 15
+          },
+          "injection": {
+            "precision": 0.72,
+            "recall": 0.9,
+            "f1-score": 0.8,
+            "support": 20
+          },
+          "malware": {
+            "precision": 0.6458,
+            "recall": 0.8611,
+            "f1-score": 0.7381,
+            "support": 72
+          },
+          "network_attack": {
+            "precision": 0.8,
+            "recall": 0.4211,
+            "f1-score": 0.5517,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.5833,
+            "recall": 0.1321,
+            "f1-score": 0.2154,
+            "support": 53
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 2
+          },
+          "vulnerability": {
+            "precision": 0.7516,
+            "recall": 0.8613,
+            "f1-score": 0.8027,
+            "support": 137
+          },
+          "xss": {
+            "precision": 0.619,
+            "recall": 0.7647,
+            "f1-score": 0.6842,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            34,
+            6,
+            0,
+            0,
+            1,
+            3,
+            1,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            7,
+            30,
+            1,
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            2,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            1,
+            5,
+            0,
+            1,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            18,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            62,
+            0,
+            2,
+            0,
+            4,
+            1
+          ],
+          [
+            2,
+            4,
+            0,
+            0,
+            2,
+            1,
+            8,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            2,
+            5,
+            0,
+            3,
+            0,
+            12,
+            1,
+            7,
+            0,
+            19,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            1,
+            1,
+            2,
+            9,
+            0,
+            1,
+            0,
+            118,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            13
+          ]
+        ]
+      },
+      "test_gold": {
+        "n": 183,
+        "accuracy": 0.6885,
+        "macro_f1": 0.5785,
+        "weighted_f1": 0.654,
+        "per_class": {
+          "access_control": {
+            "precision": 0.7917,
+            "recall": 0.95,
+            "f1-score": 0.8636,
+            "support": 20
+          },
+          "crypto": {
+            "precision": 0.6154,
+            "recall": 1.0,
+            "f1-score": 0.7619,
+            "support": 16
+          },
+          "csrf_session": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 8
+          },
+          "incident_response": {
+            "precision": 0.8,
+            "recall": 0.3077,
+            "f1-score": 0.4444,
+            "support": 13
+          },
+          "injection": {
+            "precision": 0.8182,
+            "recall": 0.72,
+            "f1-score": 0.766,
+            "support": 25
+          },
+          "malware": {
+            "precision": 0.5938,
+            "recall": 0.7037,
+            "f1-score": 0.6441,
+            "support": 27
+          },
+          "network_attack": {
+            "precision": 0.875,
+            "recall": 0.3684,
+            "f1-score": 0.5185,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 14
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1
+          },
+          "vulnerability": {
+            "precision": 0.6216,
+            "recall": 1.0,
+            "f1-score": 0.7667,
+            "support": 23
+          },
+          "xss": {
+            "precision": 0.875,
+            "recall": 0.8235,
+            "f1-score": 0.8485,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            19,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            4,
+            1,
+            6,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            18,
+            0,
+            0,
+            0,
+            0,
+            5,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            19,
+            0,
+            4,
+            0,
+            2,
+            0
+          ],
+          [
+            3,
+            4,
+            0,
+            0,
+            1,
+            2,
+            7,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            1,
+            0,
+            5,
+            1,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            23,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            14
+          ]
+        ],
+        "labels_source": [
+          "claude-annotator"
+        ]
+      }
+    },
+    "lsa_mlp": {
+      "val_macro_f1": 0.5288,
+      "params": {
+        "h": 64
+      },
+      "test_weak": {
+        "n": 439,
+        "accuracy": 0.6925,
+        "macro_f1": 0.5889,
+        "weighted_f1": 0.6798,
+        "per_class": {
+          "access_control": {
+            "precision": 0.6923,
+            "recall": 0.7347,
+            "f1-score": 0.7129,
+            "support": 49
+          },
+          "crypto": {
+            "precision": 0.7436,
+            "recall": 0.6444,
+            "f1-score": 0.6905,
+            "support": 45
+          },
+          "csrf_session": {
+            "precision": 0.7143,
+            "recall": 0.5,
+            "f1-score": 0.5882,
+            "support": 10
+          },
+          "incident_response": {
+            "precision": 0.8571,
+            "recall": 0.4,
+            "f1-score": 0.5455,
+            "support": 15
+          },
+          "injection": {
+            "precision": 0.7143,
+            "recall": 0.75,
+            "f1-score": 0.7317,
+            "support": 20
+          },
+          "malware": {
+            "precision": 0.7125,
+            "recall": 0.7917,
+            "f1-score": 0.75,
+            "support": 72
+          },
+          "network_attack": {
+            "precision": 0.8333,
+            "recall": 0.5263,
+            "f1-score": 0.6452,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.4865,
+            "recall": 0.3396,
+            "f1-score": 0.4,
+            "support": 53
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 2
+          },
+          "vulnerability": {
+            "precision": 0.6941,
+            "recall": 0.8613,
+            "f1-score": 0.7687,
+            "support": 137
+          },
+          "xss": {
+            "precision": 0.7143,
+            "recall": 0.5882,
+            "f1-score": 0.6452,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            36,
+            3,
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            0,
+            6,
+            0
+          ],
+          [
+            7,
+            29,
+            1,
+            0,
+            0,
+            5,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          [
+            3,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            1,
+            3,
+            1,
+            1,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            0,
+            1,
+            0,
+            4,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            57,
+            0,
+            4,
+            0,
+            8,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            10,
+            2,
+            0,
+            4,
+            0
+          ],
+          [
+            2,
+            2,
+            0,
+            1,
+            0,
+            8,
+            0,
+            18,
+            0,
+            19,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            0,
+            0,
+            3,
+            6,
+            0,
+            6,
+            0,
+            118,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            4,
+            10
+          ]
+        ]
+      },
+      "test_gold": {
+        "n": 183,
+        "accuracy": 0.6776,
+        "macro_f1": 0.6224,
+        "weighted_f1": 0.6755,
+        "per_class": {
+          "access_control": {
+            "precision": 0.75,
+            "recall": 0.9,
+            "f1-score": 0.8182,
+            "support": 20
+          },
+          "crypto": {
+            "precision": 0.6957,
+            "recall": 1.0,
+            "f1-score": 0.8205,
+            "support": 16
+          },
+          "csrf_session": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1-score": 0.8571,
+            "support": 8
+          },
+          "incident_response": {
+            "precision": 1.0,
+            "recall": 0.4615,
+            "f1-score": 0.6316,
+            "support": 13
+          },
+          "injection": {
+            "precision": 0.8333,
+            "recall": 0.6,
+            "f1-score": 0.6977,
+            "support": 25
+          },
+          "malware": {
+            "precision": 0.75,
+            "recall": 0.5556,
+            "f1-score": 0.6383,
+            "support": 27
+          },
+          "network_attack": {
+            "precision": 0.8182,
+            "recall": 0.4737,
+            "f1-score": 0.6,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.3529,
+            "recall": 0.4286,
+            "f1-score": 0.3871,
+            "support": 14
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1
+          },
+          "vulnerability": {
+            "precision": 0.4783,
+            "recall": 0.9565,
+            "f1-score": 0.6377,
+            "support": 23
+          },
+          "xss": {
+            "precision": 0.9167,
+            "recall": 0.6471,
+            "f1-score": 0.7586,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            18,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            6,
+            1,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            15,
+            0,
+            1,
+            1,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            15,
+            0,
+            7,
+            0,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            1,
+            0,
+            9,
+            1,
+            0,
+            5,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            6,
+            0,
+            4,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            22,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            4,
+            11
+          ]
+        ],
+        "labels_source": [
+          "claude-annotator"
+        ]
+      }
+    },
+    "minilm_logreg": {
+      "val_macro_f1": 0.5893,
+      "test_weak": {
+        "n": 439,
+        "accuracy": 0.7198,
+        "macro_f1": 0.6356,
+        "weighted_f1": 0.7242,
+        "per_class": {
+          "access_control": {
+            "precision": 0.7234,
+            "recall": 0.6939,
+            "f1-score": 0.7083,
+            "support": 49
+          },
+          "crypto": {
+            "precision": 0.8043,
+            "recall": 0.8222,
+            "f1-score": 0.8132,
+            "support": 45
+          },
+          "csrf_session": {
+            "precision": 0.5714,
+            "recall": 0.8,
+            "f1-score": 0.6667,
+            "support": 10
+          },
+          "incident_response": {
+            "precision": 0.5263,
+            "recall": 0.6667,
+            "f1-score": 0.5882,
+            "support": 15
+          },
+          "injection": {
+            "precision": 0.72,
+            "recall": 0.9,
+            "f1-score": 0.8,
+            "support": 20
+          },
+          "malware": {
+            "precision": 0.7681,
+            "recall": 0.7361,
+            "f1-score": 0.7518,
+            "support": 72
+          },
+          "network_attack": {
+            "precision": 0.48,
+            "recall": 0.6316,
+            "f1-score": 0.5455,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.5385,
+            "recall": 0.5283,
+            "f1-score": 0.5333,
+            "support": 53
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 2
+          },
+          "vulnerability": {
+            "precision": 0.8632,
+            "recall": 0.7372,
+            "f1-score": 0.7953,
+            "support": 137
+          },
+          "xss": {
+            "precision": 0.7143,
+            "recall": 0.8824,
+            "f1-score": 0.7895,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            34,
+            2,
+            1,
+            1,
+            1,
+            0,
+            2,
+            2,
+            1,
+            5,
+            0
+          ],
+          [
+            4,
+            37,
+            2,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            10,
+            0,
+            3,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            18,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            2,
+            2,
+            0,
+            2,
+            0,
+            53,
+            4,
+            8,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            2,
+            2,
+            0,
+            3,
+            0,
+            5,
+            3,
+            28,
+            1,
+            8,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            2,
+            3,
+            5,
+            7,
+            2,
+            11,
+            0,
+            101,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            15
+          ]
+        ]
+      },
+      "params": {
+        "C": 4
+      },
+      "seconds": 142.9,
+      "device": "cpu",
+      "base": "sentence-transformers/all-MiniLM-L6-v2",
+      "test_gold": {
+        "n": 183,
+        "accuracy": 0.6503,
+        "macro_f1": 0.5887,
+        "weighted_f1": 0.6619,
+        "per_class": {
+          "access_control": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1-score": 0.8,
+            "support": 20
+          },
+          "crypto": {
+            "precision": 0.6,
+            "recall": 0.9375,
+            "f1-score": 0.7317,
+            "support": 16
+          },
+          "csrf_session": {
+            "precision": 0.5,
+            "recall": 0.625,
+            "f1-score": 0.5556,
+            "support": 8
+          },
+          "incident_response": {
+            "precision": 0.8182,
+            "recall": 0.6923,
+            "f1-score": 0.75,
+            "support": 13
+          },
+          "injection": {
+            "precision": 0.8947,
+            "recall": 0.68,
+            "f1-score": 0.7727,
+            "support": 25
+          },
+          "malware": {
+            "precision": 0.7222,
+            "recall": 0.4815,
+            "f1-score": 0.5778,
+            "support": 27
+          },
+          "network_attack": {
+            "precision": 0.6667,
+            "recall": 0.6316,
+            "f1-score": 0.6486,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.1,
+            "recall": 0.1429,
+            "f1-score": 0.1176,
+            "support": 14
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1
+          },
+          "vulnerability": {
+            "precision": 0.8,
+            "recall": 0.6957,
+            "f1-score": 0.7442,
+            "support": 23
+          },
+          "xss": {
+            "precision": 0.7368,
+            "recall": 0.8235,
+            "f1-score": 0.7778,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            16,
+            2,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            15,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            0,
+            0,
+            9,
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            17,
+            0,
+            0,
+            1,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            3,
+            0,
+            0,
+            0,
+            13,
+            1,
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            1,
+            1,
+            0,
+            12,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            1,
+            0,
+            2,
+            4,
+            2,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            6,
+            0,
+            16,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            14
+          ]
+        ]
+      }
+    },
+    "distilbert": {
+      "val_macro_f1": 0.6016,
+      "test_weak": {
+        "n": 439,
+        "accuracy": 0.7062,
+        "macro_f1": 0.6013,
+        "weighted_f1": 0.6987,
+        "per_class": {
+          "access_control": {
+            "precision": 0.7708,
+            "recall": 0.7551,
+            "f1-score": 0.7629,
+            "support": 49
+          },
+          "crypto": {
+            "precision": 0.6889,
+            "recall": 0.6889,
+            "f1-score": 0.6889,
+            "support": 45
+          },
+          "csrf_session": {
+            "precision": 0.6667,
+            "recall": 0.8,
+            "f1-score": 0.7273,
+            "support": 10
+          },
+          "incident_response": {
+            "precision": 0.6429,
+            "recall": 0.6,
+            "f1-score": 0.6207,
+            "support": 15
+          },
+          "injection": {
+            "precision": 0.619,
+            "recall": 0.65,
+            "f1-score": 0.6341,
+            "support": 20
+          },
+          "malware": {
+            "precision": 0.8269,
+            "recall": 0.5972,
+            "f1-score": 0.6935,
+            "support": 72
+          },
+          "network_attack": {
+            "precision": 0.4615,
+            "recall": 0.3158,
+            "f1-score": 0.375,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.58,
+            "recall": 0.5472,
+            "f1-score": 0.5631,
+            "support": 53
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 2
+          },
+          "vulnerability": {
+            "precision": 0.7391,
+            "recall": 0.8686,
+            "f1-score": 0.7987,
+            "support": 137
+          },
+          "xss": {
+            "precision": 0.6522,
+            "recall": 0.8824,
+            "f1-score": 0.75,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            37,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            6,
+            0
+          ],
+          [
+            6,
+            31,
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            9,
+            1,
+            2,
+            0,
+            1,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            13,
+            0,
+            0,
+            0,
+            0,
+            5,
+            2
+          ],
+          [
+            2,
+            6,
+            0,
+            2,
+            0,
+            43,
+            3,
+            11,
+            0,
+            4,
+            1
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            1,
+            0,
+            6,
+            2,
+            0,
+            7,
+            0
+          ],
+          [
+            1,
+            3,
+            0,
+            3,
+            0,
+            0,
+            3,
+            29,
+            0,
+            10,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            2,
+            0,
+            3,
+            3,
+            0,
+            6,
+            0,
+            119,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            15
+          ]
+        ]
+      },
+      "params": {},
+      "seconds": 2675.0,
+      "device": "cpu",
+      "base": "distilbert-base-uncased",
+      "test_gold": {
+        "n": 183,
+        "accuracy": 0.5847,
+        "macro_f1": 0.5231,
+        "weighted_f1": 0.5806,
+        "per_class": {
+          "access_control": {
+            "precision": 0.7391,
+            "recall": 0.85,
+            "f1-score": 0.7907,
+            "support": 20
+          },
+          "crypto": {
+            "precision": 0.5909,
+            "recall": 0.8125,
+            "f1-score": 0.6842,
+            "support": 16
+          },
+          "csrf_session": {
+            "precision": 0.4444,
+            "recall": 0.5,
+            "f1-score": 0.4706,
+            "support": 8
+          },
+          "incident_response": {
+            "precision": 0.7778,
+            "recall": 0.5385,
+            "f1-score": 0.6364,
+            "support": 13
+          },
+          "injection": {
+            "precision": 0.7647,
+            "recall": 0.52,
+            "f1-score": 0.619,
+            "support": 25
+          },
+          "malware": {
+            "precision": 0.7143,
+            "recall": 0.3704,
+            "f1-score": 0.4878,
+            "support": 27
+          },
+          "network_attack": {
+            "precision": 0.8571,
+            "recall": 0.3158,
+            "f1-score": 0.4615,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.1905,
+            "recall": 0.2857,
+            "f1-score": 0.2286,
+            "support": 14
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1
+          },
+          "vulnerability": {
+            "precision": 0.4419,
+            "recall": 0.8261,
+            "f1-score": 0.5758,
+            "support": 23
+          },
+          "xss": {
+            "precision": 0.7778,
+            "recall": 0.8235,
+            "f1-score": 0.8,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            17,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            13,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            7,
+            1,
+            3,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            13,
+            0,
+            1,
+            1,
+            0,
+            6,
+            2
+          ],
+          [
+            1,
+            5,
+            0,
+            0,
+            0,
+            10,
+            0,
+            9,
+            0,
+            2,
+            0
+          ],
+          [
+            4,
+            1,
+            0,
+            0,
+            0,
+            0,
+            6,
+            1,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            2,
+            0,
+            0,
+            0,
+            4,
+            0,
+            5,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            14
+          ]
+        ]
+      }
+    }
+  },
+  "baselines": {
+    "majority_class": {
+      "test_weak": {
+        "n": 439,
+        "accuracy": 0.3121,
+        "macro_f1": 0.0432,
+        "weighted_f1": 0.1485,
+        "per_class": {
+          "access_control": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 49
+          },
+          "crypto": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 45
+          },
+          "csrf_session": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 10
+          },
+          "incident_response": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 15
+          },
+          "injection": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 20
+          },
+          "malware": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 72
+          },
+          "network_attack": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 53
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 2
+          },
+          "vulnerability": {
+            "precision": 0.3121,
+            "recall": 1.0,
+            "f1-score": 0.4757,
+            "support": 137
+          },
+          "xss": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            49,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            45,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            72,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            53,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            137,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            17,
+            0
+          ]
+        ]
+      },
+      "test_gold": {
+        "n": 183,
+        "accuracy": 0.1257,
+        "macro_f1": 0.0203,
+        "weighted_f1": 0.0281,
+        "per_class": {
+          "access_control": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 20
+          },
+          "crypto": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 16
+          },
+          "csrf_session": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8
+          },
+          "incident_response": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 13
+          },
+          "injection": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 25
+          },
+          "malware": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 27
+          },
+          "network_attack": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 19
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 14
+          },
+          "phishing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 1
+          },
+          "vulnerability": {
+            "precision": 0.1257,
+            "recall": 1.0,
+            "f1-score": 0.2233,
+            "support": 23
+          },
+          "xss": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 17
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            27,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            23,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            17,
+            0
+          ]
+        ],
+        "labels_source": [
+          "claude-annotator"
+        ]
+      }
+    }
+  },
+  "rules_vs_gold": {
+    "n": 183,
+    "agreement": 0.6721,
+    "cohen_kappa": 0.6348,
+    "note": "How often the keyword rules (weak labels) agree with the independent gold labels."
+  },
+  "top_terms": {
+    "access_control": [
+      "authentication",
+      "password",
+      "credentials",
+      "authorization",
+      "credential",
+      "access",
+      "passwords",
+      "oauth",
+      "accounts",
+      "token"
+    ],
+    "crypto": [
+      "cryptographic",
+      "hash",
+      "tls",
+      "encryption",
+      "certificate",
+      "rsa",
+      "aes",
+      "certificates",
+      "hashes",
+      "hashing"
+    ],
+    "csrf_session": [
+      "csrf",
+      "cookie",
+      "session",
+      "cookies",
+      "request",
+      "token",
+      "requests",
+      "tokens",
+      "csrf attacks",
+      "session hijacking"
+    ],
+    "incident_response": [
+      "siem",
+      "forensics",
+      "memory forensics",
+      "forensic",
+      "att",
+      "att ck",
+      "ck",
+      "mitre",
+      "mitre att",
+      "logs"
+    ],
+    "injection": [
+      "ssrf",
+      "sql",
+      "sqli",
+      "sql injection",
+      "xml",
+      "xxe",
+      "database",
+      "injection",
+      "input",
+      "internal"
+    ],
+    "malware": [
+      "malware",
+      "c2",
+      "rootkits",
+      "rootkit",
+      "detection",
+      "command control",
+      "ransomware",
+      "banking",
+      "botnet",
+      "infected"
+    ],
+    "network_attack": [
+      "mitm",
+      "ddos",
+      "traffic",
+      "spoofing",
+      "firewalls",
+      "arp",
+      "arp spoofing",
+      "mitm attacks",
+      "network",
+      "ddos attacks"
+    ],
+    "other": [
+      "high",
+      "thread",
+      "current",
+      "threat modeling",
+      "windows",
+      "technique",
+      "presence",
+      "process",
+      "modeling",
+      "covert"
+    ],
+    "phishing": [
+      "phishing",
+      "social engineering",
+      "social",
+      "supply chain",
+      "supply",
+      "learning systems",
+      "spear",
+      "spear phishing",
+      "campaigns",
+      "phishing campaigns"
+    ],
+    "vulnerability": [
+      "vulnerabilities",
+      "exploitation",
+      "exploit",
+      "vulnerability",
+      "exploiting",
+      "exploits",
+      "kernel",
+      "privilege escalation",
+      "escalation",
+      "overflow"
+    ],
+    "xss": [
+      "xss",
+      "csp",
+      "script",
+      "dom",
+      "page",
+      "site",
+      "site scripting",
+      "content",
+      "scripting",
+      "cross site"
+    ]
+  },
+  "preprocessing_ablation": {
+    "raw": {
+      "vocab_size": 8750,
+      "val_macro_f1": 0.604,
+      "test_macro_f1": 0.6306
+    },
+    "stop": {
+      "vocab_size": 8459,
+      "val_macro_f1": 0.599,
+      "test_macro_f1": 0.6311
+    },
+    "stem": {
+      "vocab_size": 5241,
+      "val_macro_f1": 0.5909,
+      "test_macro_f1": 0.6263
+    },
+    "lemma": {
+      "vocab_size": 6086,
+      "val_macro_f1": 0.5841,
+      "test_macro_f1": 0.6304
+    },
+    "note": "Weak labels (keyword rules): differences between variants are small and partly an artefact of the rules."
+  },
+  "gold_info": {
+    "n": 183,
+    "sources": {
+      "claude-annotator": 183
+    },
+    "class_counts": {
+      "malware": 27,
+      "injection": 25,
+      "vulnerability": 23,
+      "access_control": 20,
+      "network_attack": 19,
+      "xss": 17,
+      "crypto": 16,
+      "other": 14,
+      "incident_response": 13,
+      "csrf_session": 8,
+      "phishing": 1
+    }
+  }
+}

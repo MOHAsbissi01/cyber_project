@@ -1,0 +1,17 @@
+# environments and caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
+.env
+
+# data and generated outputs (rebuild with `python -m cyberintel.pipeline all`)
+data/
+artifacts/
+nltk_data/
+legacy_prototype/outputs_real/
+legacy_prototype/outputs_synthetic/
+
+# keep: reports/ (metrics, figures) and annotations/ (gold labels) are deliverables, versioned on purpose

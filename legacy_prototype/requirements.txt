@@ -1,0 +1,15 @@
+pandas
+numpy
+scipy
+scikit-learn
+networkx>=3.0
+matplotlib
+torch
+datasets            # --source hf
+pyarrow
+# optionnels
+sentence-transformers   # --embedder st
+transformers            # transformer_finetune.py
+anthropic               # --llm
+streamlit>=1.50      # app.py (demo)
+pyvis                   # app.py : graphe interactif (optionnel, repli matplotlib)

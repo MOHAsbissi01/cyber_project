@@ -1,0 +1,262 @@
+{
+  "model": "distilbert",
+  "classes": [
+    "access_control",
+    "crypto",
+    "csrf_session",
+    "incident_response",
+    "injection",
+    "malware",
+    "network_attack",
+    "other",
+    "phishing",
+    "vulnerability",
+    "xss"
+  ],
+  "val_macro_f1": 0.6016,
+  "test_weak": {
+    "n": 439,
+    "accuracy": 0.7062,
+    "macro_f1": 0.6013,
+    "weighted_f1": 0.6987,
+    "per_class": {
+      "access_control": {
+        "precision": 0.7708,
+        "recall": 0.7551,
+        "f1-score": 0.7629,
+        "support": 49
+      },
+      "crypto": {
+        "precision": 0.6889,
+        "recall": 0.6889,
+        "f1-score": 0.6889,
+        "support": 45
+      },
+      "csrf_session": {
+        "precision": 0.6667,
+        "recall": 0.8,
+        "f1-score": 0.7273,
+        "support": 10
+      },
+      "incident_response": {
+        "precision": 0.6429,
+        "recall": 0.6,
+        "f1-score": 0.6207,
+        "support": 15
+      },
+      "injection": {
+        "precision": 0.619,
+        "recall": 0.65,
+        "f1-score": 0.6341,
+        "support": 20
+      },
+      "malware": {
+        "precision": 0.8269,
+        "recall": 0.5972,
+        "f1-score": 0.6935,
+        "support": 72
+      },
+      "network_attack": {
+        "precision": 0.4615,
+        "recall": 0.3158,
+        "f1-score": 0.375,
+        "support": 19
+      },
+      "other": {
+        "precision": 0.58,
+        "recall": 0.5472,
+        "f1-score": 0.5631,
+        "support": 53
+      },
+      "phishing": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 2
+      },
+      "vulnerability": {
+        "precision": 0.7391,
+        "recall": 0.8686,
+        "f1-score": 0.7987,
+        "support": 137
+      },
+      "xss": {
+        "precision": 0.6522,
+        "recall": 0.8824,
+        "f1-score": 0.75,
+        "support": 17
+      }
+    },
+    "confusion_matrix": [
+      [
+        37,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        6,
+        0
+      ],
+      [
+        6,
+        31,
+        1,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        9,
+        1,
+        2,
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        5,
+        2
+      ],
+      [
+        2,
+        6,
+        0,
+        2,
+        0,
+        43,
+        3,
+        11,
+        0,
+        4,
+        1
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        6,
+        2,
+        0,
+        7,
+        0
+      ],
+      [
+        1,
+        3,
+        0,
+        3,
+        0,
+        0,
+        3,
+        29,
+        0,
+        10,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        0,
+        6,
+        0,
+        119,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        15
+      ]
+    ]
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.9887,
+      "val_macro_f1": 0.4851,
+      "elapsed_s": 636
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.1662,
+      "val_macro_f1": 0.6016,
+      "elapsed_s": 1409
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.8365,
+      "val_macro_f1": 0.5977,
+      "elapsed_s": 2486
+    }
+  ],
+  "base_model": "distilbert-base-uncased",
+  "max_len": 160,
+  "lr": 5e-05,
+  "epochs": 3,
+  "seconds": 2675.0,
+  "device": "cpu"
+}

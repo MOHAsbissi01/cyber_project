@@ -1,0 +1,474 @@
+{
+  "corpus": {
+    "incidents": 2193,
+    "mentions": 38536,
+    "mentions_by_type": {
+      "TARGET": 16156,
+      "ATTACK": 9069,
+      "TECHNOLOGY": 4543,
+      "SOFTWARE": 3727,
+      "DEFENSE": 3455,
+      "TOOL": 589,
+      "MALWARE": 280,
+      "VULN_NAME": 255,
+      "MITRE_TECHNIQUE": 171,
+      "CVE": 139,
+      "IP": 85,
+      "THREAT_ACTOR": 38,
+      "TACTIC": 27,
+      "CWE": 2
+    },
+    "unique_entities_by_type": {
+      "MITRE_TECHNIQUE": 86,
+      "CVE": 86,
+      "ATTACK": 73,
+      "SOFTWARE": 56,
+      "TECHNOLOGY": 46,
+      "TOOL": 34,
+      "DEFENSE": 31,
+      "IP": 22,
+      "MALWARE": 19,
+      "TARGET": 18,
+      "VULN_NAME": 10,
+      "TACTIC": 9,
+      "THREAT_ACTOR": 6,
+      "CWE": 2
+    },
+    "incidents_with_specific_entity": 2050,
+    "incidents_without_specific_entity": 143,
+    "unique_cves": 86,
+    "mitre_ids_found": 86,
+    "mitre_ids_with_name": 28
+  },
+  "gold_eval": {
+    "dev": {
+      "overall": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 36,
+        "fp": 0,
+        "fn": 0
+      },
+      "per_type": {
+        "ATTACK": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 12,
+          "fp": 0,
+          "fn": 0
+        },
+        "DEFENSE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "SOFTWARE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        },
+        "TECHNOLOGY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        },
+        "TOOL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "n_passages": 35,
+      "errors_sample": [],
+      "note": "lexicon tuned on these errors: NOT a generalisation estimate"
+    },
+    "test": {
+      "overall": {
+        "precision": 1.0,
+        "recall": 0.8438,
+        "f1": 0.9153,
+        "tp": 27,
+        "fp": 0,
+        "fn": 5
+      },
+      "per_type": {
+        "ATTACK": {
+          "precision": 1.0,
+          "recall": 0.8889,
+          "f1": 0.9412,
+          "tp": 16,
+          "fp": 0,
+          "fn": 2
+        },
+        "MITRE_TECHNIQUE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "SOFTWARE": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "tp": 3,
+          "fp": 0,
+          "fn": 2
+        },
+        "TECHNOLOGY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        },
+        "TOOL": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571,
+          "tp": 3,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "n_passages": 35,
+      "errors_sample": [
+        {
+          "kind": "false_negative",
+          "entity": [
+            "TOOL",
+            "xmlsec"
+          ],
+          "text": "Another tool called xmlsec provides command-line utilities to verify XML Signatures on SAML responses and identify any potential issues such as signature wrappi"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "SOFTWARE",
+            "Telegram"
+          ],
+          "text": "One method used by attackers is to establish command-and-control (C2) communication channels via legitimate services such as Discord, Telegram and GitHub. This "
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "SOFTWARE",
+            "Discord"
+          ],
+          "text": "One method used by attackers is to establish command-and-control (C2) communication channels via legitimate services such as Discord, Telegram and GitHub. This "
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "LFI/RFI"
+          ],
+          "text": "If we have a web server that does not allow us to read any local files but allows SSRF using the file:// protocol handler, then it will be very easy for an atta"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "Ghost Domain"
+          ],
+          "text": "In many cases, victims only become aware of the problem when their own brand reputation has already been damaged through bad reviews, negative SEO rankings and "
+        }
+      ],
+      "note": "optimistic: lexicon extended after reading these passages"
+    },
+    "final": {
+      "overall": {
+        "precision": 0.9714,
+        "recall": 0.5862,
+        "f1": 0.7312,
+        "tp": 34,
+        "fp": 1,
+        "fn": 24
+      },
+      "per_type": {
+        "ATTACK": {
+          "precision": 1.0,
+          "recall": 0.6111,
+          "f1": 0.7586,
+          "tp": 11,
+          "fp": 0,
+          "fn": 7
+        },
+        "CVE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "DEFENSE": {
+          "precision": 0.8,
+          "recall": 0.4444,
+          "f1": 0.5714,
+          "tp": 4,
+          "fp": 1,
+          "fn": 5
+        },
+        "MALWARE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        },
+        "SOFTWARE": {
+          "precision": 1.0,
+          "recall": 0.5833,
+          "f1": 0.7368,
+          "tp": 7,
+          "fp": 0,
+          "fn": 5
+        },
+        "TECHNOLOGY": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "tp": 9,
+          "fp": 0,
+          "fn": 6
+        },
+        "THREAT_ACTOR": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "n_passages": 45,
+      "errors_sample": [
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "kernel pool feng shui"
+          ],
+          "text": "Unfortunately, even though Microsoft introduced these mitigations over a decade ago, many organizations still run 32-bit operating systems. The most commonly ex"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "THREAT_ACTOR",
+            "Shadow Brokers"
+          ],
+          "text": "Unfortunately, even though Microsoft introduced these mitigations over a decade ago, many organizations still run 32-bit operating systems. The most commonly ex"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "DEFENSE",
+            "PPL"
+          ],
+          "text": "The implementation relies on the use of a special process type that enforces certain restrictions. Microsoft has not revealed all details of how exactly PPL is "
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "SOFTWARE",
+            "KVM"
+          ],
+          "text": "**Hypervisor-Level Access**: Memory is managed at the hypervisor level in cloud deployments, making it difficult for security teams to directly access or dump p"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "SOFTWARE",
+            "Xen"
+          ],
+          "text": "**Hypervisor-Level Access**: Memory is managed at the hypervisor level in cloud deployments, making it difficult for security teams to directly access or dump p"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "TECHNOLOGY",
+            "SHA-3"
+          ],
+          "text": "Additionally, it is critical to use a strong hash function such as SHA-3 or BLAKE2b, which has not been broken yet in terms of quantum attacks. Furthermore, one"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "TECHNOLOGY",
+            "New Hope"
+          ],
+          "text": "Additionally, it is critical to use a strong hash function such as SHA-3 or BLAKE2b, which has not been broken yet in terms of quantum attacks. Furthermore, one"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "TECHNOLOGY",
+            "BLAKE2b"
+          ],
+          "text": "Additionally, it is critical to use a strong hash function such as SHA-3 or BLAKE2b, which has not been broken yet in terms of quantum attacks. Furthermore, one"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "TECHNOLOGY",
+            "NTRU"
+          ],
+          "text": "Additionally, it is critical to use a strong hash function such as SHA-3 or BLAKE2b, which has not been broken yet in terms of quantum attacks. Furthermore, one"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "DOP"
+          ],
+          "text": "Despite these advances in detection technology, DOP remains a significant threat that must be taken seriously by developers who want their software products to "
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "Diamond Ticket"
+          ],
+          "text": "With proper security measures and up-to-date patches, organizations can significantly mitigate the risks posed by this dangerous threat. If you suspect your org"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "SOFTWARE",
+            "Dropbox"
+          ],
+          "text": "Dropbox provides both free and paid accounts for individuals and organizations. Paid plans come with larger storage capacities and enhanced security features su"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "DEFENSE",
+            "shadow stack"
+          ],
+          "text": "It must be possible to extract at least some kernel data to find the location of the shadow stack. 2) A vulnerability in a system call or driver that allows exe"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "DEFENSE",
+            "Mandatory Access Control"
+          ],
+          "text": "In this section we will look at how to bypass Mandatory Access Control (MAC) using domain transitions in SELinux. As previously discussed, MAC enforces a securi"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "BadUSB"
+          ],
+          "text": "Creating a BadUSB implementation capable of surviving firmware updates and factory resets involves manipulating the device’s internal storage mechanisms (e.g., "
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "SOFTWARE",
+            "GitHub"
+          ],
+          "text": "Finally, here is an example of how attackers can exploit ESI tags to inject malicious code into a cached page: https://github.com/marcinwielgosz/esi_injector. I"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "ESI injection"
+          ],
+          "text": "Finally, here is an example of how attackers can exploit ESI tags to inject malicious code into a cached page: https://github.com/marcinwielgosz/esi_injector. I"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "DEFENSE",
+            "Credential Guard"
+          ],
+          "text": "This can help detect suspicious activity such as brute-force attacks or unauthorized access attempts. To use Credential Guard effectively, it is important to en"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "dropper"
+          ],
+          "text": "Attackers can also use staged payloads to deliver a custom version of the malware, which might be specially built for the target or contain unique signatures to"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "TECHNOLOGY",
+            "TrustZone"
+          ],
+          "text": "**Cross-Platform Boot Process Handling**: - Intel-based systems typically boot via a legacy BIOS or modern UEFI implementation with x86 instruction sets, wherea"
+        },
+        {
+          "kind": "false_positive",
+          "entity": [
+            "DEFENSE",
+            "patch management"
+          ],
+          "text": "By carefully crafting transactions that trigger memory corruptions in vulnerable code paths, attackers can achieve code execution within critical processes. How"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "SOFTWARE",
+            "Flask"
+          ],
+          "text": "The taxii-server library provides several methods for configuring and managing collections, objects, and other TAXII 2 server components. Implementing authentic"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "TECHNOLOGY",
+            "TAXII"
+          ],
+          "text": "The taxii-server library provides several methods for configuring and managing collections, objects, and other TAXII 2 server components. Implementing authentic"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "ATTACK",
+            "cross-heap exploitation"
+          ],
+          "text": "This technique can be challenging for defenders because it requires knowledge of both heaps’ layouts, how they interact, and which objects reside where. The con"
+        },
+        {
+          "kind": "false_negative",
+          "entity": [
+            "DEFENSE",
+            "Protected Users"
+          ],
+          "text": "The **Protected Users** group is an Active Directory (AD) protected group introduced in Windows Server 2016 and Windows 10/Server 2016, designed to mitigate adv"
+        }
+      ],
+      "note": "UNBIASED: drawn and annotated after the lexicon freeze"
+    }
+  },
+  "precision_audit": {
+    "n": 137,
+    "correct": 133,
+    "precision": 0.9708,
+    "note": "Precision audit: 137 extractor mentions sampled at random per entity type (TARGET excluded), judged by the annotator (Claude) from a +-50 char context. Wrong: 3 git-commit SHA-1 ids typed HASH, 1 'process monitoring' typed TOOL. Both causes were fixed afterwards (URL masking for HASH; no inflection suffix for TOOL); the fixed extractor was not re-audited."
+  }
+}

@@ -1,0 +1,379 @@
+head,head_type,relation,tail,tail_type,support,lift,source,status
+phishing,ATTACK,TARGETS,email,TARGET,64,7.025,corpus,unverified
+brute force,ATTACK,TARGETS,credentials,TARGET,53,2.489,corpus,unverified
+lateral movement,ATTACK,TARGETS,network,TARGET,48,1.371,corpus,unverified
+rootkit,ATTACK,TARGETS,kernel,TARGET,38,2.723,corpus,unverified
+SQL injection,ATTACK,TARGETS,database,TARGET,30,4.545,corpus,unverified
+ASLR,DEFENSE,MITIGATES,ROP,ATTACK,29,2.764,corpus,unverified
+SQL injection,ATTACK,TARGETS,web application,TARGET,24,2.462,corpus,unverified
+botnet,ATTACK,TARGETS,IoT device,TARGET,23,14.469,corpus,unverified
+social engineering,ATTACK,TARGETS,email,TARGET,23,5.325,corpus,unverified
+SSRF,ATTACK,TARGETS,server,TARGET,23,2.155,corpus,unverified
+lateral movement,ATTACK,TARGETS,credentials,TARGET,22,1.33,corpus,unverified
+CSRF,ATTACK,TARGETS,web application,TARGET,21,3.438,corpus,unverified
+CFI/CFG,DEFENSE,MITIGATES,ROP,ATTACK,19,7.12,corpus,unverified
+DEP/NX,DEFENSE,MITIGATES,ROP,ATTACK,19,2.678,corpus,unverified
+XSS,ATTACK,TARGETS,web application,TARGET,19,1.7,corpus,unverified
+Mimikatz,MALWARE,TARGETS,credentials,TARGET,16,2.457,corpus,unverified
+XSS,ATTACK,TARGETS,browser,TARGET,16,1.581,corpus,unverified
+credential dumping,ATTACK,TARGETS,credentials,TARGET,14,5.681,corpus,unverified
+golden ticket,ATTACK,TARGETS,credentials,TARGET,14,3.314,corpus,unverified
+ARP spoofing,ATTACK,TARGETS,network,TARGET,14,1.708,corpus,unverified
+use-after-free,ATTACK,TARGETS,kernel,TARGET,14,1.677,corpus,unverified
+privilege escalation,ATTACK,TARGETS,Linux,SOFTWARE,14,1.045,corpus,unverified
+pass-the-hash,ATTACK,TARGETS,credentials,TARGET,13,2.841,corpus,unverified
+SSRF,ATTACK,TARGETS,web application,TARGET,13,2.632,corpus,unverified
+golden ticket,ATTACK,TARGETS,Kerberos,TECHNOLOGY,12,19.237,corpus,unverified
+rootkit,ATTACK,TARGETS,UEFI,TECHNOLOGY,12,5.59,corpus,unverified
+XXE,ATTACK,TARGETS,web application,TARGET,12,2.886,corpus,unverified
+DNS spoofing,ATTACK,TARGETS,DNS,TECHNOLOGY,11,23.33,corpus,unverified
+CSRF,ATTACK,TARGETS,browser,TARGET,11,1.989,corpus,unverified
+DLL hijacking,ATTACK,TARGETS,Windows,SOFTWARE,11,1.866,corpus,unverified
+rootkit,ATTACK,TARGETS,Intel,TECHNOLOGY,10,2.411,corpus,unverified
+race condition,ATTACK,TARGETS,kernel,TARGET,10,1.475,corpus,unverified
+SameSite cookies,DEFENSE,MITIGATES,CSRF,ATTACK,9,29.995,corpus,unverified
+WAF,DEFENSE,MITIGATES,SQL injection,ATTACK,9,5.061,corpus,unverified
+input validation,DEFENSE,MITIGATES,SQL injection,ATTACK,9,2.089,corpus,unverified
+input validation,DEFENSE,MITIGATES,SSRF,ATTACK,8,3.664,corpus,unverified
+CSP,DEFENSE,MITIGATES,XSS,ATTACK,8,3.579,corpus,unverified
+MITM,ATTACK,TARGETS,TLS/SSL,TECHNOLOGY,8,2.278,corpus,unverified
+watering hole,ATTACK,TARGETS,email,TARGET,7,8.644,corpus,unverified
+SMEP/SMAP,DEFENSE,MITIGATES,ROP,ATTACK,7,4.617,corpus,unverified
+rate limiting,DEFENSE,MITIGATES,brute force,ATTACK,7,2.15,corpus,unverified
+sandbox escape,ATTACK,TARGETS,browser,TARGET,7,2.052,corpus,unverified
+side-channel,ATTACK,TARGETS,AES,TECHNOLOGY,7,2.013,corpus,unverified
+MFA,DEFENSE,MITIGATES,brute force,ATTACK,7,1.256,corpus,unverified
+XSS,ATTACK,TARGETS,JavaScript,SOFTWARE,7,1.19,corpus,unverified
+side-channel,ATTACK,TARGETS,TLS/SSL,TECHNOLOGY,7,1.116,corpus,unverified
+SQL injection,ATTACK,TARGETS,MySQL,SOFTWARE,6,17.544,corpus,unverified
+LFI/RFI,ATTACK,TARGETS,PHP,SOFTWARE,6,12.531,corpus,unverified
+side-channel,ATTACK,TARGETS,WPA3,TECHNOLOGY,6,4.211,corpus,unverified
+cryptojacking,ATTACK,TARGETS,browser,TARGET,6,2.833,corpus,unverified
+ASLR,DEFENSE,MITIGATES,heap spray,ATTACK,6,2.056,corpus,unverified
+side-channel,ATTACK,TARGETS,RSA,TECHNOLOGY,6,2.024,corpus,unverified
+SSRF,ATTACK,TARGETS,endpoint,TARGET,6,1.374,corpus,unverified
+SQL injection,ATTACK,TARGETS,firewall,TARGET,6,1.35,corpus,unverified
+padding oracle,ATTACK,TARGETS,RSA,TECHNOLOGY,5,26.358,corpus,unverified
+Dirty COW,VULN_NAME,AFFECTS,Linux,SOFTWARE,5,19.651,corpus,unverified
+Kerberoasting,ATTACK,TARGETS,Kerberos,TECHNOLOGY,5,19.237,corpus,unverified
+JOP,ATTACK,TARGETS,ARM,TECHNOLOGY,5,19.237,corpus,unverified
+process injection,ATTACK,MAPS_TO,T1055 Process Injection,MITRE_TECHNIQUE,5,16.921,corpus,unverified
+pass-the-hash,ATTACK,TARGETS,NTLM,TECHNOLOGY,5,15.62,corpus,unverified
+BEAST,ATTACK,TARGETS,TLS/SSL,TECHNOLOGY,5,14.24,corpus,unverified
+prototype pollution,ATTACK,TARGETS,JavaScript,SOFTWARE,5,12.183,corpus,unverified
+golden ticket,ATTACK,TARGETS,domain controller,TARGET,5,11.715,corpus,unverified
+sandboxing,DEFENSE,MITIGATES,sandbox escape,ATTACK,5,4.847,corpus,unverified
+privilege escalation,ATTACK,MAPS_TO,T1098,MITRE_TECHNIQUE,5,4.337,corpus,unverified
+ROP,ATTACK,TARGETS,ARM,TECHNOLOGY,5,2.748,corpus,unverified
+input validation,DEFENSE,MITIGATES,XXE,ATTACK,5,2.719,corpus,unverified
+rate limiting,DEFENSE,MITIGATES,DDoS,ATTACK,5,2.618,corpus,unverified
+pass-the-ticket,ATTACK,TARGETS,credentials,TARGET,5,2.367,corpus,unverified
+SSRF,ATTACK,TARGETS,firewall,TARGET,5,2.22,corpus,unverified
+stack canary,DEFENSE,MITIGATES,ROP,ATTACK,5,2.114,corpus,unverified
+stack canary,DEFENSE,MITIGATES,buffer overflow,ATTACK,5,2.008,corpus,unverified
+RCE,ATTACK,TARGETS,PHP,SOFTWARE,5,1.976,corpus,unverified
+APT,ATTACK,TARGETS,DNS,TECHNOLOGY,5,1.715,corpus,unverified
+Dirty COW,VULN_NAME,ALIAS_OF,CVE-2016-5195,CVE,4,365.5,corpus,verified
+padding oracle,ATTACK,TARGETS,Oracle Database,SOFTWARE,4,91.375,corpus,unverified
+EternalBlue,VULN_NAME,AFFECTS,SMB,TECHNOLOGY,4,60.917,corpus,unverified
+Mirai,MALWARE,USES,botnet,ATTACK,4,34.81,corpus,unverified
+Rowhammer,ATTACK,TARGETS,ECC/ECDSA,TECHNOLOGY,4,34.266,corpus,unverified
+WannaCry,MALWARE,USES,ransomware,ATTACK,4,28.481,corpus,unverified
+Stuxnet,MALWARE,USES,worm,ATTACK,4,25.063,corpus,unverified
+Mimikatz,MALWARE,USES,credential dumping,ATTACK,4,16.934,corpus,unverified
+SQL injection,ATTACK,TARGETS,PostgreSQL,SOFTWARE,4,16.709,corpus,unverified
+Mimikatz,MALWARE,USES,golden ticket,ATTACK,4,9.878,corpus,unverified
+SQL injection,ATTACK,TARGETS,Oracle Database,SOFTWARE,4,9.747,corpus,unverified
+MITM,ATTACK,TARGETS,Bluetooth,TECHNOLOGY,4,9.64,corpus,unverified
+parameterized queries,DEFENSE,MITIGATES,SQL injection,ATTACK,4,8.997,corpus,unverified
+token manipulation,ATTACK,TARGETS,Kerberos,TECHNOLOGY,4,5.496,corpus,unverified
+network segmentation,DEFENSE,MITIGATES,SSRF,ATTACK,4,5.368,corpus,unverified
+privilege escalation,ATTACK,MAPS_TO,T1059 Command and Scripting Interpreter,MITRE_TECHNIQUE,4,4.627,corpus,unverified
+privilege escalation,ATTACK,TARGETS,XPC,TECHNOLOGY,4,4.627,corpus,unverified
+sandbox escape,ATTACK,TARGETS,hypervisor,TARGET,4,3.689,corpus,unverified
+rootkit,ATTACK,TARGETS,BIOS,TECHNOLOGY,4,3.036,corpus,unverified
+Mimikatz,MALWARE,TARGETS,PowerShell,SOFTWARE,4,2.927,corpus,unverified
+SSRF,ATTACK,TARGETS,cloud,TARGET,4,2.85,corpus,unverified
+lateral movement,ATTACK,TARGETS,WMI,TECHNOLOGY,4,2.666,corpus,unverified
+SSRF,ATTACK,TARGETS,DNS,TECHNOLOGY,4,2.456,corpus,unverified
+Kerberoasting,ATTACK,TARGETS,credentials,TARGET,4,2.273,corpus,unverified
+SELinux,DEFENSE,MITIGATES,privilege escalation,ATTACK,4,1.983,corpus,unverified
+race condition,ATTACK,TARGETS,Linux,SOFTWARE,4,1.814,corpus,unverified
+directory traversal,ATTACK,TARGETS,server,TARGET,4,1.582,corpus,unverified
+DOM XSS,ATTACK,TARGETS,web application,TARGET,4,1.466,corpus,unverified
+MITM,ATTACK,TARGETS,DNS,TECHNOLOGY,4,1.333,corpus,unverified
+CSRF,ATTACK,TARGETS,JavaScript,SOFTWARE,4,1.244,corpus,unverified
+patch management,DEFENSE,MITIGATES,zero-day,ATTACK,4,1.196,corpus,unverified
+signature wrapping,ATTACK,TARGETS,SAML,TECHNOLOGY,3,219.3,corpus,unverified
+KRACK,VULN_NAME,AFFECTS,WPA2,TECHNOLOGY,3,82.237,corpus,unverified
+Equation Group,THREAT_ACTOR,USES,Stuxnet,MALWARE,3,67.133,corpus,unverified
+KRACK,VULN_NAME,AFFECTS,WPA3,TECHNOLOGY,3,32.895,corpus,unverified
+Emotet,MALWARE,USES,trojan,ATTACK,3,21.5,corpus,unverified
+Mimikatz,MALWARE,USES,Kerberoasting,ATTACK,3,17.781,corpus,unverified
+CVE-2016-5195,CVE,AFFECTS,Linux,SOFTWARE,3,17.685,corpus,verified
+Mirai,MALWARE,TARGETS,IoT device,TARGET,3,13.211,corpus,unverified
+pass-the-ticket,ATTACK,TARGETS,Kerberos,TECHNOLOGY,3,9.618,corpus,unverified
+IDOR,ATTACK,TARGETS,GraphQL,TECHNOLOGY,3,9.074,corpus,unverified
+side-channel,ATTACK,TARGETS,OpenSSL,SOFTWARE,3,8.772,corpus,unverified
+side-channel,ATTACK,TARGETS,Zigbee,TECHNOLOGY,3,8.772,corpus,unverified
+CSP,DEFENSE,MITIGATES,clickjacking,ATTACK,3,8.244,corpus,unverified
+cache attack,ATTACK,TARGETS,AES,TECHNOLOGY,3,7.704,corpus,unverified
+stack canary,DEFENSE,MITIGATES,format string,ATTACK,3,7.668,corpus,unverified
+padding oracle,ATTACK,TARGETS,TLS/SSL,TECHNOLOGY,3,7.476,corpus,unverified
+XXE,ATTACK,USES,Burp Suite,TOOL,3,7.343,corpus,unverified
+Emotet,MALWARE,USES,process injection,ATTACK,3,6.769,corpus,unverified
+process injection,ATTACK,TARGETS,AMSI,TECHNOLOGY,3,6.769,corpus,unverified
+CSRF,ATTACK,USES,OWASP ZAP,TOOL,3,6.666,corpus,unverified
+Meltdown,VULN_NAME,AFFECTS,Intel,TECHNOLOGY,3,6.45,corpus,unverified
+golden ticket,ATTACK,TARGETS,Active Directory,SOFTWARE,3,5.832,corpus,unverified
+token manipulation,ATTACK,TARGETS,OAuth,TECHNOLOGY,3,5.731,corpus,unverified
+privilege escalation,ATTACK,MAPS_TO,T1068 Exploitation for Privilege Escalation,MITRE_TECHNIQUE,3,5.205,corpus,unverified
+pass-the-hash,ATTACK,TARGETS,Kerberos,TECHNOLOGY,3,4.439,corpus,unverified
+BEAST,ATTACK,TARGETS,browser,TARGET,3,3.643,corpus,unverified
+use-after-free,ATTACK,TARGETS,iOS,SOFTWARE,3,3.545,corpus,unverified
+WAF,DEFENSE,MITIGATES,SSRF,ATTACK,3,3.329,corpus,unverified
+race condition,ATTACK,TARGETS,OAuth,TECHNOLOGY,3,3.086,corpus,unverified
+Mirai,MALWARE,TARGETS,credentials,TARGET,3,2.841,corpus,unverified
+sandbox escape,ATTACK,TARGETS,cloud,TARGET,3,2.801,corpus,unverified
+backdoor,ATTACK,TARGETS,WMI,TECHNOLOGY,3,2.764,corpus,unverified
+EternalBlue,VULN_NAME,AFFECTS,Windows,SOFTWARE,3,2.544,corpus,unverified
+cryptojacking,ATTACK,TARGETS,JavaScript,SOFTWARE,3,2.437,corpus,unverified
+DOM XSS,ATTACK,TARGETS,JavaScript,SOFTWARE,3,2.089,corpus,unverified
+Mimikatz,MALWARE,USES,lateral movement,ATTACK,3,1.892,corpus,unverified
+SMEP/SMAP,DEFENSE,MITIGATES,buffer overflow,ATTACK,3,1.88,corpus,unverified
+botnet,ATTACK,TARGETS,DNS,TECHNOLOGY,3,1.666,corpus,unverified
+ransomware,ATTACK,TARGETS,RSA,TECHNOLOGY,3,1.643,corpus,unverified
+EDR,DEFENSE,MITIGATES,ransomware,ATTACK,3,1.582,corpus,unverified
+BEAST,ATTACK,TARGETS,server,TARGET,3,1.526,corpus,unverified
+sandbox escape,ATTACK,TARGETS,JavaScript,SOFTWARE,3,1.512,corpus,unverified
+type confusion,ATTACK,TARGETS,API,TARGET,3,1.506,corpus,unverified
+stored XSS,ATTACK,TARGETS,database,TARGET,3,1.42,corpus,unverified
+ransomware,ATTACK,TARGETS,AES,TECHNOLOGY,3,1.401,corpus,unverified
+race condition,ATTACK,TARGETS,DNS,TECHNOLOGY,3,1.346,corpus,unverified
+padding oracle,ATTACK,TARGETS,server,TARGET,3,1.335,corpus,unverified
+APT,ATTACK,TARGETS,PowerShell,SOFTWARE,3,1.194,corpus,unverified
+heap spray,ATTACK,TARGETS,JavaScript,SOFTWARE,3,1.185,corpus,unverified
+patch management,DEFENSE,MITIGATES,DLL hijacking,ATTACK,3,1.166,corpus,unverified
+credential dumping,ATTACK,TARGETS,Windows,SOFTWARE,3,1.09,corpus,unverified
+prototype pollution,ATTACK,TARGETS,Node.js,SOFTWARE,2,146.2,corpus,unverified
+credential dumping,ATTACK,MAPS_TO,T1003 OS Credential Dumping,MITRE_TECHNIQUE,2,104.429,corpus,unverified
+supply chain attack,ATTACK,MAPS_TO,T1219,MITRE_TECHNIQUE,2,53.488,corpus,unverified
+command injection,ATTACK,MAPS_TO,T1059 Command and Scripting Interpreter,MITRE_TECHNIQUE,2,48.733,corpus,unverified
+golden ticket,ATTACK,MAPS_TO,T1558 Steal or Forge Kerberos Tickets,MITRE_TECHNIQUE,2,45.688,corpus,unverified
+Zeus,MALWARE,USES,trojan,ATTACK,2,43.0,corpus,unverified
+SUNBURST,MALWARE,USES,supply chain attack,ATTACK,2,35.659,corpus,unverified
+DLL hijacking,ATTACK,MAPS_TO,T1574 Hijack Execution Flow,MITRE_TECHNIQUE,2,29.24,corpus,unverified
+SSRF,ATTACK,TARGETS,Redis,SOFTWARE,2,28.855,corpus,unverified
+REvil,MALWARE,USES,ransomware,ATTACK,2,28.481,corpus,unverified
+NotPetya,MALWARE,USES,supply chain attack,ATTACK,2,26.744,corpus,unverified
+TrickBot,MALWARE,USES,trojan,ATTACK,2,25.8,corpus,unverified
+sandbox escape,ATTACK,TARGETS,XPC,TECHNOLOGY,2,25.207,corpus,unverified
+Equation Group,THREAT_ACTOR,USES,worm,ATTACK,2,25.063,corpus,unverified
+SUNBURST,MALWARE,USES,backdoor,ATTACK,2,21.5,corpus,unverified
+ZeroAccess,MALWARE,USES,rootkit,ATTACK,2,20.495,corpus,unverified
+Ryuk,MALWARE,USES,ransomware,ATTACK,2,18.987,corpus,unverified
+zero-day,ATTACK,TARGETS,XPC,TECHNOLOGY,2,18.744,corpus,unverified
+APT28,THREAT_ACTOR,USES,APT,ATTACK,2,16.125,corpus,unverified
+QakBot,MALWARE,USES,botnet,ATTACK,2,14.918,corpus,unverified
+DOM clobbering,ATTACK,TARGETS,JavaScript,SOFTWARE,2,14.62,corpus,unverified
+NotPetya,MALWARE,USES,ransomware,ATTACK,2,14.24,corpus,unverified
+sandbox escape,ATTACK,TARGETS,Hyper-V,SOFTWARE,2,13.749,corpus,unverified
+XXE,ATTACK,TARGETS,SAML,TECHNOLOGY,2,13.706,corpus,unverified
+output encoding,DEFENSE,MITIGATES,stored XSS,ATTACK,2,12.183,corpus,unverified
+BEAST,ATTACK,TARGETS,AES,TECHNOLOGY,2,10.272,corpus,unverified
+spyware,ATTACK,TARGETS,iOS,SOFTWARE,2,10.083,corpus,unverified
+Mimikatz,MALWARE,USES,pass-the-ticket,ATTACK,2,9.878,corpus,unverified
+Kerberoasting,ATTACK,TARGETS,Active Directory,SOFTWARE,2,9.332,corpus,unverified
+MITM,ATTACK,TARGETS,BGP,TECHNOLOGY,2,8.951,corpus,unverified
+memory corruption,ATTACK,TARGETS,Rust,SOFTWARE,2,8.702,corpus,unverified
+CFI/CFG,DEFENSE,MITIGATES,type confusion,ATTACK,2,8.307,corpus,unverified
+BEAST,ATTACK,TARGETS,HTTPS,TECHNOLOGY,2,8.033,corpus,unverified
+fault injection,ATTACK,TARGETS,RSA,TECHNOLOGY,2,7.029,corpus,unverified
+golden ticket,ATTACK,TARGETS,NTLM,TECHNOLOGY,2,6.769,corpus,unverified
+DLL hijacking,ATTACK,USES,Process Monitor,TOOL,2,6.645,corpus,unverified
+HttpOnly,DEFENSE,MITIGATES,XSS,ATTACK,2,6.375,corpus,unverified
+Emotet,MALWARE,USES,ransomware,ATTACK,2,6.329,corpus,unverified
+heap spray,ATTACK,TARGETS,Firefox,SOFTWARE,2,6.239,corpus,unverified
+reflected XSS,ATTACK,TARGETS,Chrome,SOFTWARE,2,6.151,corpus,unverified
+fault injection,ATTACK,TARGETS,AES,TECHNOLOGY,2,5.992,corpus,unverified
+SSRF,ATTACK,TARGETS,AWS,SOFTWARE,2,5.496,corpus,unverified
+ROP,ATTACK,USES,ROPgadget,TOOL,2,5.496,corpus,unverified
+cryptojacking,ATTACK,TARGETS,mobile device,TARGET,2,5.297,corpus,unverified
+XXE,ATTACK,TARGETS,Java,SOFTWARE,2,5.272,corpus,unverified
+CFI/CFG,DEFENSE,MITIGATES,JOP,ATTACK,2,5.246,corpus,unverified
+sandbox escape,ATTACK,TARGETS,Chrome,SOFTWARE,2,4.879,corpus,unverified
+CRIME,ATTACK,TARGETS,browser,TARGET,2,4.25,corpus,unverified
+WAF,DEFENSE,MITIGATES,LFI/RFI,ATTACK,2,4.016,corpus,unverified
+XXE,ATTACK,TARGETS,REST API,TECHNOLOGY,2,3.916,corpus,unverified
+zero-day,ATTACK,TARGETS,iOS,SOFTWARE,2,3.878,corpus,unverified
+rootkit,ATTACK,TARGETS,Hyper-V,SOFTWARE,2,3.726,corpus,unverified
+CSP,DEFENSE,MITIGATES,DOM XSS,ATTACK,2,3.664,corpus,unverified
+brute force,ATTACK,TARGETS,WPA2,TECHNOLOGY,2,3.625,corpus,unverified
+use-after-free,ATTACK,TARGETS,Firefox,SOFTWARE,2,3.607,corpus,unverified
+CORS,DEFENSE,MITIGATES,CSRF,ATTACK,2,3.589,corpus,unverified
+lateral movement,ATTACK,USES,PsExec,TOOL,2,3.589,corpus,unverified
+privilege escalation,ATTACK,EXPLOITS,CVE-2016-5195,CVE,2,3.47,corpus,unverified
+CSP,DEFENSE,MITIGATES,reflected XSS,ATTACK,2,3.346,corpus,unverified
+MITM,ATTACK,TARGETS,TPM,TECHNOLOGY,2,3.298,corpus,unverified
+brute force,ATTACK,TARGETS,MD5,TECHNOLOGY,2,3.295,corpus,unverified
+Mimikatz,MALWARE,TARGETS,domain controller,TARGET,2,3.04,corpus,unverified
+privilege escalation,ATTACK,MAPS_TO,T1053 Scheduled Task/Job,MITRE_TECHNIQUE,2,2.776,corpus,unverified
+prototype pollution,ATTACK,TARGETS,web application,TARGET,2,2.565,corpus,unverified
+brute force,ATTACK,TARGETS,RDP,TECHNOLOGY,2,2.417,corpus,unverified
+SUNBURST,MALWARE,TARGETS,server,TARGET,2,2.373,corpus,unverified
+side-channel,ATTACK,TARGETS,Intel SGX,TECHNOLOGY,2,2.339,corpus,unverified
+CSRF,ATTACK,TARGETS,OAuth,TECHNOLOGY,2,2.276,corpus,unverified
+rootkit,ATTACK,TARGETS,TPM,TECHNOLOGY,2,2.157,corpus,unverified
+DDoS,ATTACK,TARGETS,GraphQL,TECHNOLOGY,2,2.13,corpus,unverified
+DEP/NX,DEFENSE,MITIGATES,JOP,ATTACK,2,1.973,corpus,unverified
+Rowhammer,ATTACK,TARGETS,kernel,TARGET,2,1.917,corpus,unverified
+lateral movement,ATTACK,TARGETS,NTLM,TECHNOLOGY,2,1.728,corpus,unverified
+cryptojacking,ATTACK,TARGETS,email,TARGET,2,1.646,corpus,unverified
+CSP,DEFENSE,MITIGATES,CSRF,ATTACK,2,1.637,corpus,unverified
+ransomware,ATTACK,TARGETS,WMI,TECHNOLOGY,2,1.627,corpus,unverified
+LFI/RFI,ATTACK,TARGETS,firewall,TARGET,2,1.607,corpus,unverified
+input validation,DEFENSE,MITIGATES,reflected XSS,ATTACK,2,1.513,corpus,unverified
+backdoor,ATTACK,TARGETS,UEFI,TECHNOLOGY,2,1.466,corpus,unverified
+XSS,ATTACK,TARGETS,JWT,TECHNOLOGY,2,1.457,corpus,unverified
+input validation,DEFENSE,MITIGATES,stored XSS,ATTACK,2,1.45,corpus,unverified
+brute force,ATTACK,TARGETS,WPA3,TECHNOLOGY,2,1.45,corpus,unverified
+privilege escalation,ATTACK,TARGETS,SAML,TECHNOLOGY,2,1.388,corpus,unverified
+zero-day,ATTACK,TARGETS,hypervisor,TARGET,2,1.371,corpus,unverified
+brute force,ATTACK,TARGETS,NTLM,TECHNOLOGY,2,1.343,corpus,unverified
+NotPetya,MALWARE,TARGETS,network,TARGET,2,1.342,corpus,unverified
+ASLR,DEFENSE,MITIGATES,JOP,ATTACK,2,1.334,corpus,unverified
+least privilege,DEFENSE,MITIGATES,SQL injection,ATTACK,2,1.329,corpus,unverified
+reflected XSS,ATTACK,TARGETS,JavaScript,SOFTWARE,2,1.271,corpus,unverified
+stored XSS,ATTACK,TARGETS,JavaScript,SOFTWARE,2,1.218,corpus,unverified
+EDR,DEFENSE,MITIGATES,APT,ATTACK,2,1.194,corpus,unverified
+SQL injection,ATTACK,TARGETS,PHP,SOFTWARE,2,1.17,corpus,unverified
+ASLR,DEFENSE,MITIGATES,format string,ATTACK,2,1.152,corpus,unverified
+Emotet,MALWARE,TARGETS,Windows,SOFTWARE,2,1.131,corpus,unverified
+memory corruption,ATTACK,TARGETS,Android,SOFTWARE,2,1.123,corpus,unverified
+MITM,ATTACK,TARGETS,Kerberos,TECHNOLOGY,2,1.099,corpus,unverified
+network segmentation,DEFENSE,MITIGATES,lateral movement,ATTACK,2,1.085,corpus,unverified
+sandboxing,DEFENSE,MITIGATES,race condition,ATTACK,2,1.081,corpus,unverified
+privilege escalation,ATTACK,TARGETS,Docker,SOFTWARE,2,1.068,corpus,unverified
+privilege escalation,ATTACK,USES,PsExec,TOOL,2,1.068,corpus,unverified
+RCE,ATTACK,TARGETS,macOS,SOFTWARE,2,1.068,corpus,unverified
+MFA,DEFENSE,MITIGATES,supply chain attack,ATTACK,2,1.059,corpus,unverified
+brute force,ATTACK,TARGETS,REST API,TECHNOLOGY,2,1.036,corpus,unverified
+Kerberoasting,ATTACK,TARGETS,Windows,SOFTWARE,2,1.018,corpus,unverified
+CVE-2021-44228,CVE,AFFECTS,Apache Log4j,SOFTWARE,1,2193.0,corpus,verified
+BlueKeep,VULN_NAME,ALIAS_OF,CVE-2019-0708,CVE,1,2193.0,corpus,verified
+Zerologon,VULN_NAME,ALIAS_OF,CVE-2020-1472,CVE,1,2193.0,corpus,verified
+CVE-2023-4956,CVE,AFFECTS,Samba,SOFTWARE,1,2193.0,corpus,unverified
+CVE-2019-5736,CVE,AFFECTS,runC,SOFTWARE,1,1096.5,corpus,differs_from_kb
+Stagefright,VULN_NAME,ALIAS_OF,CVE-2019-2234,CVE,1,548.25,corpus,unverified
+CVE-2022-41978,CVE,AFFECTS,Redis,SOFTWARE,1,548.25,corpus,unverified
+Heartbleed,VULN_NAME,AFFECTS,OpenSSL,SOFTWARE,1,365.5,corpus,unverified
+EternalBlue,VULN_NAME,ALIAS_OF,CVE-2017-0290,CVE,1,365.5,corpus,contradicted_by_kb
+EternalBlue,VULN_NAME,ALIAS_OF,CVE-2017-0144,CVE,1,365.5,corpus,verified
+CVE-2019-8647,CVE,AFFECTS,XPC,TECHNOLOGY,1,365.5,corpus,unverified
+CVE-2023-25061,CVE,AFFECTS,XPC,TECHNOLOGY,1,365.5,corpus,unverified
+CVE-2020-3876,CVE,AFFECTS,XPC,TECHNOLOGY,1,365.5,corpus,unverified
+CVE-2013-4353,CVE,AFFECTS,curl,SOFTWARE,1,313.286,corpus,unverified
+CVE-2021-3786,CVE,AFFECTS,SAML,TECHNOLOGY,1,219.3,corpus,unverified
+Meltdown,VULN_NAME,ALIAS_OF,CVE-2017-5754,CVE,1,182.75,corpus,verified
+CVE-2019-0708,CVE,AFFECTS,RDP,TECHNOLOGY,1,146.2,corpus,verified
+BlueKeep,VULN_NAME,AFFECTS,RDP,TECHNOLOGY,1,146.2,corpus,unverified
+CVE-2023-46952,CVE,AFFECTS,Apache HTTP Server,SOFTWARE,1,137.062,corpus,unverified
+CVE-2017-5123,CVE,AFFECTS,Firefox,SOFTWARE,1,115.421,corpus,unverified
+CVE-2016-5273,CVE,AFFECTS,Firefox,SOFTWARE,1,115.421,corpus,unverified
+CVE-2017-8469,CVE,AFFECTS,Hyper-V,SOFTWARE,1,99.682,corpus,unverified
+CVE-2017-0290,CVE,AFFECTS,SMB,TECHNOLOGY,1,91.375,corpus,differs_from_kb
+CVE-2017-0144,CVE,AFFECTS,SMB,TECHNOLOGY,1,91.375,corpus,verified
+CVE-2018-0981,CVE,AFFECTS,SMB,TECHNOLOGY,1,91.375,corpus,unverified
+Spectre,VULN_NAME,ALIAS_OF,CVE-2018-3646,CVE,1,84.346,corpus,contradicted_by_kb
+CVE-2020-6463,CVE,AFFECTS,Chrome,SOFTWARE,1,70.742,corpus,unverified
+CVE-2022-1978,CVE,AFFECTS,Android,SOFTWARE,1,70.742,corpus,unverified
+CVE-2023-24253,CVE,AFFECTS,Android,SOFTWARE,1,70.742,corpus,unverified
+CVE-2013-6282,CVE,AFFECTS,Android,SOFTWARE,1,70.742,corpus,unverified
+CVE-2018-19756,CVE,AFFECTS,ECC/ECDSA,TECHNOLOGY,1,68.531,corpus,unverified
+CVE-2023-24253,CVE,AFFECTS,ECC/ECDSA,TECHNOLOGY,1,68.531,corpus,unverified
+CVE-2013-6282,CVE,AFFECTS,ECC/ECDSA,TECHNOLOGY,1,68.531,corpus,unverified
+CVE-2021-34527,CVE,AFFECTS,SMB,TECHNOLOGY,1,45.688,corpus,differs_from_kb
+CVE-2016-8357,CVE,AFFECTS,PHP,SOFTWARE,1,43.86,corpus,unverified
+CVE-2018-19374,CVE,AFFECTS,PHP,SOFTWARE,1,43.86,corpus,unverified
+CVE-2023-2958,CVE,AFFECTS,HTTPS,TECHNOLOGY,1,28.115,corpus,unverified
+CVE-2023-2962,CVE,AFFECTS,HTTPS,TECHNOLOGY,1,28.115,corpus,unverified
+CVE-2023-1984,CVE,AFFECTS,Intel,TECHNOLOGY,1,25.8,corpus,unverified
+CVE-2017-5715,CVE,AFFECTS,Intel,TECHNOLOGY,1,25.8,corpus,verified
+CVE-2023-31893,CVE,AFFECTS,Intel,TECHNOLOGY,1,25.8,corpus,unverified
+CVE-2017-8463,CVE,AFFECTS,Linux,SOFTWARE,1,23.581,corpus,unverified
+CVE-2017-5715,CVE,AFFECTS,Linux,SOFTWARE,1,23.581,corpus,differs_from_kb
+CVE-2020-15997,CVE,AFFECTS,Linux,SOFTWARE,1,23.581,corpus,unverified
+CVE-2019-8750,CVE,AFFECTS,Linux,SOFTWARE,1,23.581,corpus,unverified
+CVE-2018-16453,CVE,AFFECTS,JavaScript,SOFTWARE,1,14.62,corpus,unverified
+Spectre,VULN_NAME,AFFECTS,Internet Explorer,SOFTWARE,1,12.049,corpus,unverified
+Dirty COW,VULN_NAME,AFFECTS,GitHub,SOFTWARE,1,8.915,corpus,unverified
+CVE-2019-2234,CVE,AFFECTS,JavaScript,SOFTWARE,1,7.31,corpus,unverified
+Spectre,VULN_NAME,AFFECTS,AMD,TECHNOLOGY,1,7.029,corpus,unverified
+CVE-2017-0144,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,verified
+PrintNightmare,VULN_NAME,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,unverified
+CVE-2018-0981,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,unverified
+CVE-2016-0189,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,differs_from_kb
+CVE-2023-41772,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,unverified
+CVE-2016-3289,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,unverified
+CVE-2017-8464,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,unverified
+CVE-2019-0708,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,verified
+CVE-2020-1472,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,verified
+BlueKeep,VULN_NAME,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,unverified
+CVE-2016-7945,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,unverified
+CVE-2019-1485,CVE,AFFECTS,Windows,SOFTWARE,1,5.088,corpus,unverified
+EternalBlue,VULN_NAME,AFFECTS,PowerShell,SOFTWARE,1,4.512,corpus,unverified
+CVE-2019-1458,CVE,AFFECTS,Windows,SOFTWARE,1,2.544,corpus,unverified
+CVE-2021-34527,CVE,AFFECTS,Windows,SOFTWARE,1,2.544,corpus,verified
+Spectre,VULN_NAME,AFFECTS,Intel,TECHNOLOGY,1,1.985,corpus,unverified
+Spectre,VULN_NAME,AFFECTS,JavaScript,SOFTWARE,1,1.125,corpus,unverified
+Heartbleed,VULN_NAME,ALIAS_OF,CVE-2014-0160,CVE,0,0.0,reference_kb,reference
+CVE-2017-0290,CVE,AFFECTS,Windows Defender,DEFENSE,0,0.0,reference_kb,reference
+EternalBlue,VULN_NAME,ALIAS_OF,CVE-2017-0144,CVE,0,0.0,reference_kb,reference
+CVE-2017-0144,CVE,AFFECTS,Windows,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2017-0144,CVE,AFFECTS,SMB,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2021-44228,CVE,AFFECTS,Apache Log4j,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2021-34527,CVE,AFFECTS,Windows,SOFTWARE,0,0.0,reference_kb,reference
+PrintNightmare,VULN_NAME,ALIAS_OF,CVE-2021-34527,CVE,0,0.0,reference_kb,reference
+CVE-2019-5736,CVE,AFFECTS,Docker,SOFTWARE,0,0.0,reference_kb,reference
+Meltdown,VULN_NAME,ALIAS_OF,CVE-2017-5754,CVE,0,0.0,reference_kb,reference
+Spectre,VULN_NAME,ALIAS_OF,CVE-2017-5715,CVE,0,0.0,reference_kb,reference
+Spectre,VULN_NAME,ALIAS_OF,CVE-2017-5753,CVE,0,0.0,reference_kb,reference
+CVE-2016-5195,CVE,AFFECTS,Linux,SOFTWARE,0,0.0,reference_kb,reference
+Dirty COW,VULN_NAME,ALIAS_OF,CVE-2016-5195,CVE,0,0.0,reference_kb,reference
+CVE-2017-5715,CVE,AFFECTS,Intel,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2017-5715,CVE,AFFECTS,AMD,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2017-5715,CVE,AFFECTS,ARM,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2018-3646,CVE,AFFECTS,Intel,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2016-0189,CVE,AFFECTS,Internet Explorer,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2019-0708,CVE,AFFECTS,RDP,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2019-0708,CVE,AFFECTS,Windows,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2020-1472,CVE,AFFECTS,Windows,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2020-1472,CVE,AFFECTS,Active Directory,SOFTWARE,0,0.0,reference_kb,reference
+BlueKeep,VULN_NAME,ALIAS_OF,CVE-2019-0708,CVE,0,0.0,reference_kb,reference
+Zerologon,VULN_NAME,ALIAS_OF,CVE-2020-1472,CVE,0,0.0,reference_kb,reference
+CVE-2017-5754,CVE,AFFECTS,Intel,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2014-6332,CVE,AFFECTS,Windows,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2014-6332,CVE,AFFECTS,Internet Explorer,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2015-7547,CVE,AFFECTS,glibc,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2015-7547,CVE,AFFECTS,Linux,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2014-0160,CVE,AFFECTS,OpenSSL,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2014-6271,CVE,AFFECTS,Bash,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2017-5753,CVE,AFFECTS,Intel,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2017-5753,CVE,AFFECTS,AMD,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2017-5753,CVE,AFFECTS,ARM,TECHNOLOGY,0,0.0,reference_kb,reference
+CVE-2017-5638,CVE,AFFECTS,Apache Struts,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2018-1002105,CVE,AFFECTS,Kubernetes,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2017-8759,CVE,AFFECTS,.NET Framework,SOFTWARE,0,0.0,reference_kb,reference
+CVE-2019-5786,CVE,AFFECTS,Chrome,SOFTWARE,0,0.0,reference_kb,reference
+Log4Shell,VULN_NAME,ALIAS_OF,CVE-2021-44228,CVE,0,0.0,reference_kb,reference
+Shellshock,VULN_NAME,ALIAS_OF,CVE-2014-6271,CVE,0,0.0,reference_kb,reference
+Foreshadow,VULN_NAME,ALIAS_OF,CVE-2018-3646,CVE,0,0.0,reference_kb,reference
+runc container escape,VULN_NAME,ALIAS_OF,CVE-2019-5736,CVE,0,0.0,reference_kb,reference
+Apache Struts 2 Jakarta Multipart RCE,VULN_NAME,ALIAS_OF,CVE-2017-5638,CVE,0,0.0,reference_kb,reference
+Kubernetes API server privilege escalation,VULN_NAME,ALIAS_OF,CVE-2018-1002105,CVE,0,0.0,reference_kb,reference
+glibc getaddrinfo overflow,VULN_NAME,ALIAS_OF,CVE-2015-7547,CVE,0,0.0,reference_kb,reference
+Internet Explorer scripting engine memory corruption,VULN_NAME,ALIAS_OF,CVE-2016-0189,CVE,0,0.0,reference_kb,reference
+.NET Framework SOAP WSDL parser code injection,VULN_NAME,ALIAS_OF,CVE-2017-8759,CVE,0,0.0,reference_kb,reference
+Chrome FileReader use-after-free,VULN_NAME,ALIAS_OF,CVE-2019-5786,CVE,0,0.0,reference_kb,reference
+Windows OLE automation array remote code execution,VULN_NAME,ALIAS_OF,CVE-2014-6332,CVE,0,0.0,reference_kb,reference
+Microsoft Malware Protection Engine remote code execution,VULN_NAME,ALIAS_OF,CVE-2017-0290,CVE,0,0.0,reference_kb,reference

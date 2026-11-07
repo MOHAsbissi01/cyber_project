@@ -1,0 +1,177 @@
+{
+  "k": 10,
+  "topics": [
+    {
+      "topic": 0,
+      "top_words": [
+        "firmware",
+        "software",
+        "hardware",
+        "secure",
+        "devices",
+        "device",
+        "memory",
+        "organizations",
+        "management",
+        "intel"
+      ],
+      "n_incidents": 160,
+      "dominant_weak_category": "vulnerability"
+    },
+    {
+      "topic": 1,
+      "top_words": [
+        "web",
+        "xss",
+        "server",
+        "http",
+        "com",
+        "https",
+        "browser",
+        "javascript",
+        "script",
+        "content"
+      ],
+      "n_incidents": 172,
+      "dominant_weak_category": "xss"
+    },
+    {
+      "topic": 2,
+      "top_words": [
+        "threats",
+        "threat",
+        "advanced",
+        "organizations",
+        "detection",
+        "understanding",
+        "practices",
+        "potential",
+        "continuous",
+        "sophisticated"
+      ],
+      "n_incidents": 340,
+      "dominant_weak_category": "vulnerability"
+    },
+    {
+      "topic": 3,
+      "top_words": [
+        "memory",
+        "kernel",
+        "execution",
+        "exploit",
+        "address",
+        "exploitation",
+        "control",
+        "function",
+        "stack",
+        "rop"
+      ],
+      "n_incidents": 276,
+      "dominant_weak_category": "vulnerability"
+    },
+    {
+      "topic": 4,
+      "top_words": [
+        "dns",
+        "database",
+        "query",
+        "sql",
+        "queries",
+        "graphql",
+        "password",
+        "api",
+        "users",
+        "hash"
+      ],
+      "n_incidents": 119,
+      "dominant_weak_category": "access_control"
+    },
+    {
+      "topic": 5,
+      "top_words": [
+        "privileges",
+        "service",
+        "user",
+        "network",
+        "privilege",
+        "account",
+        "escalation",
+        "credentials",
+        "ticket",
+        "password"
+      ],
+      "n_incidents": 164,
+      "dominant_weak_category": "access_control"
+    },
+    {
+      "topic": 6,
+      "top_words": [
+        "application",
+        "applications",
+        "input",
+        "vulnerability",
+        "validation",
+        "developers",
+        "web",
+        "xml",
+        "proper",
+        "practices"
+      ],
+      "n_incidents": 134,
+      "dominant_weak_category": "injection"
+    },
+    {
+      "topic": 7,
+      "top_words": [
+        "malware",
+        "windows",
+        "dll",
+        "detection",
+        "memory",
+        "tools",
+        "injection",
+        "legitimate",
+        "analysis",
+        "processes"
+      ],
+      "n_incidents": 351,
+      "dominant_weak_category": "malware"
+    },
+    {
+      "topic": 8,
+      "top_words": [
+        "token",
+        "user",
+        "authentication",
+        "session",
+        "server",
+        "tokens",
+        "client",
+        "users",
+        "request",
+        "application"
+      ],
+      "n_incidents": 159,
+      "dominant_weak_category": "access_control"
+    },
+    {
+      "topic": 9,
+      "top_words": [
+        "network",
+        "key",
+        "encryption",
+        "cryptographic",
+        "traffic",
+        "devices",
+        "algorithms",
+        "communication",
+        "networks",
+        "protocols"
+      ],
+      "n_incidents": 318,
+      "dominant_weak_category": "crypto"
+    }
+  ],
+  "nmi_vs_weak_labels": 0.2391,
+  "note": "Unsupervised topics only partly align with the keyword taxonomy."
+}

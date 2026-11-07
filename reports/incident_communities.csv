@@ -1,0 +1,13 @@
+community,n_incidents,dominant_category,category_purity,top_entities,top_terms
+0,328,malware,0.311,Windows [SOFTWARE]; process injection [ATTACK]; EDR [DEFENSE]; PowerShell [SOFTWARE]; patch management [DEFENSE]; privilege escalation [ATTACK],"malware, process, windows, detection, memory, tools"
+1,253,vulnerability,0.798,ASLR [DEFENSE]; ROP [ATTACK]; buffer overflow [ATTACK]; DEP/NX [DEFENSE]; memory corruption [ATTACK]; Windows [SOFTWARE],"memory, rop, heap, stack, address, exploitation"
+2,230,injection,0.396,SQL injection [ATTACK]; input validation [DEFENSE]; PHP [SOFTWARE]; RCE [ATTACK]; Python [SOFTWARE]; WAF [DEFENSE],"web, server, application, sql, php, http"
+3,224,malware,0.491,botnet [ATTACK]; supply chain attack [ATTACK]; trojan [ATTACK]; DNS [TECHNOLOGY]; ransomware [ATTACK]; DDoS [ATTACK],"c2, network, malware, iot, supply, command"
+4,214,crypto,0.537,side-channel [ATTACK]; RSA [TECHNOLOGY]; AES [TECHNOLOGY]; brute force [ATTACK]; ECC/ECDSA [TECHNOLOGY]; TLS/SSL [TECHNOLOGY],"cryptographic, key, encryption, algorithms, keys, rsa"
+5,183,xss,0.426,JavaScript [SOFTWARE]; CSP [DEFENSE]; XSS [ATTACK]; CSRF [ATTACK]; input validation [DEFENSE]; phishing [ATTACK],"xss, web, site, browser, content, cross"
+6,177,vulnerability,0.542,privilege escalation [ATTACK]; race condition [ATTACK]; Windows [SOFTWARE]; Linux [SOFTWARE]; memory corruption [ATTACK]; sandboxing [DEFENSE],"kernel, process, memory, sandbox, vulnerabilities, race"
+7,155,access_control,0.51,rate limiting [DEFENSE]; OAuth [TECHNOLOGY]; JWT [TECHNOLOGY]; brute force [ATTACK]; GraphQL [TECHNOLOGY]; REST API [TECHNOLOGY],"authorization, token, user, graphql, authentication, access"
+8,150,vulnerability,0.393,Secure Boot [DEFENSE]; rootkit [ATTACK]; UEFI [TECHNOLOGY]; Intel [TECHNOLOGY]; BIOS [TECHNOLOGY]; Windows [SOFTWARE],"firmware, hardware, uefi, boot, memory, secure"
+9,127,access_control,0.52,Windows [SOFTWARE]; privilege escalation [ATTACK]; Kerberos [TECHNOLOGY]; Active Directory [SOFTWARE]; lateral movement [ATTACK]; Mimikatz [MALWARE],"ticket, kerberos, account, tickets, privileges, domain"
+10,101,malware,0.297,ARP spoofing [ATTACK]; DDoS [ATTACK]; MITM [ATTACK]; MFA [DEFENSE]; BGP [TECHNOLOGY]; DNS [TECHNOLOGY],"metamorphic, detection, arp, learning, machine, traffic"
+11,51,vulnerability,0.529,Windows [SOFTWARE]; DLL hijacking [ATTACK]; privilege escalation [ATTACK]; process injection [ATTACK]; AppLocker [DEFENSE]; Process Monitor [TOOL],"dll, hijacking, dlls, windows, loading, path"
